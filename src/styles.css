@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-}
+
+/*Font Awesome*/ 
+@import '@fortawesome\fontawesome-free\css\all.css';
+/*Kendo*/
+/* @import 'assets/kendo/kendo.bootstrap-v4.min.css'; */
+

@@ -1,0 +1,92 @@
+<h1>Spacing</h1>
+<p>Space is an integral tool in UX/UI design. It organizes content, influences readability, shapes visual hiearchy, and dictactes overall usability. Our goal
+    is to apply space consistenly within and between components to render harmonious visual experiences.
+</p>
+<!-- <hr class="atlas-hr"> -->
+
+<!-- <h2>Margins and Padding</h2>
+<p>Spacing is dictated by margins and padding. Margin represents the space around the element, beyond its' borders. 
+    Padding is the space around the content of an element, <em>within</em> its' borders.
+</p>
+<div class="row">
+    <div class="col-md-6">
+        <div class="atlas-padding-example text-center">
+            <p class="atlas-text-slim">Padding</p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="atlas-margin-wrapper-example text-center">
+            <div class="atlas-margin-example">
+                <p class="atlas-text-slim">Margin</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="atlas-hr"> -->
+<h2>CSS Utilities</h2>
+<p>Spacing can be modified by using one of the SASS variables or using a utility class.</p>
+
+<h3>Variables</h3>
+<div class="row">
+    <div class="col-md-8">
+        <p class="atlas-text-slim">ADS spacing variables follow the naming convention <code>$atlas-spacing-base</code>.</p>
+        <p>Each variable is a derivative of its base value (1 rem) and increases (or decreases) in quarter increments.</p>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Sass Variable Name</th>
+            <th scope="col">Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let variable of listVariables">
+            <th scope="row"><code>{{variable.name}}</code></th>
+            <td>{{variable.value}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<h3>Utility Classes</h3>
+<p>Utility classes can be added directly to your html code. Built from a Sass mixin, 
+    classes are constructed ranging from <code>0rem</code> to <code>4rem</code>, increasing by quarter increments.
+</p>
+<h4>Syntax</h4>
+<p class="atlas-text-slim">To utilize our spacing utility classes, use the following format:</p>
+<p><code>atlas-{{leftCurlyBraces}}property{{rightCurlyBraces}}-{{leftCurlyBraces}}direction{{rightCurlyBraces}}-{{leftCurlyBraces}}size{{rightCurlyBraces}}</code></p>
+
+<p>Property stands for:</p>
+<ul>
+    <li>
+        <code>m</code> - for classes that set <code>margin</code>
+    </li>
+    <li>
+        <code>p</code> - for classes that set <code>padding</code>
+    </li>
+</ul>
+
+<p>Direction stands for:</p>
+<ul>
+    <li *ngFor="let direction of listDirections; let first = first; let last = last; let w = index;">
+        <code>{{direction.abbreviation}}</code> - for classes that set <code>{{direction.className1}}</code> {{direction.conjunction}} <code>{{direction.className2}}</code>
+    </li>
+    <li>
+        blank - for classes that set <code>margin</code> or <code>padding</code> on all 4 sides.
+    </li>
+</ul>
+
+<p>Sizes stands for:</p>
+<ul>
+    <li *ngFor="let direction of listSizes; let first = first; let last = last; let w = index;">
+        <code>{{w}}</code> - {{direction.removeOrSet}}  <code>margin</code> {{direction.conjunction}} <code>padding</code> {{direction.preposition}} <code>{{direction.variable}}</code>
+    </li>
+    <li>
+        <code>auto</code> - for classes that set the  <code>margin</code> to auto.
+    </li>
+</ul>
+
+<h4>Examples</h4>
+
+<p>Note to Afftene: Put Syntax Highlighter of using these classes here</p>

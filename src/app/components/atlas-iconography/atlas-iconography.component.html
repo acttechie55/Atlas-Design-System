@@ -1,0 +1,33 @@
+<h1>Iconography</h1>
+
+<p>Icons are illustrations to help users define and complete task. In Atlas, they should be used sparingly with a specific intention.</p>
+
+<h2>Full Documentation</h2>
+<p>Our icons are pulled from <a href="https://fontawesome.com/icons?d=gallery" class="atlas-link">Font Awesome.</a></p>
+
+<h2>Icon Library</h2>
+<div class="card atlas-card">
+   <div class="table-responsive">
+    <table class="table atlas-table">
+        <thead>
+           <tr>
+              <th scope="col">Icon</th>
+              <th scope="col">Name</th>
+              <th scope="col">When It Is Used</th>
+              <th scope="col">Code</th>
+           </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor="let icon of iconography">
+              <th scope="row"><i [ngClass]="icon.iconPicture"></i></th>
+              <td>{{icon.name}}</td>
+              <td>{{icon.summary}}</td>
+              <td><code>&lt;i class=&quot;{{icon.className}}&quot; &gt;&lt;/i&gt;</code></td>
+           </tr>
+        </tbody>
+     </table>
+   </div>  
+</div>
+<!-- <h2>Icon As A Button</h2>
+<h2>Color</h2>
+<p></p> -->

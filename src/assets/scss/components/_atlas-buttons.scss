@@ -1,0 +1,46 @@
+/*FOCUS*/
+a:focus,.atlas-link:focus, button:focus, .btn:focus {
+    @include atlas-focus();
+}
+/*ATLAS BUTTON STYLING*/
+.btn {
+    &.atlas-primary {
+        background-color: $JC-cyan;
+        color: $white;
+        @include atlas-button();
+        &:hover:not(:disabled) {
+            background-color: $JC-cyan-dark;
+        }
+    }
+    &.atlas-primary-danger {
+        background-color: $atlas-error;
+        color: $white;
+        @include atlas-button();
+        &:hover:not(:disabled) {
+            background-color: $atlas-error-hover;
+        }
+    }
+    &.atlas-secondary {
+        border:2px solid $JC-cyan;
+        color: $JC-cyan;
+        @include atlas-button();
+        &:hover:not(:disabled) {
+            background-color: $JC-cyan-light;
+        }
+    }
+    &.atlas-secondary-danger {
+        border:2px solid $atlas-error;
+        color: $atlas-error;
+        @include atlas-button();
+        &:hover:not(:disabled) {
+            background-color: $atlas-secondary-error-hover;
+        }
+    }
+    &.atlas-tertiary {
+        color: $gray-five;
+        @include atlas-button();
+        &:hover:not(:disabled) {
+            text-decoration: underline;
+        }
+    }
+}

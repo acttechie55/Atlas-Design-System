@@ -1,0 +1,40 @@
+<h1>Colors</h1>
+
+<h2>Guidelines</h2>
+<h2>Color Palette</h2>
+<div class="row">
+    <div class="col-md-6">
+        <h3>Brand</h3>
+        <div class="card atlas-card">
+            <ul class="list-unstyled m-0">
+                <li class="atlas-color-row" *ngFor="let color of brandColors" [ngClass]="color.className">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h3>Derivative Brand</h3>
+        <div class="card atlas-card">
+            <ul class="list-unstyled m-0">
+                <li class="atlas-color-row" *ngFor="let color of derivativeColors" [ngClass]="color.className">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h3>Success, Caution, Error</h3>
+        <ul class="list-unstyled m-0">
+            <li class="atlas-color-row" *ngFor="let color of successErrorColors" [ngClass]="color.className">
+            </li>
+        </ul>
+    </div>
+</div>
+<h3>Neutral</h3>
+<div class="card atlas-card">
+    <ul class="list-unstyled m-0">
+        <li class="atlas-color-row" *ngFor="let color of neutralColors" [ngClass]="color.className">
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,400 @@
+<h1>Form Elements</h1>
+<p>
+    Use Forms to allow people to enter data for use by the application, or to configure options. 
+    Forms are used to get information and guide people with minimal fuss. 
+    Designing forms well requires making decisions about structure, sequence, interface elements, 
+    field labels, help, and feedback. 
+</p>
+<h2>Full Documentation</h2>
+<p>Our form styling is adapted and modified from 
+the <a href="https://getbootstrap.com/docs/4.0/components/forms/" class="atlas-link">Bootstrap</a> 
+and <a href="https://www.telerik.com/kendo-angular-ui/components/" class="atlas-link">Kendo UI</a>.
+</p>
+<!-- <ul>
+    <li>
+        Wrap all forms in the <code>&lt;form&gt;</code> tag.
+    </li>
+    <li>
+        Always use a label.
+    </li>
+    <li>
+        Do not use placeholders.
+    </li>
+</ul> -->
+<div class="atlas-card mb-4" atlas-altitude='raised'>
+    <div class="atlas-card-title-wrapper">
+        <h2 class="atlas-card-title">Form Elements</h2>
+    </div>
+    <div class="atlas-card-body">
+        <!-- BEGIN TEXT INPUT AND REQUIRED TEXT INPUT -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group atlas-form-group">
+                    <label for="textInput" class="atlas-label">Text Input</label>
+                    <input type="text" class="form-control" id="textInput">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group atlas-form-group">
+                    <label for="textInput" class="atlas-label">Required Text Input <span class="atlas-required" aria-hidden="true">*</span></label>
+                    <input type="text" class="form-control" id="textInput">
+                </div>
+            </div>
+        </div>
+        <!-- END TEXT INPUT AND REQUIRED TEXT INPUT -->
+        <div class="form-group atlas-form-group">
+            <label for="textInput" class="atlas-text-slim atlas-label">Text Input</label>
+            <em> <span class="atlas-text-slim">Sub-label text goes here</span></em>
+            <input type="text" class="form-control" id="textInput">
+        </div>
+        <!-- BEGIN SELECT DROPDOWN AND PASSWORD TEXT INPUT -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="atlas-form-group form-group">
+                    <label for="exampleFormControlSelect1" class="atlas-label">Example Select</label>
+                    <div class="atlas-select-wrapper">
+                        <select class="atlas-form-control form-control" id="exampleFormControlSelect1">
+                            <option>Select One</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group atlas-form-group">
+                    <label for="textInput2" class="atlas-label">Password</label>
+                    <input type="password" class="form-control" id="textInput2">
+                </div>
+            </div>
+        </div>
+        <!-- END SELECT DROPDOWN AND PASSWORD TEXT INPUT -->
+        <!-- BEGIN TEXTAREA -->
+        <div class="form-group atlas-form-group">
+            <label for="exampleFormControlTextarea1" class="atlas-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <!-- END TEXTAREA -->
+        <hr class="atlas-hr">
+        <!-- BEGIN DISABLED TEXT INPUTS -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group atlas-form-group">
+                    <label for="textInput" class="atlas-label">Disabled Text Input</label>
+                    <input type="text" class="form-control" id="textInput" disabled> 
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="atlas-form-group form-group">
+                    <label for="exampleFormControlSelect1" class="atlas-label">Disabled Select</label>
+                    <div class="atlas-select-wrapper">
+                        <select class="atlas-form-control form-control" id="exampleFormControlSelect1" disabled>
+                            <option>Select One</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END DISABLED TEXT INPUTS -->
+        <!-- BEGIN DISABLED REQUIRED TEXTAREA -->
+        <div class="form-group atlas-form-group">
+            <label for="exampleFormControlTextarea1" class="atlas-label">Disabled Textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled></textarea>
+        </div>
+        <!-- END DISABLED REQUIRED TEXTAREA -->
+        <hr class="atlas-hr">
+        <!-- BEGIN ERROR REQUIRED INPUTS -->
+        <div class="row">
+            <!-- BEGIN ERROR REQUIRED TEXT INPUT -->
+            <div class="col-md-6">
+                <div class="form-group atlas-form-group">
+                    <label for="textInput" class="atlas-label">Error Required Text Input <span class="atlas-required" aria-hidden="true">*</span></label>
+                    <input type="text" class="form-control ng-invalid" id="textInput">
+                    <span class="atlas-required" role="alert">This input is required!
+                        <span class="atlas-error-icon">
+
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <!-- END ERROR REQUIRED TEXT INPUT -->
+            <!-- BEGIN ERROR SELECT -->
+            <div class="col-md-6">
+                <div class="atlas-form-group form-group">
+                    <label for="exampleFormControlSelect1" class="atlas-label">Error Required Select <span class="atlas-required" aria-hidden="true">*</span></label>
+                    <div class="atlas-select-wrapper">
+                        <select class="atlas-form-control form-control ng-invalid" id="exampleFormControlErrorSelect1">
+                            <option>Select One</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <span class="atlas-required" role="alert">This input is required!
+                            <span class="atlas-error-icon">
+    
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- END ERROR SELECT -->
+        </div>
+        <!-- BEGIN ERROR REQUIRED TEXTAREA -->
+        <div class="form-group atlas-form-group">
+            <label for="exampleFormControlTextarea1" class="atlas-label">Error Example Textarea <span class="atlas-required" aria-hidden="true">*</span></label>
+            <div class="atlas-form-textarea">
+                <textarea class="form-control ng-invalid" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <span class="atlas-required" role="alert">This input is required!
+                    <span class="atlas-error-icon">
+
+                    </span>
+                </span>
+            </div>
+        </div>
+        <!-- END ERROR REQUIRED TEXTAREA -->
+        <!-- END ERROR REQUIRED INPUTS -->
+        <hr class="atlas-hr">
+        <!-- BEGIN SUCCESS INPUTS -->
+        <div class="row">
+            <!-- BEGIN REQUIRED SUCCESS TEXT INPUT -->
+            <div class="col-md-6">
+                <div class="form-group atlas-form-group">
+                    <label for="textInput" class="atlas-label" class="atlas-label">Success Required Text Input <span class="atlas-required" aria-hidden="true">*</span></label>
+                    <input type="text" class="form-control ng-valid" id="textInput">
+                </div>
+            </div>
+            <!-- END REQUIRED SUCCESS TEXT INPUT -->
+            <!-- BEGIN REQUIRED SUCCESS SELECT INPUT -->
+            <div class="col-md-6">
+                <div class="atlas-form-group form-group">
+                    <label for="exampleFormControlSelect1">Success Select <span class="atlas-required" aria-hidden="true">*</span></label>
+                    <div class="atlas-select-wrapper">
+                        <select class="atlas-form-control form-control ng-valid" id="exampleFormControlErrorSelect1">
+                            <option>Select One</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- END REQUIRED SUCCESS SELECT INPUT -->
+        </div>
+        <!-- BEGIN REQUIRED SUCCESS TEXTAREA -->
+        <div class="form-group atlas-form-group">
+            <label for="exampleFormControlTextarea1" class="atlas-label">Success Textarea <span class="atlas-required" aria-hidden="true">*</span></label>
+            <div class="atlas-form-textarea">
+                <textarea class="form-control ng-valid" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <!-- END REQUIRED SUCCESS TEXTAREA -->
+        <!-- END SUCCESS INPUTS -->
+        
+    </div>
+</div>
+<div class="atlas-card mb-4" atlas-altitude='raised'>
+    <div class="atlas-card-title-wrapper">
+        <h2 class="atlas-card-title">Checkboxes and Radio Buttons</h2>
+    </div>
+    <div class="atlas-card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="atlas-card" atlas-altitude='basic'>
+                    <div class="atlas-card-body">
+                        <div class="custom-control custom-checkbox atlas-form-group">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label" for="customCheck">A Single Checkbox</label>
+                        </div>
+                        <div class="custom-control custom-checkbox atlas-form-group">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2" name="example2" checked>
+                            <label class="custom-control-label" for="customCheck2">A Single Checkbox, But Checked</label>
+                        </div>
+                        <div class="custom-control custom-checkbox atlas-form-group">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3" disabled>
+                            <label class="custom-control-label" for="customCheck3">A Single Checkbox, But Disabled</label>
+                        </div>
+                        <div class="custom-control custom-checkbox atlas-form-group">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4" name="example4" disabled checked>
+                            <label class="custom-control-label" for="customCheck4">A Single Checkbox, But Disabled and Checked</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="atlas-card" atlas-altitude='basic'>
+                    <div class="atlas-card-body">
+                        <fieldset class="atlas-form-group">
+                            <legend class="atlas-form-legend">A Fieldset of Checkboxes</legend>
+                            <div class="custom-control custom-checkbox atlas-form-group">
+                                <input type="checkbox" class="custom-control-input" id="customFieldsetCheck" name="example1">
+                                <label class="custom-control-label" for="customFieldsetCheck">Checkbox A</label>
+                            </div>
+                            <div class="custom-control custom-checkbox atlas-form-group">
+                                <input type="checkbox" class="custom-control-input" id="customFieldsetCheck2" name="example1" >
+                                <label class="custom-control-label" for="customFieldsetCheck2">Checkbox B</label>
+                            </div>
+                        </fieldset>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="atlas-card" atlas-altitude='basic'>
+                    <div class="atlas-card-body">
+                <div class="custom-control custom-checkbox atlas-form-group custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="customInlineCheck" name="example1">
+                    <label class="custom-control-label" for="customInlineCheck">Checkbox A</label>
+                </div>
+                <div class="custom-control custom-checkbox atlas-form-group custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="customInlineCheck2" name="example2" >
+                    <label class="custom-control-label" for="customInlineCheck2">Checkbox B</label>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <hr class="atlas-line">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="atlas-card" atlas-altitude='basic'>
+                    <div class="atlas-card-body">
+                        <fieldset class="atlas-form-group">
+                            <legend class="atlas-form-legend">A Fieldset of Radio Buttons</legend>
+                            <div class="custom-control custom-radio atlas-form-group">
+                                <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+                                <label class="custom-control-label" for="customRadio">An Unchecked Radio Button</label>
+                            </div>
+                            <div class="custom-control custom-radio atlas-form-group">
+                            <input type="radio" class="custom-control-input" id="customRadio1" name="example2" checked>
+                            <label class="custom-control-label" for="customRadio1">A Checked Radio Button</label>
+                            </div>  
+                              <div class="custom-control custom-radio atlas-form-group">
+                                <input type="radio" class="custom-control-input" id="customRadio2" name="example3" disabled>
+                                <label class="custom-control-label" for="customRadio2">A Disabled Radio Button</label>
+                              </div>  
+                              <div class="custom-control custom-radio atlas-form-group">
+                                <input type="radio" class="custom-control-input" id="customRadio3" name="example4" checked disabled>
+                                <label class="custom-control-label" for="customRadio3">A Disabled And Checked Radio Button</label>
+                              </div>  
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="atlas-card" atlas-altitude='basic'>
+                    <div class="atlas-card-body">
+                        <fieldset class="atlas-form-group">
+                            <legend class="atlas-form-legend">A Fieldset of Radio Buttons, but Inline</legend>
+                            <div class="custom-control custom-radio atlas-form-group custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadioInline" name="exampleInline1">
+                                <label class="custom-control-label" for="customRadioInline">An Unchecked Radio Button</label>
+                            </div>
+                            <div class="custom-control custom-radio atlas-form-group custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="customRadioInline2" name="exampleInline1" checked>
+                            <label class="custom-control-label" for="customRadioInline2">A Checked Radio Button</label>
+                            </div>   
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <h3>Other Inputs</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="atlas-card" atlas-altitude="basic">
+                    <div class="atlas-form-group">
+                        <label for="customRange">Range</label>
+                        <input type="range" class="custom-range" id="customRange" name="points1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="atlas-card" atlas-altitude="basic">
+                    <div class="atlas-form-group">
+                    <div class="custom-control custom-switch atlas-form-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                    </div>
+                    </div>
+                      <div class="custom-control custom-switch atlas-form-switch">
+                        <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                        <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                      </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+<div class="atlas-card mb-4" atlas-altitude='raised'>
+    <div class="atlas-card-title-wrapper">
+        <h2 class="atlas-card-title">Other Form Elements</h2>
+    </div>
+    <div class="atlas-card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="atlas-card" atlas-altitude='raised'>
+                    <div class="atlas-card-body text-center">
+                        <p class="h2">
+                            Upload File Input Feature Coming Soon
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pl-0 pr-1">
+                <label [for]="'work-location-' + i" class="create-expense-labels pr-1"><span class="required-star">*</span> Work location </label>
+
+                <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error" role="alert"
+                      *ngIf="exp.hasError('innerPropertyRequired', ['workLocation'])">
+                  <span class="k-icon k-i-warning"> </span> Select Work Location
+                </span>
+                <span class="work-location-missing p-sm-4">
+                  (If you don't see the correct work location please contact your recruiter)
+                </span>
+                <span title="" class="k-widget k-dropdown k-header w-100">
+                  <kendo-dropdownlist class="k-dropdown-wrap"
+                                      [data]="workLocationDropDownData"
+                                      [defaultItem]="{text: 'Select work location …', value: null}"
+                                      [textField]="'text'"
+                                      [valueField]="'value'"
+                                      [id]="'work-location-' + i"
+                                      [valuePrimitive]="false"
+                                      [formControlName]="'workLocation'"
+                                      (valueChange)="onWorkLocationChange($event)">
+                  </kendo-dropdownlist>
+                </span>
+            </div>  
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-6">
+                <div class="atlas-card" atlas-altitude="basic">
+                    <div class="atlas-form-group">
+                        <label for="customRange">Range</label>
+                        <input type="range" class="custom-range" id="customRange" name="points1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="atlas-card" atlas-altitude="basic">
+                    <div class="atlas-form-group">
+                    <div class="custom-control custom-switch atlas-form-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                    </div>
+                    </div>
+                      <div class="custom-control custom-switch atlas-form-switch">
+                        <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                        <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                      </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>

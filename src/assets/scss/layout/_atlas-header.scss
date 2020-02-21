@@ -1,0 +1,68 @@
+
+.atlas-header {
+    background-color: $JC-blue;
+    color: $white;
+    @include atlas-box-shadow-one;
+    position: fixed;
+    top: 0px;
+    z-index: $zindex-sticky;
+    height: $header-height;
+    display: flex;
+    align-items:center;
+    align-content: center;
+    @include atlas-transition-one;
+    width: 100%;
+    .atlas-header-container {
+       width: $navigation-width;
+       display: flex;
+       align-items:center;
+      // width: 100%;
+      // min-width: 45px;
+       @media #{$atlas-tablet-range}{
+        @include atlas-transition-one;
+           width: 100%;
+           display: block;
+           -webkit-box-align: center;
+           align-items: center;
+           -webkit-box-pack: center;
+           justify-content: center;
+           position: relative;
+           float: left;
+           text-align: center;
+       }
+        .jclt-logo-link {
+            // height: 17px;
+            // width: 68px;
+            @media #{$atlas-tablet-range} {
+                display:inline-block;
+                margin:0 auto;
+                // right: auto;
+                // left: 0;
+                // top: 15px;
+                // position: absolute;
+            }
+        }
+        .atlas-nav-menu-button {
+            color: $white;
+            margin-left:auto;
+            padding-right: $atlas-spacing-base-0;
+            //line-height: $header-height - 20;
+            // float: right;
+            z-index: 10;
+            @media #{$atlas-tablet-range} {
+                //float: left;
+                right: auto;
+                left: 0;
+                top: 15px;
+                position: absolute;
+                margin-left: $atlas-spacing-base-0;
+            }
+        }
+    }
+    .atlas-logo-wrapper {
+        @media #{$atlas-tablet-range}{
+            position: absolute;
+            width: 100%;
+        }
+    }
+}

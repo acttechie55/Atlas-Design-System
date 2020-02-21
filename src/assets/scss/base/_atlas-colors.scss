@@ -1,0 +1,81 @@
+
+/*BACKGROUND COLORS*/
+/*BRAND*/
+.atlas-jc-blue-bg {
+    background-color: $JC-blue;
+}
+.atlas-jc-orange-bg {
+    background-color: $JC-orange;
+}
+.atlas-jc-green-bg {
+    background-color: $JC-green;                    
+}
+.atlas-jc-cyan-bg {
+    background-color: $JC-cyan;              
+}
+/*DERIVATIVE*/
+.atlas-jc-cyan-dark-bg {
+    background-color: $JC-cyan-dark;
+}
+.atlas-jc-cyan-light-bg {
+    background-color: $JC-cyan-light;
+}
+.atlas-jc-cyan-extra-light-bg {
+    background-color: $JC-cyan-extra-light
+}
+.atlas-blue-light-bg {
+    background-color: $JC-blue-light;
+}
+/*SUCCESS, CAUTION, ERROR*/
+.atlas-caution-bg {
+    background-color: $atlas-caution;
+}
+.atlas-error-bg {
+    background-color: $atlas-error;
+}
+.atlas-error-hover-bg {
+    background-color: $atlas-error-hover;
+}
+/*NEUTRAL*/
+.atlas-white-bg {
+    background-color: $white;
+}
+.atlas-white-two-bg {
+    background-color: $white-two;
+}
+.atlas-white-three-bg {
+    background-color: $white-three;
+}
+.atlas-white-four-bg {
+    background-color: $white-four;
+}
+.atlas-gray-bg {
+    background-color: $gray
+}
+.atlas-gray-two-bg {
+    background-color: $gray-two;
+}
+.atlas-gray-three-bg {
+    background-color: $gray-three;
+}
+.atlas-gray-four-bg {
+    background-color: $gray-four;
+}
+.atlas-gray-five-bg {
+    background-color: $gray-five;
+}
+.atlas-gray-five-light-bg {
+    background-color: $gray-five-light;
+}
+.atlas-gray-five-lighter-bg {
+    background-color: $gray-five-lighter;
+}
+.atlas-black-bg {
+    background-color: $black;
+}
+
+/*SELCTION COLORS*/
+::selection {
+    color: $white;
+    background: $JC-blue;
+}

@@ -1,0 +1,202 @@
+/*FOCUS*/
+input:focus, select:focus, textarea:focus, .form-control:focus {
+    @include atlas-focus()
+}
+
+/*FORM INPUT STYLING*/
+.form-group, .atlas-form-group {
+    .atlas-required {
+        color: $atlas-error;
+    }
+    .atlas-label {
+        & ~ em {
+            font-size:$atlas-font-small;
+            display: block;
+        }
+    }
+    input, textarea, select {
+        &.form-control, .atlas-form-control {
+            border: $atlas-border-three;
+            border-radius: 1px;
+            color: $black;
+            &:disabled, [readonly] {
+                cursor: not-allowed;
+            }
+            &.ng-invalid {
+                border: $atlas-error-border;
+                &:focus {
+                    outline: 5px auto $atlas-error;
+                }
+            }
+            &.ng-valid {
+                border: $atlas-green-line;
+                &:focus {
+                    outline: 5px auto $JC-green;
+                }
+            }
+        }
+    }
+
+    //Styling Select Boxes
+    .atlas-select-wrapper {
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+        &::after {
+            @include atlas-font-awesome-content();
+            content: "\f078";
+            position: absolute;
+            text-align: center;
+            color: $JC-orange;
+            width: 46px;
+            font-size: 23px;
+            line-height: 38px;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            pointer-events: none;    
+        }
+        select {
+            cursor: pointer;
+           -webkit-appearance: none;
+           -moz-appearance: none;
+           appearance: none;
+        }
+        .atlas-error-icon {                                                 //Styling Error Icon
+            right: 45px;
+            top: 7px;
+            @include atlas-error-input-icon()
+        }
+    }
+
+    //Styling Checkboxes
+    &.custom-control {
+        margin-bottom: .5rem;
+        .custom-control-input {
+            //Checkbox Checked State
+            &:checked ~ .custom-control-label::before {
+                border-color: $JC-cyan;
+                background-color: $JC-cyan;
+            }
+            //Checkbox Disabled State
+            &[disabled],
+            &:disabled {
+              ~ .custom-control-label {
+                  opacity: .5;
+                  color: $black;
+                  cursor:not-allowed;
+              }
+            }
+            //Checkbox Active State
+            &:not(:disabled):active ~ .custom-control-label::before {
+                opacity: .75;
+                background-color: $JC-cyan;
+                border:  $atlas-border-three;
+            }
+        }
+        .custom-control-label {
+            padding-left: .5rem;
+            font-size: $atlas-font-small;
+            &:before {
+                top: 0;
+                border: $atlas-border-three;
+                width: 1.5rem;
+                height: 1.5rem;
+             }
+            &:after {
+                top: 0;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+
+    //Styling Range 
+    .custom-range {
+        &::-webkit-slider-thumb,::-moz-range-thumb {
+            background-color: $JC-cyan;
+            // width: 1.5rem;
+            // height: 1.5rem;
+        }
+
+    }
+
+    //Styling Textarea 
+    .atlas-form-textarea {
+        position: relative;
+        .atlas-error-icon {                                         //Textarea Error Icon 
+            top: 10px;
+            right: 10px;
+            @include atlas-error-input-icon()
+        }
+    }
+    .atlas-error-icon {                                              //Input Error Icon 
+        right: 30px;
+        top: 39px;
+        @include atlas-error-input-icon()
+    }
+
+    .atlas-form-legend {
+        font-size: $atlas-font-size-base;
+        color: $black;
+    }
+
+    
+
+
+
+    //Autofill States
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        border: $atlas-border-three;
+        -webkit-text-fill-color: $black;
+        // -webkit-box-shadow: $white;
+        // box-shadow: $white;
+        background-color: $white;
+        @include atlas-transition-background-color-one();
+    }
+
+}
+
+//Invalid Inputs {
+    // .atlas-form-group {
+    //     .ng-invalid {
+    //         border: 1px solid $atlas-error;
+    //     }
+    // }
+//Styling Switches
+// .custom-switch.atlas-form-switch {
+//     .custom-control-label {
+//         &::before {
+//             height: 30px;
+//             width: 90px;
+//             border-radius: 16px;
+//         }
+//         &::after {
+//             left: -34px;
+//             width: 24px;
+//             height: 25px;
+//             border-radius: 16px;
+//         }
+       
+//     }
+//     .custom-control-input:checked ~ .custom-control-label::before {
+//         background-color: $JC-cyan;
+//         border: 1px solid $JC-cyan;
+//     }
+//     .custom-control-input:checked ~ .custom-control-label::after{
+//         left: 14px;
+//     }
+// }
+
+// select:-internal-list-box option:checked {
+//     background-color: red;
+//     color: red;
+// }

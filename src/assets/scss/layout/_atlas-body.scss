@@ -1,0 +1,25 @@
+.atlas-main-body {
+    margin-left: $navigation-width;
+    padding: $atlas-spacing-base-three-three-quarters;
+    position: relative;
+    top: $header-height;
+    background-color: $white-four;
+    @include atlas-transition-one;
+    @include atlas-box-shadow-one;
+    height: auto;
+    min-height: 100vh;
+    @media #{$atlas-tablet-range} {
+        @include atlas-transition-one;
+        margin-left: $atlas-spacing-base-0;
+        padding:  $atlas-spacing-base-two;
+    }
+    &.atlas-main-body-expanded {
+        @include atlas-transition-one;
+        margin-left: $navigation-mini-width;
+        @media #{$atlas-tablet-range} {
+            @include atlas-transition-one;
+            margin-left: $atlas-spacing-base-0;
+            padding: $atlas-spacing-base-two;
+        }
+    }
+}

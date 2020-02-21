@@ -1,0 +1,164 @@
+/*!
+=========================================================
+* Buttons
+=========================================================
+*/
+@mixin atlas-button {
+    font-weight: $atlas-font-weight-bold;
+    font-size: $atlas-font-small;
+    padding: $atlas-spacing-base-half $atlas-spacing-base-half;
+    margin-right: $atlas-spacing-base-three-quarters;
+    min-width: 100px;
+    &:disabled {
+        cursor: not-allowed;
+        &:hover {
+            background-color: none;
+        }
+    }
+    @media #{$atlas-mobile-range} {
+       width: 100%;
+       line-height: 1;
+       padding-top: $atlas-spacing-base-three-quarters;
+       padding-bottom: $atlas-spacing-base-three-quarters;
+       margin-bottom: $atlas-spacing-base;
+    }
+}
+
+/*!
+=========================================================
+* BOX SHADOWS
+=========================================================
+*/
+@mixin atlas-box-shadow-one {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+}
+@mixin atlas-box-shadow-two {
+    -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+/*!
+=========================================================
+* TRANSITIONS
+=========================================================
+*/
+@mixin atlas-transition-one {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+@mixin atlas-transition-background-color-one {
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    -moz-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    
+}
+
+/*!
+=========================================================
+* CARDS
+=========================================================
+*/
+@mixin atlas-card {
+    background-color: $white;
+    margin: $atlas-spacing-base-0;
+    border: 1px solid $atlas-line-color;
+}
+@mixin atlas-card-border {
+    border-radius: $atlas-border-radius;
+    border: 1px solid $atlas-line-color;
+}
+@mixin atlas-card-circle {
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+@mixin atlas-card-sharp {
+    border-radius: 1px
+}
+/*!
+=========================================================
+* ICONS
+=========================================================
+*/
+@mixin atlas-font-awesome-content {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: $atlas-font-weight-bolder;
+    -webkit-font-smoothing: antialiased;
+}
+/*!
+=========================================================
+* FORM ELEMENTS
+=========================================================
+*/
+
+@mixin atlas-error-input-icon {
+    float: right;
+    position: absolute;
+    //right: 25px;
+    &::before {
+        @include atlas-font-awesome-content;
+        content: "\f12a";
+    }
+}
+/*!
+=========================================================
+* FOCUS
+=========================================================
+*/
+@mixin atlas-focus {
+    outline: 5px auto $JC-cyan;
+    box-shadow: none;   
+}
+
+/*!
+=========================================================
+* SPACING
+=========================================================
+*/
+@mixin generate($prefix, $property) {
+     $spacing: 1rem;
+    // List of sizes to generate for each
+    $sizes: (0, .25, .5, .75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4);
+    // Spacing to multiply the sizes by
+    
+    // Loop through all of the sizes(we use @for rather than @each, as we want access to the index)
+    @for $i from 1 through length($sizes) {
+      // Get the size for the current index
+      $size: nth($sizes, $i);
+      
+      // Create the rule
+      .#{$prefix}-#{$i - 1} {
+        #{$property}: $spacing * $size !important;
+      }
+    }
+} 
+
+@mixin generateAxes($prefix, $property, $propertyTwo) {
+    // List of sizes to generate for each
+    $sizes: (0, .25, .5, .75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4);
+    // Spacing to multiply the sizes by
+    $spacing: 1rem;
+    
+    // Loop through all of the sizes(we use @for rather than @each, as we want access to the index)
+    @for $i from 1 through length($sizes) {
+      // Get the size for the current index
+      $size: nth($sizes, $i);
+      
+      // Create the rule
+      .#{$prefix}-#{$i - 1} {
+        #{$property}: $spacing * $size !important;
+        #{$propertyTwo}: $spacing * $size !important;
+      }
+    }
+}
+@mixin generateAuto($prefix,$property) {
+    $auto: 'auto';
+    .#{$prefix}-#{$auto} {
+        #{$property}: #{$auto} !important;
+    }
+}  

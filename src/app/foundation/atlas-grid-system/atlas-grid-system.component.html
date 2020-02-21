@@ -1,0 +1,72 @@
+<h1>Grid System</h1>
+
+<p>Our layout is based on the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" class="atlas-link">Bootstrap</a> 12-column, 
+    responsive, mobile-first grid system.</p>
+<hr class="atlas-line">
+
+<h2>Guidelines</h2>
+
+<h3>Foundation of Our Grid System </h3>
+<p>The core of the Bootstrap's grid are rows and columns.
+    Each <code>row</code> can have any amount columns totaling up to 12. Using classes, these columns can "break",
+    allowing our content to respond to whatever viewport (mobile, tablet, or desktop) it appears.
+</p>
+<div class="atlas-breakpoint-example atlas-mb-5 container">
+    <div class="row">
+        <div class="col-lg-6">
+            This column will break at the desktop breakpoint.
+        </div>
+        <div class="col-lg-6">
+            This column will break at the desktop breakpoint.
+        </div>
+        <div class="col-md-4">
+            This column will break at the tablet breakpoint.
+        </div>
+        <div class="col-md-4">
+            This column will break at the tablet breakpoint.
+        </div>
+        <div class="col-md-4">
+            This column will break at the tablet breakpoint.
+        </div>
+    </div>
+</div>
+<p>
+Most of the time, we want our content to break at the tablet breakpoint. So you will probably use <code>col-md-**</code> more than any other
+grid class. However, feel free to use other grid classes when appropriate. 
+</p>
+<div class="atlas-notification atlas-info">
+    <div class="atlas-notification-status">
+        <i class="fas fa-info-circle fa-lg"></i>
+    </div>
+    <div class="atlas-notification-body">
+        <p class="atlas-text-slim">Note: You will rarely need to use <code>col-**-12</code>. 
+            Full-width, single column elements have no need for grid classes. 
+         </p>
+    </div>
+</div>
+<hr class="atlas-line">
+
+<h3>Breakpoints</h3>
+<p>Our layout grid includes five breakpoints—0, 576, 768, 992, and 1200—to configure  across viewport widths.</p>
+<ul class="list-unstyled atlas-breakpoint-detection">
+    <li class="atlas-pt-5" *ngFor="let breakpoint of deviceRanges; let b = index; let last = last">
+        <div class="text-center">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="d-none d-sm-block" *ngIf="b == 0"><strong>Device</strong></p>
+                    <i [ngClass]="breakpoint.icon" class="mb-4"></i>
+                </div>
+                <div class="col-sm-6">
+                    <p class="d-none d-sm-block" *ngIf="b == 0"><strong>Viewport Range</strong></p>
+                    <p>{{breakpoint.rangeNumber}}</p>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<hr class="atlas-line">
+
+<h3>Mobile-First</h3>
+<p>A mobile-first approach means that you start with the smallest breakpoint first 
+and configure what changes as viewport width increases.</p>

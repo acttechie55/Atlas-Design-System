@@ -1,0 +1,67 @@
+@mixin breakpoint-highlighter {
+    background-color: $white;
+    color: $JC-blue;
+    border: 10px solid $JC-cyan;
+    border-radius: $atlas-border-radius;
+}
+.atlas-breakpoint-detection {
+    li {
+        border-bottom: 1px solid $atlas-line-color;
+        &:first-child {
+            @media #{$atlas-mobile-xs} {
+                @include breakpoint-highlighter;
+            }
+        }
+        &:nth-child(2) {
+            @media #{$atlas-mobile} {
+                @include breakpoint-highlighter;
+            }
+        }
+        &:nth-child(3) {
+            @media #{$atlas-tablet} {
+                @include breakpoint-highlighter;
+            }
+        }
+        &:nth-child(4) {
+            @media #{$atlas-desktop} {
+                @include breakpoint-highlighter;
+            }
+        }
+        &:last-child {
+            @media #{$atlas-desktop-lg} {
+                @include breakpoint-highlighter;
+            }
+            border: none;
+        }
+        p {
+            color: $black;
+        }
+    }
+}
+
+.atlas-breakpoint-example {
+    [class^=col-] {
+        border:1px solid $JC-blue;
+        background-color: $white;
+        padding-top: $atlas-spacing-base-three-quarters;
+        padding-bottom:$atlas-spacing-base-three-quarters;
+    }
+}
+
+.atlas-padding-example {
+    -webkit-box-shadow: inset 64px 64px 0 #c7dcbf, inset -64px -64px #c7dcbf;
+    box-shadow: inset 64px 64px 0 #c7dcbf, inset -64px -64px #c7dcbf;
+    padding: 64px;
+}
+
+.atlas-margin-wrapper-example {
+   // background-color: #f5c997;.  
+   border:1px solid  #f5c997;
+    .atlas-margin-example {
+        // -webkit-box-shadow: inset 64px 64px 0 #c7dcbf, inset -64px -64px #c7dcbf;
+        // box-shadow: inset 64px 64px 0 #c7dcbf, inset -64px -64px #c7dcbf;
+        margin: 64px;
+        border:5px solid  #f5c997;
+       // background-color: #f5c997;
+    }
+}

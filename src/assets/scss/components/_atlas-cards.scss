@@ -1,0 +1,89 @@
+
+.atlas-card {
+    @include atlas-card;
+
+
+    // Altitude Types
+    &[atlas-altitude='basic'] {
+        @include atlas-card-border;
+    }
+    &[atlas-altitude='raised'] {
+        @include atlas-box-shadow-two;
+        @include atlas-card-border;
+    }
+    &[atlas-altitude='base'] {
+        border: none;
+    }
+
+    //Border Radii Types
+    &[atlas-border-radius='circle'] {
+        @include atlas-card-circle;
+    }
+    &[atlas-border-radius='sharp'] {
+        @include atlas-card-sharp;
+    }
+
+    // Circle Sizes
+    &.atlas-card-circle-xl {
+        width: 200px;
+        height: 200px;
+    }
+    &.atlas-card-circle-lg {
+        width: 100px;
+        height: 100px;
+    }
+    &.atlas-card-circle-md {
+        width: 50px;
+        height: 50px;
+    }
+    &.atlas-card-circle-sm {
+        width: 10px;
+        height: 10px;
+    }
+    &.atlas-card-circle-xs {
+        width: 5px;
+        height: 5px;
+    }
+    &.atlas-card-cyan-border-top {
+        border-top: $atlas-heading-line;
+    }
+}
+
+.atlas-card-title-wrapper {
+    border-bottom: 1px solid $atlas-line-color;
+    padding-left: $atlas-spacing-base;
+    padding-top: $atlas-spacing-base-half;
+    position: relative;
+    button, a, .btn.atlas-primary, .btn.atlas-primary-danger, 
+    .btn.atlas-secondary, .btn.atlas-secondary-danger, .btn.atlas-tertiary  {
+        float: right;
+        margin-bottom: $atlas-spacing-base-half;
+        @media #{$atlas-tablet-range} {
+            width: auto;
+            min-width: 75px;
+         }
+    }
+    .atlas-card-title-with-button {
+        position: absolute;
+        bottom: 8px; 
+    }
+}
+
+.atlas-card-body, .atlas-card-footer {
+    padding: $atlas-spacing-base $atlas-spacing-base-one-quarter $atlas-spacing-base-0 $atlas-spacing-base-one-quarter;
+}
+.atlas-card-footer {
+    padding: $atlas-spacing-base-three-quarters $atlas-spacing-base-one-quarter;
+    background-color: $white-two;
+    border-top: 1px solid $atlas-line-color;
+    button, a, .btn.atlas-primary, .btn.atlas-primary-danger, .btn.atlas-secondary, .btn.atlas-secondary-danger, .btn.atlas-tertiary  {
+        float: right;
+        margin-right: $atlas-spacing-base-0;
+        margin-bottom: $atlas-spacing-base-0;
+    }
+}
+.atlas-card-body.atlas-scrollable {
+    overflow-y: scroll;
+    max-height:250px;
+}
+

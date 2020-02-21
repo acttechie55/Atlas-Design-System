@@ -1,0 +1,38 @@
+/*Spacing Variables are located src/assets/scss/base/_atlas-variables.scss*/
+
+//Margin
+@include generate(atlas-m, margin);
+@include generate(atlas-ml, margin-left);
+@include generate(atlas-mr, margin-right);
+@include generate(atlas-mt, margin-top);
+@include generate(atlas-mb, margin-bottom);
+
+//Padding
+@include generate(atlas-p, padding);
+@include generate(atlas-pl, padding-left);
+@include generate(atlas-pr, padding-right);
+@include generate(atlas-pt, padding-top);
+@include generate(atlas-pb, padding-bottom);
+
+//Axes
+@include generateAxes(atlas-my, margin-top, margin-bottom);
+@include generateAxes(atlas-mx, margin-left, margin-right);
+@include generateAxes(atlas-py, padding-top, padding-bottom);
+@include generateAxes(atlas-px, padding-left, padding-right);
+
+//Auto
+@include generateAuto(atlas-mt, margin-top);
+@include generateAuto(atlas-mb, margin-bottom);
+@include generateAuto(atlas-ml, margin-left);
+@include generateAuto(atlas-mr, margin-right);
+
+
+
+.atlas-mx-auto {
+    @include generateAuto(atlas-ml, margin-left);
+    @include generateAuto(atlas-mr, margin-right);
+}
+.atlas-my-auto {
+    @include generateAuto(atlas-mt, margin-top);
+    @include generateAuto(atlas-mb, margin-bottom);
+}

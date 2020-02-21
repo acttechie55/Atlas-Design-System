@@ -1,0 +1,95 @@
+.atlas-sidebar {
+    padding-top: $atlas-spacing-base-half;
+    padding-bottom: $atlas-spacing-base-half;
+    position: fixed;
+    left: 0px;
+    float: left;
+    top: $header-height;
+    width: $navigation-width;
+    background-color: $white;
+    height:100vh;
+  //  overflow-y:scroll;
+    // @media #{$atlas-up-to-tablet} {
+    //     // @include atlas-transition-one;
+    //     // margin-left: -$navigation-width;
+    //     // width: $navigation-width;
+    //     .atlas-expanded {
+    //         margin-left: $atlas-spacing-base;
+    //         width: $navigation-width;
+    //     }
+    // }
+    .atlas-nav-subtitle {
+        padding:$atlas-spacing-base-half;
+        font-weight: $atlas-font-weight-bold;
+        text-transform:  $atlas-uppercase;
+        margin: $atlas-spacing-base-0;
+    
+    }
+    .atlas-nav-list-item {
+        padding-left: $atlas-spacing-base-half;
+        padding-top: $atlas-spacing-base-half;
+        padding-bottom: $atlas-spacing-base-half;
+        &:hover {
+            background-color:$JC-blue-light;
+            font-weight: $atlas-font-weight-bold;
+        }
+        &.active {
+            background-color:$JC-blue-light;
+            border-right: 5px solid $JC-cyan;
+            font-weight: $atlas-font-weight-bold;
+        }
+        a {
+            color: $black;
+            display: block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .atlas-nav-link-icon {
+            width: 30px;
+            text-align:center;
+        }
+        .atlas-nav-link-text {
+            margin-left:$atlas-spacing-base-one-quarter;
+        }
+    }
+    &.atlas-mini-sidebar {                                                              //When the Navigation is Minimized
+        @include atlas-transition-one;
+        text-align: center;
+        width: $navigation-mini-width;
+        .atlas-nav-list-item {
+            padding-left: $atlas-spacing-base-0;
+            .atlas-nav-link-text {
+                display:none;
+            }
+        }
+    }
+    @media #{$atlas-tablet-range} {                                                     //Mobile
+        &.atlas-sidebar-modal {
+            width: $navigation-width;
+            text-align: left;
+            z-index:$zindex-modal;
+            @include atlas-transition-one;
+            height: 100%;
+            .atlas-nav-list-item {
+                padding-left: $atlas-spacing-base-half;
+                .atlas-nav-link-text {
+                    display:inline-block;
+                }
+            }
+        }
+        
+    }
+}
+@media #{$atlas-tablet-range} {                                                         //Sidebar Overlay
+    .sidebar-overlay {
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        z-index:$zindex-dropdown;
+        background-color: rgba(0, 0, 0, 0.6);
+        overflow: hidden;
+    } 
+}

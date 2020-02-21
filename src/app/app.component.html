@@ -1,1 +1,6 @@
-<h1 class="text-center">Hello World!</h1>
+<app-atlas-header></app-atlas-header>
+<app-atlas-navigation></app-atlas-navigation>
+<main class="atlas-main-body" [ngClass]="{'atlas-main-body-expanded': navExpanded}">
+    <router-outlet></router-outlet>
+</main>
+<!-- <app-atlas-footer></app-atlas-footer> -->
