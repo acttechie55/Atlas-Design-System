@@ -21,9 +21,9 @@ export class AtlasColorComponent implements OnInit {
     }
   ]
 
-  derivativeColors = [ 
+  bluesColors = [ 
     {
-      className: 'atlas-jc-cyan-dark-bg'
+      className: 'atlas-gray-four-bg'
     },
     {
       className: 'atlas-jc-cyan-light-bg'
@@ -33,6 +33,15 @@ export class AtlasColorComponent implements OnInit {
     },
     {
       className: 'atlas-blue-light-bg'
+    },
+    {
+      className: 'atlas-jc-cyan-bg'
+    },
+    {
+      className: 'atlas-jc-cyan-dark-bg'
+    },
+    {
+      className: 'atlas-jc-blue-bg'
     }
   ]
 
@@ -48,6 +57,9 @@ export class AtlasColorComponent implements OnInit {
     },
     {
       className: 'atlas-error-hover-bg'
+    },
+    {
+      className: 'atlas-secondary-error-hover-bg'
     }
   ]
 
@@ -56,29 +68,26 @@ export class AtlasColorComponent implements OnInit {
       className: 'atlas-white-bg'
     },
     {
-      className: 'atlas-white-two-bg'
+      className: 'atlas-white-four-bg'
     },
     {
       className: 'atlas-white-three-bg'
     },
     {
-      className: 'atlas-white-four-bg'
+      className: 'atlas-white-two-bg'
     },
+    // {
+    //   className: 'atlas-gray-two-bg'
+    // },
+    // {
+    //   className: 'atlas-gray-three-bg'
+    // },
     {
       className: 'atlas-gray-bg'
     },
-    {
-      className: 'atlas-gray-two-bg'
-    },
-    {
-      className: 'atlas-gray-three-bg'
-    },
-    {
-      className: 'atlas-gray-four-bg'
-    },
-    {
-      className: 'atlas-gray-five-light-bg'
-    },
+    // {
+    //   className: 'atlas-gray-five-light-bg'
+    // },
     {
       className: 'atlas-gray-five-lighter-bg'
     },

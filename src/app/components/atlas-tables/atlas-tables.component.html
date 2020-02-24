@@ -1,1 +1,288 @@
-<p>atlas-tables works!</p>
+<h1>Tables</h1>
+
+<p>Define tables. Why do we use them?</p>
+
+<div class="atlas-card atlas-mb-15" atlas-altitude="raised">
+    <div class="atlas-card-body">
+        
+        <p>Our Basic Table</p>
+        <ul>
+            <li>
+                Use this only if it passes the mobile viewport test
+            </li>
+            <li>Has no more than four columns</li>
+            <li>Content of the rows has few characters</li>
+        </ul>
+        <div class="atlas-table">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+ 
+<hr class="atlas-hr-line atlas-mt-12 atlas-mb-12">
+<div class="atlas-card atlas-mb-15" atlas-altitude="raised">
+    <div class="atlas-card-body">
+        
+        <p>Accordion Table</p>
+        <ul>
+            <li>
+                Use this if the basic table does not pass the viewport test
+            </li>
+            <li>Use this if progressive discloure is appropriate</li>
+            <li>Has more than three or four columns</li>
+        </ul>
+        <div class="atlas-table atlas-table-accordion">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Head 1</th>
+                        <th scope="col">Head 2</th>
+                        <th scope="col">Head 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Row 1, Col 1</th>
+                    <td>Row 1, Col 2</td>
+                    <td>Row 1, Col 3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 2, Col 1</th>
+                    <td>Row 2, Col 2 </td>
+                    <td>Row 2, Col 3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 3, Col 1</th>
+                    <td>Row 3, Col 2 </td>
+                    <td>Row 3, Col 3</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="accordion atlas-mb-5" id="accordionExample">
+                <!-- Begin First Accordion Row-->
+                <div class="atlas-card card">
+                    <h2 class="atlas-mb-0">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Row 1, Col 1
+                        </button>
+                    </h2>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="atlas-card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <p class="atlas-text-slim" ><strong>Head 1</strong></p>
+                            </div>
+                            <div class="col-7">
+                                <p class="atlas-text-slim">Row 1, Col 1</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-5">
+                              <p class="atlas-text-slim"><strong>Head 2</strong></p>
+                          </div>
+                          <div class="col-7">
+                              <p class="atlas-text-slim">Row 1, Col 2</p>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-5">
+                              <p><strong>Head 3</strong></p>
+                          </div>
+                          <div class="col-7">
+                              <p>Row 1, Col 3</p>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- End First Accordion Row-->
+                <!-- Begin Second Accordion Row-->
+                <div class="atlas-card card">
+                  <div id="headingTwo">
+                    <h2 class="atlas-mb-0">
+                      <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Row 2, Col 1
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="atlas-card-body">
+                      <div class="row">
+                          <div class="col-5">
+                              <p class="atlas-text-slim" ><strong>Head 1</strong></p>
+                          </div>
+                          <div class="col-7">
+                              <p class="atlas-text-slim">Row 1, Col 1</p>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5">
+                            <p class="atlas-text-slim"><strong>Head 2</strong></p>
+                        </div>
+                        <div class="col-7">
+                            <p class="atlas-text-slim">Row 1, Col 2</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <p><strong>Head 3</strong></p>
+                        </div>
+                        <div class="col-7">
+                            <p>Row 1, Col 3</p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Second Accordion Row-->
+                <!-- Begin Third Accordion Row-->
+                <div class="atlas-card card">
+                  <div id="headingThree">
+                    <h2 class="atlas-mb-0">
+                      <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Row 3, Col 1
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="atlas-card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <p class="atlas-text-slim" ><strong>Head 1</strong></p>
+                            </div>
+                            <div class="col-7">
+                                <p class="atlas-text-slim">Row 3, Col 1</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-5">
+                              <p class="atlas-text-slim"><strong>Head 2</strong></p>
+                          </div>
+                          <div class="col-7">
+                              <p class="atlas-text-slim">Row 3, Col 2</p>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-5">
+                              <p><strong>Head 3</strong></p>
+                          </div>
+                          <div class="col-7">
+                              <p>Row 3, Col 3</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Third Accordion Row-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="atlas-hr-line  atlas-mt-12 atlas-mb-12">
+<div class="atlas-card atlas-mb-15" atlas-altitude="raised">
+    <div class="atlas-card-body">
+        
+        <p>Card Table</p>
+        <ul>
+            <li>
+                Use this if the basic table does not pass the viewport test
+            </li>
+            <li>Use this if progressive discloure is NOT appropriate</li>
+            <li>Has more than three or four columns</li>
+        </ul>
+        <div class="atlas-table atlas-table-card-list atlas-mb-5">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Change</th>
+                        <th scope="col">Open</th>
+                        <th scope="col">High</th>
+                        <th scope="col">Low</th>
+                        <th scope="col">Volume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr class="atlas-mb-4">
+                    <th scope="row" data-title="Code">AAC</th>
+                    <td data-title="Company">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                    <td data-title="Price">$1.38</td>
+                    <td data-title="Change">-0.01</td>
+                    <td data-title="Open">$1.39</td>
+                    <td data-title="High">$1.39</td>
+                    <td data-title="Low">$1.38</td>
+                    <td data-title="Volume">9,395</td>
+                </tr>
+                <tr>
+                    <th scope="row" data-title="Code">AAC</th>
+                    <td data-title="Company">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                    <td data-title="Price">$1.38</td>
+                    <td data-title="Change">-0.01</td>
+                    <td data-title="Open">$1.39</td>
+                    <td data-title="High">$1.39</td>
+                    <td data-title="Low">$1.38</td>
+                    <td data-title="Volume">9,395</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+      
+        <!-- <table id="no-more-tables">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Company</th>
+                    <th class="numeric">Price</th>
+                    <th class="numeric">Change</th>
+                    <th class="numeric">Change %</th>
+                    <th class="numeric">Open</th>
+                    <th class="numeric">High</th>
+                    <th class="numeric">Low</th>
+                    <th class="numeric">Volume</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Code">AAC</td>
+                    <td data-title="Company">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                    <td data-title="Price" class="numeric">$1.38</td>
+                    <td data-title="Change" class="numeric">-0.01</td>
+                    <td data-title="Change %" class="numeric">-0.36%</td>
+                    <td data-title="Open" class="numeric">$1.39</td>
+                    <td data-title="High" class="numeric">$1.39</td>
+                    <td data-title="Low" class="numeric">$1.38</td>
+                    <td data-title="Volume" class="numeric">9,395</td>
+                </tr>
+            </tbody>
+        </table> -->
+    </div>
+</div>

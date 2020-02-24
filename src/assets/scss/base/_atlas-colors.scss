@@ -36,6 +36,9 @@
 .atlas-error-hover-bg {
     background-color: $atlas-error-hover;
 }
+.atlas-secondary-error-hover-bg {
+    background-color: $atlas-secondary-error-hover;
+}
 /*NEUTRAL*/
 .atlas-white-bg {
     background-color: $white;
@@ -52,21 +55,21 @@
 .atlas-gray-bg {
     background-color: $gray
 }
-.atlas-gray-two-bg {
-    background-color: $gray-two;
-}
-.atlas-gray-three-bg {
-    background-color: $gray-three;
-}
+// .atlas-gray-two-bg {
+//     background-color: $gray-two;
+// }
+// .atlas-gray-three-bg {
+//     background-color: $gray-three;
+// }
 .atlas-gray-four-bg {
     background-color: $gray-four;
 }
 .atlas-gray-five-bg {
     background-color: $gray-five;
 }
-.atlas-gray-five-light-bg {
-    background-color: $gray-five-light;
-}
+// .atlas-gray-five-light-bg {
+//     background-color: $gray-five-light;
+// }
 .atlas-gray-five-lighter-bg {
     background-color: $gray-five-lighter;
 }

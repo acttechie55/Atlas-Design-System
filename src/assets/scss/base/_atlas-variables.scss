@@ -12,15 +12,15 @@ $JC-blue-light: #dbeeff;
 
 /* NEUTRAL COLORS */
 $white: #ffffff;
-$white-two: #f1f4f6;
-$white-three: #f8f9fa;
-$white-four: #fcfcfc;
-$gray: #d2d6de;
-$gray-two: #e9ecef;
-$gray-three: #c7c7c7;
+$white-two: #f1f4f6; //card footer and table hover
+$white-three: #f8f9fa; //modal header and footer
+$white-four: #fcfcfc; //body baclground
+$gray: #d2d6de; //card and input border
+//$gray-two: #e9ecef;
+//$gray-three: #c7c7c7;
 $gray-four: rgba(#183181, 15%);
 $gray-five: #495057;
-$gray-five-light: rgba($gray-five, 80%);
+// $gray-five-light: rgba($gray-five, 80%);
 $gray-five-lighter: rgba($gray-five, 70%);
 $black: #000000;
 
@@ -61,8 +61,8 @@ $atlas-uppercase: uppercase;
 // }
 /*BORDER AND HORIZONTAL LINES COLORS*/
 $atlas-line-color: $gray-four;
-$atlas-border: 1px solid $gray-three;
-$atlas-border-two: 1px solid $gray-two;
+//$atlas-border: 1px solid $gray-three;
+//$atlas-border-two: 1px solid $gray-two;
 $atlas-border-three: 1px solid $gray;
 $atlas-orange-line: 1px solid $JC-orange;
 $atlas-green-line: 1px solid $JC-green;

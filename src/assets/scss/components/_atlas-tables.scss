@@ -1,0 +1,121 @@
+.atlas-table{
+    .table {
+        color: $black;
+        margin:$atlas-spacing-base-0;
+        thead {
+            th {
+                border-bottom: 1px solid $gray-four;
+            }
+        }
+        th, td {
+            border-top: 1px solid $gray-four;
+        }
+        &.table-hover tbody tr {
+            &:hover {
+                color: $black;
+                background-color: $white-two;
+            }
+        }
+        th[scope=row] {
+            font-weight:$atlas-font-weight-normal;
+        }
+    }
+    &.atlas-table-accordion {
+        .table {
+            display:table;
+            @media #{$atlas-tablet-range} {
+                display:none;
+            }
+        }
+        .accordion {
+            display:none;
+            @media #{$atlas-tablet-range} {
+                display:block;
+
+                button {
+                    width: 100%;
+                    text-align: left;
+                    border-radius: 0px;
+                    &.collapsed {
+                        &::after {
+                            float: right;
+                            @include atlas-font-awesome-content();
+                            content: "\f054";
+                        }
+                    }
+                    &::after {
+                        float: right;
+                        @include atlas-font-awesome-content();
+                        content: "\f078";
+                    }
+                   &:not(.collapsed){
+                        border-bottom: 1px solid $gray-four;
+                   }
+                    
+                }
+                .atlas-card {
+                    h2,h3,h4,h5,h6 {
+                        &:hover {
+                            background-color: $white-two;
+                        }
+
+                        //background-color: $white-two;
+                    }
+                }
+            }
+        }
+    }
+    &.atlas-table-card-list {
+        @media #{$atlas-tablet-range} {
+            	/* Force table to not be like tables anymore */
+                table, thead, tbody, th, td, tr { 
+                    display: block; 
+                }
+                /* Hide table headers (but not display: none;, for accessibility) */
+                thead tr {
+                    position: absolute; 
+                    overflow: hidden; 
+                    clip: rect(0 0 0 0); 
+                    height: 1px; 
+                    width: 1px; 
+                    margin: -1px; 
+                    padding: $atlas-spacing-base-0;
+                    border: 0; 
+                }
+                .table-hover tbody tr {
+                    border: 1px solid  $gray-four;
+                    &:hover {
+                        color: $black;
+                        background-color: $white;
+                    }
+                }
+                td,th[scope=row] { 
+                    /* Behave  like a "row" */
+                    border: none;
+                    border-bottom: 1px solid  $gray-four;
+                    position: relative;
+                    padding-left: 45%; 
+                    white-space: normal;
+                    text-align:left;
+                    &:hover {
+                        background-color: $white-two;
+                    }
+                    &:last-child {
+                        border:none;
+                    }
+                }
+                 td:before,th[scope=row]::before { 
+                    /* Now like a table header */
+                    position: absolute;
+                    left: 6px;
+                    width: 40%; 
+                    //padding-right: $atlas-spacing-base-three-quarters; 
+                    white-space: nowrap;
+                    text-align:left;
+                    font-weight: bold;
+                    content: attr(data-title); 
+                }
+            }
+    }
+}
+			

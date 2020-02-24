@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-atlas-grid-system',
-  templateUrl: './atlas-grid-system.component.html',
-  styleUrls: ['./atlas-grid-system.component.scss']
+  templateUrl: './atlas-grid-system.component.html'
 })
 export class AtlasGridSystemComponent implements OnInit {
 
