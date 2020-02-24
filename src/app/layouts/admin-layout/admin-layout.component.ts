@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminLayoutComponent implements OnInit {
 
+  navExpanded:boolean;
+
   constructor() { }
 
   ngOnInit() {
