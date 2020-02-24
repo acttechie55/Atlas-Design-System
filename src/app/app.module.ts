@@ -27,17 +27,13 @@ import { AtlasListsComponent } from './components/atlas-lists/atlas-lists.compon
 import { AtlasTablesComponent } from './components/atlas-tables/atlas-tables.component';
 import { AtlasBreadcrumbsComponent } from './components/atlas-breadcrumbs/atlas-breadcrumbs.component';
 import { AtlasHomeComponent } from './atlas-home/atlas-home.component';
+
+//SERVICES
+import {DataService} from './atlas-header/data.service';
 import { AtlasFooterComponent } from './atlas-footer/atlas-footer.component';
 import { AtlasNotificationsComponent } from './atlas-notifications/atlas-notifications.component';
 import { AtlasBadgeComponent } from './atlas-badge/atlas-badge.component';
 import { AtlasSpacingComponent } from './foundation/atlas-spacing/atlas-spacing.component';
-
-import { AppRoutingModule } from './app.routing';
-
-//SERVICES
-import {DataService} from './atlas-header/data.service';
-import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-
 const appRoutes: Routes = [
   { path: 'foundation/philosophy', component: AtlasPhilosophyComponent },
   { path: 'foundation/colors', component: AtlasColorComponent },
@@ -79,8 +75,7 @@ const appRoutes: Routes = [
     AtlasFooterComponent,
     AtlasNotificationsComponent,
     AtlasBadgeComponent,
-    AtlasSpacingComponent,
-    AdminLayoutComponent
+    AtlasSpacingComponent
   ],
   imports: [
     BrowserModule,
@@ -95,8 +90,7 @@ const appRoutes: Routes = [
     DateInputsModule,
     GridModule,
     InputsModule,
-    UploadModule,
-    AppRoutingModule
+    UploadModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
