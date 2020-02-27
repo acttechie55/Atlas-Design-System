@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AtlasListsComponent } from './atlas-lists.component';
+import { AtlasAccordionComponent } from './atlas-accordion.component';
 
-describe('AtlasListsComponent', () => {
-  let component: AtlasListsComponent;
-  let fixture: ComponentFixture<AtlasListsComponent>;
+describe('AtlasAccordionComponent', () => {
+  let component: AtlasAccordionComponent;
+  let fixture: ComponentFixture<AtlasAccordionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AtlasListsComponent ]
+      declarations: [ AtlasAccordionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AtlasListsComponent);
+    fixture = TestBed.createComponent(AtlasAccordionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

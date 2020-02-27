@@ -24,7 +24,7 @@ import { AtlasModalsComponent } from './components/atlas-modals/atlas-modals.com
 import { AtlasFormElementsComponent } from './components/atlas-form-elements/atlas-form-elements.component';
 import { AtlasCardsComponent } from './components/atlas-cards/atlas-cards.component';
 import { AtlasIconographyComponent } from './components/atlas-iconography/atlas-iconography.component';
-import { AtlasListsComponent } from './components/atlas-lists/atlas-lists.component';
+import { AtlasAccordionComponent } from './components/atlas-accordion/atlas-accordion.component';
 import { AtlasTablesComponent } from './components/atlas-tables/atlas-tables.component';
 import { AtlasBreadcrumbsComponent } from './components/atlas-breadcrumbs/atlas-breadcrumbs.component';
 import { AtlasHomeComponent } from './atlas-home/atlas-home.component';
@@ -46,7 +46,7 @@ const appRoutes: Routes = [
   { path: 'components/form_elements', component: AtlasFormElementsComponent },
   { path: 'components/cards', component: AtlasCardsComponent },
   { path: 'components/iconography', component: AtlasIconographyComponent },
-  { path: 'components/lists', component: AtlasListsComponent },
+  { path: 'components/accordion', component: AtlasAccordionComponent },
   { path: 'components/tables', component: AtlasTablesComponent },
   { path: 'components/breadcrumbs', component: AtlasBreadcrumbsComponent},
   { path: 'components/notifications', component: AtlasNotificationsComponent},
@@ -69,7 +69,7 @@ const appRoutes: Routes = [
     AtlasFormElementsComponent,
     AtlasCardsComponent,
     AtlasIconographyComponent,
-    AtlasListsComponent,
+    AtlasAccordionComponent,
     AtlasTablesComponent,
     AtlasBreadcrumbsComponent,
     AtlasHomeComponent,

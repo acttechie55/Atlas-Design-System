@@ -23,7 +23,7 @@ export const ROUTESTWO: RouteInfo[] = [
   { path: 'components/form_elements',   title: 'Form Elements', icon:'far fa-file' },
   { path: 'components/cards',           title: 'Cards',         icon:'far fa-square'},
   { path: 'components/iconography',     title: 'Iconography',   icon:'fas fa-icons' },
-  { path: 'components/lists',           title: 'Lists',         icon:'fas fa-list' },
+  { path: 'components/accordion',       title: 'Accordion',     icon:'fas fa-list' },
   { path: 'components/tables',          title: 'Tables',        icon:'fas fa-table'},
   { path: 'components/breadcrumbs',     title: 'Breadcrumbs',   icon:'fas fa-road'},
   { path: 'components/notifications',   title: 'Notifications', icon:'fas fa-bell'},
