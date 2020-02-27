@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import {DialogsModule} from '@progress/kendo-angular-dialog';
 import {ButtonsModule} from '@progress/kendo-angular-buttons';
@@ -83,6 +84,7 @@ const appRoutes: Routes = [
       useHash: true
     }),
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     FormsModule,
     DialogsModule,
     ButtonsModule,

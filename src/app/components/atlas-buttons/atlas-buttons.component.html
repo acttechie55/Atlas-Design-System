@@ -20,3 +20,23 @@
 <button class="btn atlas-tertiary" disabled>A Disabled Tertiary Button</button>
 <hr class="atlas-hr">
 <p class="display-4">Icon Only</p>
+<hr class="atlas-hr">
+<div class="row">
+    <div class="col-xs-12 col-sm-6 example-col">
+        <p>Single selection mode</p>
+        <kendo-buttongroup [selection]="'single'">
+            <button kendoButton [toggleable]="true" [icon]="'align-left'"></button>
+            <button kendoButton [toggleable]="true" [icon]="'align-center'"></button>
+            <button kendoButton [toggleable]="true" [icon]="'align-right'"></button>
+            <button kendoButton [toggleable]="true" [icon]="'align-justify'"></button>
+        </kendo-buttongroup>
+    </div>
+    <div class="col-xs-12 col-sm-6 example-col">
+        <p>Multiple selection mode</p>
+        <kendo-buttongroup>
+            <button kendoButton [toggleable]="true" [icon]="'bold'"></button>
+            <button kendoButton [toggleable]="true" [icon]="'italic'"></button>
+            <button kendoButton [toggleable]="true" [icon]="'underline'"></button>
+        </kendo-buttongroup>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+.atlas-dialog {
+    color: $black;
+    //border-radius: 5px;
+    .k-window-titlebar, .k-dialog-titlebar {
+        background-color: $white-three;
+    }
+    .k-window-title {
+        font-size: $h2-font-size;
+        @media #{$atlas-mobile-range} {
+           font-size: $h2-font-size * 0.85;
+        }
+    }
+    .k-widget, .k-window, .k-dialog {
+        border-radius: .25rem;
+        width:900px;
+        @media #{$atlas-tablet-range} {
+            width:700px;
+        }
+        @media #{$atlas-mobile-range} {
+            width:500px;
+            margin: auto 10px;
+        }
+        @media #{$atlas-mobile-xs-range} {
+            width: 320px;
+            margin: auto 10px;
+        }
+    }
+    .k-window-content {
+        max-height: 500px;
+    } 
+    .k-window-action {
+        opacity: 1;
+        .k-i-x {
+            &::before {
+                color: $black;
+                font-size: $atlas-font-size-base * 2;
+                position: absolute;
+                right: -15px;
+                bottom: -10px; 
+            }
+        }
+    }
+
+    .k-dialog-button-layout-stretched {
+        padding: $atlas-spacing-base;
+        -webkit-box-align: center;
+        align-items:center
+    }
+    .k-dialog-buttongroup {
+        justify-content: center;
+        background-color: $white-three;
+    }
+}
