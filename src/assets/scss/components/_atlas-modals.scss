@@ -49,5 +49,10 @@
     .k-dialog-buttongroup {
         justify-content: center;
         background-color: $white-three;
+        @media #{$atlas-mobile-range} {
+            button {
+                margin-right: $atlas-spacing-base-0;
+            }
+        }
     }
 }
