@@ -1,4 +1,10 @@
-<h1>Buttons</h1>
+<nav aria-label="breadcrumb" class="atlas-mb-2">
+    <ol class="atlas-breadcrumb">
+        <li class="atlas-breadcrumb-item"><a href="#" class="atlas-link">Home</a></li>
+        <li class="atlas-breadcrumb-item active" aria-current="page">{{title}}</li>
+    </ol>
+</nav>
+<h1>{{title}}</h1>
 <p>Buttons trigger interactions throughout the experience.</p>
 <p class="display-4">Primary</p>
 <p>Use for highest-priority actions that are required to complete the user’s task.</p>
@@ -23,20 +29,18 @@
 <hr class="atlas-hr">
 <div class="row">
     <div class="col-xs-12 col-sm-6 example-col">
-        <p>Single selection mode</p>
+        <p>Tabs</p>
         <kendo-buttongroup [selection]="'single'">
-            <button kendoButton [toggleable]="true" [icon]="'align-left'"></button>
-            <button kendoButton [toggleable]="true" [icon]="'align-center'"></button>
-            <button kendoButton [toggleable]="true" [icon]="'align-right'"></button>
-            <button kendoButton [toggleable]="true" [icon]="'align-justify'"></button>
+            <button class="atlas-tab-button" kendoButton [toggleable]="true">Heading 1</button>
+            <button class="atlas-tab-button" kendoButton [toggleable]="true">Heading 2</button>
         </kendo-buttongroup>
     </div>
-    <div class="col-xs-12 col-sm-6 example-col">
+    <!-- <div class="col-xs-12 col-sm-6 example-col">
         <p>Multiple selection mode</p>
         <kendo-buttongroup>
             <button kendoButton [toggleable]="true" [icon]="'bold'"></button>
             <button kendoButton [toggleable]="true" [icon]="'italic'"></button>
             <button kendoButton [toggleable]="true" [icon]="'underline'"></button>
         </kendo-buttongroup>
-    </div>
+    </div> -->
 </div>

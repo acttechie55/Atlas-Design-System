@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AtlasButtonsComponent implements OnInit {
 
+  title:string = "Buttons";
+
   constructor() { }
 
   ngOnInit() {

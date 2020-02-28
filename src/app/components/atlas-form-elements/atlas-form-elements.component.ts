@@ -14,4 +14,7 @@ export class AtlasFormElementsComponent implements OnInit {
   ngOnInit() {
   }
 
+  public allowCustom: boolean = true;
+    public listItems: Array<string> = ["Baseball", "Basketball", "Cricket", "Field Hockey", "Football", "Table Tennis", "Tennis", "Volleyball"];
+
 }

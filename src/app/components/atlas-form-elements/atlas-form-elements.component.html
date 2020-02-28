@@ -42,6 +42,33 @@ and <a href="https://www.telerik.com/kendo-angular-ui/components/" class="atlas-
             </div>
         </div>
         <!-- END TEXT INPUT AND REQUIRED TEXT INPUT -->
+        <div class="row atlas-mb-5">
+            <div class="col-md-6">
+                  <div class="atlas-form-group atlas-time-select">
+                    <label class="atlas-label">Kendo Combo Box</label>
+                    <kendo-combobox [data]="listItems" [allowCustom]="allowCustom">
+                    </kendo-combobox>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="atlas-form-group">
+                    <label class="atlas-label">Kendo Dropdown List</label>
+                    <kendo-dropdownlist [data]="listItems">
+                    </kendo-dropdownlist>
+                </div>
+            </div>
+        </div>
+        <div class="row atlas-mb-5">
+            <div class="col-md-6">
+                <div class="atlas-form-group">
+                    <label class="atlas-label">Kendo Datepicker</label>
+                    <kendo-datepicker
+                        [(value)]="value"
+                    ></kendo-datepicker>
+                </div>
+            </div>
+        </div>
+
         <div class="form-group atlas-form-group">
             <label for="textInput" class="atlas-text-slim atlas-label">Text Input</label>
             <em> <span class="atlas-text-slim">Sub-label text goes here</span></em>

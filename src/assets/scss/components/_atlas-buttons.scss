@@ -1,5 +1,5 @@
 /*FOCUS*/
-a:focus,.atlas-link:focus, button:focus, .btn:focus {
+a:focus,.atlas-link:focus, button:focus, .btn:focus, .k-button:focus, .k-button.k-state-focused {
     @include atlas-focus();
 }
 /*ATLAS BUTTON STYLING*/
@@ -42,5 +42,29 @@ a:focus,.atlas-link:focus, button:focus, .btn:focus {
         &:hover:not(:disabled) {
             text-decoration: underline;
         }
+    }
+}
+
+.atlas-tab-button {
+    &.k-button {
+        border: none;
+        background-color: $white;
+        -moz-transition: none;
+        -webkit-transition: none;
+        -o-transition: color 0 ease-in;
+        transition: none;
+        @include atlas-heading-one;
+        // border-top-left-radius: 0rem;
+        // border-bottom-left-radius: 0rem;
+        &:hover {
+            border-bottom: 3px solid $JC-cyan;
+            border-top-left-radius: 0rem;
+            border-bottom-left-radius: 0rem;
+            border-top-right-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+        }
+    }
+    &.k-state-active {
+        border-bottom: 3px solid $JC-cyan;
     }
 }

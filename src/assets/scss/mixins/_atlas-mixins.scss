@@ -161,4 +161,28 @@
     .#{$prefix}-#{$auto} {
         #{$property}: #{$auto} !important;
     }
-}  
+}
+/*!
+=========================================================
+* HEADINGS
+=========================================================
+*/
+@mixin atlas-heading-one {
+    font-size: $h1-font-size;
+    font-weight: $atlas-font-weight-bold;
+}
+@mixin atlas-heading-two {
+    font-size: $h2-font-size;
+}
+@mixin atlas-heading-three {
+    font-size: $h3-font-size;
+}
+@mixin atlas-heading-four {
+    font-size: $h4-font-size;
+}
+@mixin atlas-heading-five {
+    font-size: $h5-font-size;
+}
+@mixin atlas-heading-six {
+    font-size: $h6-font-size;
+}            

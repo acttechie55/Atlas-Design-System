@@ -1,9 +1,10 @@
 /*FOCUS*/
-input:focus, select:focus, textarea:focus, .form-control:focus {
+input:focus, select:focus, textarea:focus, .form-control:focus, .k-combobox:focus, 
+.k-combobox .k-state-focused, .k-dropdown .k-state-focused, .k-datepicker .k-state-focused{
     @include atlas-focus()
 }
 
-/*FORM INPUT STYLING*/
+/*BOOTSTRAP FORM INPUT STYLING*/
 .form-group, .atlas-form-group {
     .atlas-required {
         color: $atlas-error;
@@ -165,6 +166,49 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 
 }
 
+/*KENDO COMBO BOX AND DROPDOWN INPUT STYLING*/
+.atlas-form-group {
+    .k-combobox, .k-dropdown, .k-datepicker {
+        width: 100%;
+        border-radius: 1px;
+        //border: $atlas-border-three;
+        .k-dropdown-wrap,.k-picker-wrap {
+            border: $atlas-border-three;
+            color: $black;
+            border-radius: 1px;
+            background-color: $white;
+        }
+        .k-select {
+            background-color: $white;
+            border: none;
+        }
+    }
+    .k-dropdown{
+        .k-select {
+            .k-i-arrow-s {
+                &::before {
+                @include atlas-font-awesome-content();
+                content: "\f078";
+                font-size: 23px;
+                }
+            }
+        }
+
+    }
+    .k-icon {
+        color: $JC-orange;
+        width:2em;
+    }
+    &.atlas-time-select {
+        .k-select {
+                .k-i-arrow-s {
+                &::before {
+                    content: "\e107";
+                }
+            }
+        }
+    }
+}
 //Invalid Inputs {
     // .atlas-form-group {
     //     .ng-invalid {
