@@ -1,7 +1,28 @@
+<nav aria-label="breadcrumb">
+    <ol class="atlas-breadcrumb">
+        <li class="atlas-breadcrumb-item"><a href="#" class="atlas-link">Home</a></li>
+        <li class="atlas-breadcrumb-item active" aria-current="page">Colors</li>
+    </ol>
+</nav>
 <h1>Colors</h1>
 <!-- 
 <h2>Guidelines</h2>
 <h2>Color Palette</h2> -->
+<div class="atlas-button-group">
+    <kendo-buttongroup [selection]="'single'">
+        <button kendoButton [toggleable]="true" (click)="showHex()">
+          Hex
+        </button>
+        <button kendoButton [toggleable]="true" (click)="showRGB()">
+          RGB
+        </button>
+        <button kendoButton [toggleable]="true" (click)="showSass()">
+          Sass
+        </button>
+    </kendo-buttongroup>
+</div>
+    <pre>{{status}}</pre>
+
 <div class="card atlas-card atlas-mb-16" atlas-altitude="raised">
     <div class="atlas-card-title-wrapper">
         <h3 class="atlas-card-title">Brand</h3>
@@ -9,9 +30,10 @@
     <div class="atlas-card-body atlas-mb-5">
         <div class="row">
             <div class="col-md-3"  *ngFor="let color of brandColors">
-                <div class="card atlas-card border-0">
-                    <div class="atlas-card-body atlas-p-5" [ngClass]="color.className"></div>
-                </div>
+                <button class="btn w-100 rounded-0 text-right atlas-p-3"  [copy-clipboard]="color.colorValue" 
+                (copied)="notify($event)" [ngClass]="color.className">
+                    <span class="badge atlas-light atlas-badge">{{color.colorValue}}</span>
+                </button>
             </div>
         </div>
     </div>
@@ -25,7 +47,12 @@
             </div>
             <div class="atlas-card-body">
                 <ul class="list-unstyled">
-                    <li class="atlas-p-5"  *ngFor="let color of bluesColors" [ngClass]="color.className"></li>
+                    <li>
+                        <button class="btn w-100 rounded-0 text-right atlas-p-3"  [copy-clipboard]="color.colorValue" 
+                        (copied)="notify($event)" *ngFor="let color of bluesColors" [ngClass]="color.className">
+                            <span class="badge atlas-light atlas-badge">{{color.colorValue}}</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,10 +64,16 @@
             </div>
             <div class="atlas-card-body">
                 <ul class="list-unstyled">
-                    <li class="atlas-p-5"  *ngFor="let color of neutralColors" [ngClass]="color.className"></li>
+                    <li>
+                        <button class="btn w-100 rounded-0 text-right atlas-p-3"  [copy-clipboard]="color.colorValue" 
+                        (copied)="notify($event)" *ngFor="let color of neutralColors" [ngClass]="color.className">
+                            <span class="badge atlas-light atlas-badge">{{color.colorValue}}</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
+        <!-- <pre>{{status}}</pre> -->
     </div>
 </div>
 
@@ -52,7 +85,10 @@
         <div class="row">
             <div class="col" *ngFor="let color of successErrorColors">
                 <div class="card atlas-card border-0">
-                    <div class="atlas-card-body atlas-p-5" [ngClass]="color.className"></div>
+                    <button class="btn w-100 rounded-0 text-right atlas-p-3"  [copy-clipboard]="color.colorValue" 
+                    (copied)="notify($event)" [ngClass]="color.className">
+                        <span class="badge atlas-light atlas-badge">{{color.colorValue}}</span>
+                    </button>
                 </div>
             </div>
         </div>

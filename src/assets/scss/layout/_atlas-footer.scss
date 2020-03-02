@@ -1,13 +1,13 @@
 .atlas-footer {
-    background-color: $gray-five;
+    background-color: $atlas-darker-gray;
     padding: $atlas-spacing-base-one-quarter $atlas-spacing-base-quarter;
-    color: $white;
+    color: $atlas-white;
    // margin-left: $navigation-width;
     width: 100%;
     @include atlas-box-shadow-one;
     .atlas-link {
         &:hover {
-            color: $white;
+            color: $atlas-white;
         }
     }
     // @media #{$atlas-up-to-tablet} {

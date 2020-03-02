@@ -37,11 +37,11 @@
         .atlas-notification-status {
             background-color: $atlas-error;
             border: $atlas-error-border;
-            color: $white;
+            color: $atlas-white;
         }
         .atlas-notification-body {
-            color: $black;
-            background-color: $white;
+            color: $atlas-black;
+            background-color: $atlas-white;
             border: $atlas-error-border;
         }
     }
@@ -49,11 +49,11 @@
         .atlas-notification-status {
             background-color: $atlas-caution;
             border: $atlas-caution-border;
-            color: $black;
+            color: $atlas-black;
         }
         .atlas-notification-body {
-            color: $black;
-            background-color: $white;
+            color: $atlas-black;
+            background-color: $atlas-white;
             border: $atlas-caution-border;
         }
     }
@@ -61,23 +61,23 @@
         .atlas-notification-status {
             background-color: $JC-green;
             border: $atlas-green-line;
-            color: $white;
+            color: $atlas-white;
         }
         .atlas-notification-body {
-            color: $black;
-            background-color: $white;
+            color: $atlas-black;
+            background-color: $atlas-white;
             border: $atlas-green-line;
         }
     }
     &.atlas-info {
         .atlas-notification-status {
-            background-color: $gray-five-lighter;
-            border: $gray-five-lighter;
-            color: $white;
+            background-color: $atlas-dark-gray;
+            border: $atlas-dark-gray;
+            color: $atlas-white;
         }
         .atlas-notification-body {
-            color: $black;
-            background-color: $white;
+            color: $atlas-black;
+            background-color: $atlas-white;
             border:$atlas-info-border;
         }
     }

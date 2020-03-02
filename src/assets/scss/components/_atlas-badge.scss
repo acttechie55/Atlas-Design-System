@@ -5,31 +5,31 @@
     font-weight: $atlas-font-weight-bold;
     &.atlas-danger {
         background-color: $atlas-error;
-        color: $white;
+        color: $atlas-white;
     }
     &.atlas-success {
         background-color: $JC-green;
-        color: $white;
+        color: $atlas-white;
     }
     &.atlas-caution {
         background-color: $atlas-caution;
-        color: $black;
+        color: $atlas-black;
     }
     &.atlas-primary {
         background-color: $JC-blue;
-        color: $white;
+        color: $atlas-white;
     }
     &.atlas-secondary {
         background-color: $JC-blue;
-        color: $white;
+        color: $atlas-white;
     }
     &.atlas-info {
-        background-color: $gray-five-lighter;
-        color: $white;
+        background-color: $atlas-dark-gray;
+        color: $atlas-white;
     }
     &.atlas-light {
-        background-color: $white-four;
-        color: $black;
+        background-color: $atlas-off-white;
+        color: $atlas-black;
     }
 }
 
@@ -40,31 +40,31 @@
     }
     &.atlas-danger {
         background-color: $atlas-error;
-        color: $white;
+        color: $atlas-white;
     }
     &.atlas-success {
         background-color: $JC-green;
-        color: $white;
+        color: $atlas-white;
     }
     &.atlas-caution {
         background-color: $atlas-caution;
-        color: $black;
+        color: $atlas-black;
     }
     &.atlas-primary {
         background-color: $JC-blue;
-        color: $white;
+        color: $atlas-white;
     }
     &.atlas-secondary {
         background-color: $JC-blue;
-        color: $white;
+        color: $atlas-white;
     }
     &.atlas-info {
-        background-color: $gray-five-lighter;
-        color: $white;
+        background-color: $atlas-dark-gray;
+        color: $atlas-white;
     }
     &.atlas-light {
-        background-color: $white-four;
-        color: $black;
+        background-color: $atlas-off-white;
+        color: $atlas-black;
     }
 }
 

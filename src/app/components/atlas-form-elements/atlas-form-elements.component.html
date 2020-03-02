@@ -366,12 +366,15 @@ and <a href="https://www.telerik.com/kendo-angular-ui/components/" class="atlas-
     </div>
     <div class="atlas-card-body">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="atlas-card" atlas-altitude='raised'>
                     <div class="atlas-card-body text-center">
-                        <p class="h2">
-                            Upload File Input Feature Coming Soon
-                        </p>
+                        <div class="atlas-mb-5 atlas-upload-button">
+                        <kendo-upload
+                        [saveUrl]="uploadSaveUrl"
+                        [removeUrl]="uploadRemoveUrl">
+                      </kendo-upload>
+                    </div>
                     </div>
                 </div>
             </div>

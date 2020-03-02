@@ -6,7 +6,7 @@ a:focus,.atlas-link:focus, button:focus, .btn:focus, .k-button:focus, .k-button.
 .btn {
     &.atlas-primary {
         background-color: $JC-cyan;
-        color: $white;
+        color: $atlas-white;
         @include atlas-button();
         &:hover:not(:disabled) {
             background-color: $JC-cyan-dark;
@@ -14,7 +14,7 @@ a:focus,.atlas-link:focus, button:focus, .btn:focus, .k-button:focus, .k-button.
     }
     &.atlas-primary-danger {
         background-color: $atlas-error;
-        color: $white;
+        color: $atlas-white;
         @include atlas-button();
         &:hover:not(:disabled) {
             background-color: $atlas-error-hover;
@@ -37,7 +37,7 @@ a:focus,.atlas-link:focus, button:focus, .btn:focus, .k-button:focus, .k-button.
         }
     }
     &.atlas-tertiary {
-        color: $gray-five;
+        color: $atlas-darker-gray;
         @include atlas-button();
         &:hover:not(:disabled) {
             text-decoration: underline;
@@ -48,7 +48,7 @@ a:focus,.atlas-link:focus, button:focus, .btn:focus, .k-button:focus, .k-button.
 .atlas-tab-button {
     &.k-button {
         border: none;
-        background-color: $white;
+        background-color: $atlas-white;
         -moz-transition: none;
         -webkit-transition: none;
         -o-transition: color 0 ease-in;
@@ -68,3 +68,12 @@ a:focus,.atlas-link:focus, button:focus, .btn:focus, .k-button:focus, .k-button.
         border-bottom: 3px solid $JC-cyan;
     }
 }
+
+// .atlas-button-group {
+//     .k-button {
+//         background-color: $JC-blue;
+//         color: $atlas-white;
+//         font-weight: $atlas-font-weight-bold;
+//         border-color: $JC-blue;
+//     }
+// }

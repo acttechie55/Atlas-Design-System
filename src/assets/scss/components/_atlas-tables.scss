@@ -1,19 +1,19 @@
 .atlas-table{
     .table {
-        color: $black;
+        color: $atlas-black;
         margin:$atlas-spacing-base-0;
         thead {
             th {
-                border-bottom: 1px solid $gray-four;
+                border-bottom: 1px solid $atlas-blue-gray;
             }
         }
         th, td {
-            border-top: 1px solid $gray-four;
+            border-top: 1px solid $atlas-blue-gray;
         }
         &.table-hover tbody tr {
             &:hover {
-                color: $black;
-                background-color: $white-two;
+                color: $atlas-black;
+                background-color: $atlas-white-gray;
             }
         }
         th[scope=row] {
@@ -49,17 +49,17 @@
                         content: "\f078";
                     }
                    &:not(.collapsed){
-                        border-bottom: 1px solid $gray-four;
+                        border-bottom: 1px solid $atlas-blue-gray;
                    }
                     
                 }
                 .atlas-card {
                     h2,h3,h4,h5,h6 {
                         &:hover {
-                            background-color: $white-two;
+                            background-color: $atlas-white-gray;
                         }
 
-                        //background-color: $white-two;
+                        //background-color: $atlas-white-gray-two;
                     }
                 }
             }
@@ -83,22 +83,22 @@
                     border: 0; 
                 }
                 .table-hover tbody tr {
-                    border: 1px solid  $gray-four;
+                    border: 1px solid  $atlas-blue-gray;
                     &:hover {
-                        color: $black;
-                        background-color: $white;
+                        color: $atlas-black;
+                        background-color: $atlas-white;
                     }
                 }
                 td,th[scope=row] { 
                     /* Behave  like a "row" */
                     border: none;
-                    border-bottom: 1px solid  $gray-four;
+                    border-bottom: 1px solid  $atlas-blue-gray;
                     position: relative;
                     padding-left: 45%; 
                     white-space: normal;
                     text-align:left;
                     &:hover {
-                        background-color: $white-two;
+                        background-color: $atlas-white-gray;
                     }
                     &:last-child {
                         border:none;

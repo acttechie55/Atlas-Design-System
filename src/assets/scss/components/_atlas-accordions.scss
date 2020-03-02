@@ -16,17 +16,17 @@
             content: "\f078";
         }
        &:not(.collapsed){
-            border-bottom: 1px solid $gray-four;
+            border-bottom: 1px solid $atlas-blue-gray;
        }
         
     }
     .atlas-card {
         h2,h3,h4,h5,h6 {
             &:hover {
-                background-color: $white-two;
+                background-color: $atlas-white-gray;
             }
     
-            //background-color: $white-two;
+            //background-color: $atlas-white-gray;
         }
     }
 }
@@ -37,7 +37,7 @@
             width: 100%;
             text-align: left;
             border-radius: 0px;
-            color: $black;
+            color: $atlas-black;
             &.collapsed {
                 &::after {
                     float: right;
@@ -53,12 +53,12 @@
                 color: $JC-cyan;
             }
         &:not(.collapsed){
-                border-bottom: 1px solid $gray-four;
+                border-bottom: 1px solid $atlas-blue-gray;
         }
             
         }
         .atlas-card {
-            border: 3px solid $gray-four;
+            border: 3px solid $atlas-blue-gray;
            // padding: $atlas-spacing-base-half;
             &:hover {
                 border: 3px solid $JC-cyan;
@@ -71,7 +71,7 @@
             //         border: 3px solid $JC-cyan;
             //     }
         
-            //     //background-color: $white-two;
+            //     //background-color: $atlas-white-gray;
             // }
         }
     }

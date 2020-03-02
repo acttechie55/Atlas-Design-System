@@ -1,8 +1,8 @@
 .atlas-dialog {
-    color: $black;
+    color: $atlas-black;
     //border-radius: 5px;
     .k-window-titlebar, .k-dialog-titlebar {
-        background-color: $white-three;
+        background-color: $atlas-off-white-two;
     }
     .k-window-title {
         font-size: $h2-font-size;
@@ -32,7 +32,7 @@
         opacity: 1;
         .k-i-x {
             &::before {
-                color: $black;
+                color: $atlas-black;
                 font-size: $atlas-font-size-base * 2;
                 position: absolute;
                 right: -15px;
@@ -48,7 +48,7 @@
     }
     .k-dialog-buttongroup {
         justify-content: center;
-        background-color: $white-three;
+        background-color:$atlas-off-white-two;
         @media #{$atlas-mobile-range} {
             button {
                 margin-right: $atlas-spacing-base-0;

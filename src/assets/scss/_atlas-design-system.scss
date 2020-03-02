@@ -1,5 +1,5 @@
 @mixin breakpoint-highlighter {
-    background-color: $white;
+    background-color: $atlas-white;
     color: $JC-blue;
     border: 10px solid $JC-cyan;
     border-radius: $atlas-border-radius;
@@ -34,7 +34,7 @@
             border: none;
         }
         p {
-            color: $black;
+            color: $atlas-black;
         }
     }
 }
@@ -42,7 +42,7 @@
 .atlas-breakpoint-example {
     [class^=col-] {
         border:1px solid $JC-blue;
-        background-color: $white;
+        background-color: $atlas-white;
         padding-top: $atlas-spacing-base-three-quarters;
         padding-bottom:$atlas-spacing-base-three-quarters;
     }

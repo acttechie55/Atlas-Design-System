@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'; 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
@@ -35,6 +36,10 @@ import { AtlasFooterComponent } from './atlas-footer/atlas-footer.component';
 import { AtlasNotificationsComponent } from './atlas-notifications/atlas-notifications.component';
 import { AtlasBadgeComponent } from './atlas-badge/atlas-badge.component';
 import { AtlasSpacingComponent } from './foundation/atlas-spacing/atlas-spacing.component';
+
+//DIRECTIVES
+import { CopyClipboardDirective } from './directives/copy-clipboard.directive';
+
 const appRoutes: Routes = [
   { path: 'foundation/philosophy', component: AtlasPhilosophyComponent },
   { path: 'foundation/colors', component: AtlasColorComponent },
@@ -76,7 +81,8 @@ const appRoutes: Routes = [
     AtlasFooterComponent,
     AtlasNotificationsComponent,
     AtlasBadgeComponent,
-    AtlasSpacingComponent
+    AtlasSpacingComponent,
+    CopyClipboardDirective
   ],
   imports: [
     BrowserModule,
@@ -92,7 +98,8 @@ const appRoutes: Routes = [
     DateInputsModule,
     GridModule,
     InputsModule,
-    UploadModule
+    UploadModule,
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

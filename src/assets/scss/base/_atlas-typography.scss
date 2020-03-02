@@ -41,7 +41,7 @@ body {
     }
 }
 .atlas-card-title {
-    text-transform: $atlas-uppercase;
+   // text-transform: $atlas-uppercase;
     font-size: $h6-font-size;
     font-weight: $atlas-font-weight-bold;
 }
@@ -52,12 +52,12 @@ body {
 }
 
 .atlas-detailed-body-text {
-    color: $gray-five-lighter;
+    color: $atlas-dark-gray;
     font-weight: $atlas-font-weight-bold;
 }
 
 .atlas-detailed-body-text-dark {
-    color: $black;
+    color: $atlas-black;
     font-weight: $atlas-font-weight-bold;
 }
 
@@ -69,5 +69,5 @@ body {
     margin: $atlas-spacing-base-0;
 }
 .atlas-hr  {
-    border-top: 1px solid $gray-four;
+    border-top: 1px solid $atlas-blue-gray;
 }

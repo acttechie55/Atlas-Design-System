@@ -41,19 +41,19 @@
 }
 /*NEUTRAL*/
 .atlas-white-bg {
-    background-color: $white;
+    background-color: $atlas-white;
 }
-.atlas-white-two-bg {
-    background-color: $white-two;
+.atlas-white-gray-bg {
+    background-color: $atlas-white-gray;
 }
-.atlas-white-three-bg {
-    background-color: $white-three;
+.atlas-off-white-two-bg {
+    background-color: $atlas-off-white-two;
 }
-.atlas-white-four-bg {
-    background-color: $white-four;
+.atlas-off-white-bg {
+    background-color: $atlas-off-white;
 }
 .atlas-gray-bg {
-    background-color: $gray
+    background-color: $atlas-gray
 }
 // .atlas-gray-two-bg {
 //     background-color: $gray-two;
@@ -61,24 +61,21 @@
 // .atlas-gray-three-bg {
 //     background-color: $gray-three;
 // }
-.atlas-gray-four-bg {
-    background-color: $gray-four;
+.atlas-blue-gray-bg {
+    background-color: $atlas-blue-gray;
 }
-.atlas-gray-five-bg {
-    background-color: $gray-five;
+.atlas-darker-gray-bg {
+    background-color: $atlas-darker-gray;
 }
-// .atlas-gray-five-light-bg {
-//     background-color: $gray-five-light;
-// }
-.atlas-gray-five-lighter-bg {
-    background-color: $gray-five-lighter;
+.atlas-dark-gray-bg {
+    background-color: $atlas-dark-gray;
 }
 .atlas-black-bg {
-    background-color: $black;
+    background-color: $atlas-black;
 }
 
 /*SELCTION COLORS*/
 ::selection {
-    color: $white;
+    color: $atlas-white;
     background: $JC-blue;
 }

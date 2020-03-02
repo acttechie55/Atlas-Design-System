@@ -4,25 +4,22 @@ $JC-orange: rgb(244, 128, 32); //#F48020;
 $JC-green: rgb(112, 190, 84); //#70be54;
 $JC-cyan: rgb(5, 161, 220); //#05a1dc;
 
-/* DERIVATIVE BRAND HOVER COLORS */
+/*BLUES*/
+$atlas-gray: #d2d6de; //card and input border
 $JC-cyan-dark: #0481b0;
 $JC-cyan-light: #e2f6fe;
 $JC-cyan-extra-light: rgba($JC-cyan, 15%);
 $JC-blue-light: #dbeeff;
 
 /* NEUTRAL COLORS */
-$white: #ffffff;
-$white-two: #f1f4f6; //card footer and table hover
-$white-three: #f8f9fa; //modal header and footer
-$white-four: #fcfcfc; //body baclground
-$gray: #d2d6de; //card and input border
-//$gray-two: #e9ecef;
-//$gray-three: #c7c7c7;
-$gray-four: rgba(#183181, 15%);
-$gray-five: #495057;
-// $gray-five-light: rgba($gray-five, 80%);
-$gray-five-lighter: rgba($gray-five, 70%);
-$black: #000000;
+$atlas-white: rgb(255,255,255); //#ffffff;
+$atlas-off-white: rgb(252,252,252); //#fcfcfc; body background
+$atlas-off-white-two: rgb(248, 249,250); //#f8f9fa; //modal header and footer
+$atlas-white-gray: rgb(241, 244, 246); //#f1f4f6; //card footer and table hover
+$atlas-blue-gray: rgb(221,224,236); //#DDE0EC 
+$atlas-dark-gray: rgb(127,132,137); //#7F8489
+$atlas-darker-gray: rgb(73, 80, 87); // #495057
+$atlas-black: rgb(0,0,0); //#000000
 
 /*CAUTION COLORS */
 $atlas-caution: #F7B924;
@@ -38,11 +35,8 @@ $atlas-success: $JC-green;
 
 /* FONT BASICS */
 $atlas-font-family-sans-serif: Segoe UI, sans-serif; //'Source Sans Pro', sans-serif;
-// .class { 
-// 	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
-// }
-//font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-$font-color: $black;
+
+$font-color: $atlas-black;
 $atlas-font-size-base: 1rem;                                                    // Assumes the browser default, typically `16px`;
 $h1-font-size:                $atlas-font-size-base * 2.5;                      // 40px
 $h2-font-size:                $atlas-font-size-base * 2.2;                      // 35px
@@ -58,21 +52,16 @@ $atlas-font-weight-bold:            600;                                        
 $atlas-font-weight-bolder:          700;                                        // Bold
 $atlas-uppercase: uppercase;
 
-// @mixin atlas-font-regular-text {
-//     $font-color: $black;
-//     $atlas-font-size-base: 1rem;
-// }
+
 /*BORDER AND HORIZONTAL LINES COLORS*/
-$atlas-line-color: $gray-four;
-//$atlas-border: 1px solid $gray-three;
-//$atlas-border-two: 1px solid $gray-two;
-$atlas-border-three: 1px solid $gray;
+$atlas-line-color: $atlas-blue-gray;
+$atlas-border-three: 1px solid $atlas-gray;
 $atlas-orange-line: 1px solid $JC-orange;
 $atlas-green-line: 1px solid $JC-green;
 $atlas-heading-line: 3px solid $JC-cyan;
 $atlas-error-border: 1px solid $atlas-error;
 $atlas-caution-border: 1px solid $atlas-caution;
-$atlas-info-border: 1px solid $gray-five-lighter;
+$atlas-info-border: 1px solid $atlas-dark-gray;
 
 /*BORDER RADIUS*/
 $atlas-border-radius: 5px; 

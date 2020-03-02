@@ -1,7 +1,7 @@
 
 .atlas-header {
     background-color: $JC-blue;
-    color: $white;
+    color: $atlas-white;
     @include atlas-box-shadow-one;
     position: fixed;
     top: 0px;
@@ -43,7 +43,7 @@
             }
         }
         .atlas-nav-menu-button {
-            color: $white;
+            color: $atlas-white;
             margin-left:auto;
             padding-right: $atlas-spacing-base-0;
             //line-height: $header-height - 20;
