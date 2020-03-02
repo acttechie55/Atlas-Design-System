@@ -18,9 +18,10 @@ export class AtlasFormElementsComponent implements OnInit {
   }
 
   public allowCustom: boolean = true;
-    public listItems: Array<string> = ["Baseball", "Basketball", "Cricket", "Field Hockey", "Football", "Table Tennis", "Tennis", "Volleyball"];
-    uploadSaveUrl = 'saveUrl'; // should represent an actual API endpoint
+  public listItems: Array<string> = ["Baseball", "Basketball", "Cricket", "Field Hockey", "Football", "Table Tennis", "Tennis", "Volleyball"];
+  uploadSaveUrl = 'saveUrl'; // should represent an actual API endpoint
   uploadRemoveUrl = 'removeUrl'; // should represent an actual API endpoint
+  public value: Date = new Date(2000, 2, 10);
 
   
 }
