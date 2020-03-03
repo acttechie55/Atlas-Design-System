@@ -13,19 +13,26 @@
 .atlas-jc-cyan-bg {
     background-color: $JC-cyan;              
 }
-/*DERIVATIVE*/
-.atlas-jc-cyan-dark-bg {
-    background-color: $JC-cyan-dark;
-}
-.atlas-jc-cyan-light-bg {
-    background-color: $JC-cyan-light;
-}
-.atlas-jc-cyan-extra-light-bg {
-    background-color: $JC-cyan-extra-light
+/*BLUES*/
+.atlas-blue-gray-bg {
+    background-color: $atlas-blue-gray;
 }
 .atlas-blue-light-bg {
     background-color: $JC-blue-light;
 }
+.atlas-jc-cyan-extra-light-bg {
+    background-color: $JC-cyan-extra-light
+}
+.atlas-jc-cyan-light-bg {
+    background-color: $JC-cyan-light;
+}
+.atlas-jc-cyan-dark-bg {
+    background-color: $JC-cyan-dark;
+}
+
+
+
+
 /*SUCCESS, CAUTION, ERROR*/
 .atlas-caution-bg {
     background-color: $atlas-caution;
@@ -43,35 +50,48 @@
 .atlas-white-bg {
     background-color: $atlas-white;
 }
-.atlas-white-gray-bg {
-    background-color: $atlas-white-gray;
+.atlas-off-white-bg {
+    background-color: $atlas-off-white;
 }
 .atlas-off-white-two-bg {
     background-color: $atlas-off-white-two;
 }
-.atlas-off-white-bg {
-    background-color: $atlas-off-white;
+.atlas-white-gray-bg {
+    background-color: $atlas-white-gray;
 }
 .atlas-gray-bg {
     background-color: $atlas-gray
 }
-// .atlas-gray-two-bg {
-//     background-color: $gray-two;
-// }
-// .atlas-gray-three-bg {
-//     background-color: $gray-three;
-// }
-.atlas-blue-gray-bg {
-    background-color: $atlas-blue-gray;
+.atlas-dark-gray-bg {
+    background-color: $atlas-dark-gray;
 }
 .atlas-darker-gray-bg {
     background-color: $atlas-darker-gray;
 }
-.atlas-dark-gray-bg {
-    background-color: $atlas-dark-gray;
-}
 .atlas-black-bg {
     background-color: $atlas-black;
+}
+
+/*TEXT COLORS*/
+/*BRAND*/
+.atlas-jc-blue {
+    color: $JC-blue;
+}
+.atlas-jc-orange {
+    color: $JC-orange;
+}
+.atlas-jc-green {
+    color: $JC-green;                    
+}
+.atlas-jc-cyan {
+    color: $JC-cyan;
+}
+/*SUCCESS, CAUTION, ERROR*/
+.atlas-caution {
+    color: $atlas-caution;
+}
+.atlas-error {
+    color: $atlas-error;
 }
 
 /*SELCTION COLORS*/

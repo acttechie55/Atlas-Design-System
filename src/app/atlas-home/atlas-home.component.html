@@ -2,20 +2,21 @@
 <hr class="atlas-hr-line atlas-mb-16">
 
 <div class="atlas-card atlas-mb-15" atlas-altitude="raised">
+    <div class="atlas-card-title-wrapper">
+        <h3 class="atlas-card-title">Component Status</h3>
+    </div>
     <div class="atlas-card-body">
-        
-        <p>Component Status</p>
         <p>Track the status of UI components across HTML and Web Component libraries.</p>
         <ul class="list-inline">
             <li class="list-inline-item" *ngFor="let status of componentStatus">
-                <span *ngIf="status.available"> <i class="fas fa-check-circle"></i></span> 
-                <span *ngIf="status.inProgress"> <i class="fas fa-sync-alt"></i></span> 
-                <span *ngIf="status.deprecated"> <i class="fas fa-exclamation-circle"></i></span>
+                <span *ngIf="status.available"> <i class="fas fa-check-circle atlas-jc-green"></i></span> 
+                <span *ngIf="status.inProgress"> <i class="fas fa-sync-alt atlas-jc-cyan"></i></span> 
+                <span *ngIf="status.deprecated"> <i class="fas fa-exclamation-circle atlas-error"></i></span>
                 <span *ngIf="status.upcoming"> <i class="fas fa-ellipsis-h"></i></span> 
-                {{status.text}}
+                {{status.text}} 
             </li>
         </ul>
-        <div class="atlas-table atlas-mb-5">
+        <div class="atlas-table table-responsive atlas-mb-5">
             <table class="table table-hover">
                 <thead>
                     <tr>

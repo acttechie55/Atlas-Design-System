@@ -213,7 +213,7 @@ export class AtlasColorComponent implements OnInit {
     this.brandColors[3].colorValue = '$JC-green';
 
     this.bluesColors[0].colorValue = '$atlas-blue-gray';
-    this.bluesColors[1].colorValue = '$JC-blue-light';
+    this.bluesColors[1].colorValue = '$JC-cyan-light';
     this.bluesColors[2].colorValue = '$JC-cyan-extra-light';
     this.bluesColors[3].colorValue = '$JC-blue-light';
     this.bluesColors[4].colorValue = '$JC-cyan';
