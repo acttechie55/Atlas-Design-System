@@ -185,4 +185,13 @@
 }
 @mixin atlas-heading-six {
     font-size: $h6-font-size;
-}            
+}
+/*!
+=========================================================
+* SELECTION
+=========================================================
+*/
+@mixin atlas-selection {
+    color: $atlas-white;
+    background: $JC-blue;
+}

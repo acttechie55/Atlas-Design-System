@@ -107,9 +107,8 @@
 }
 
 /*SELCTION COLORS*/
-::selection {
-    color: $atlas-white;
-    background: $JC-blue;
+::selection, .k-text-selection ::selection, .k-block ::selection, .k-panel ::selection, .k-widget ::selection {
+    @include atlas-selection;
 }
 
 // body {
