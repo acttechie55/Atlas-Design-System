@@ -7,7 +7,7 @@
 .atlas-jc-orange-bg {
     background-color: $JC-orange;
 }
-.atlas-jc-green-bg {
+.atlas-jc-green-bg, .atlas-success-bg {
     background-color: $JC-green;                    
 }
 .atlas-jc-cyan-bg {
@@ -34,8 +34,20 @@
 
 
 /*SUCCESS, CAUTION, ERROR*/
+.atlas-success-hover-bg {
+    background-color: $atlas-success-hover;                 
+}
+.atlas-secondary-success-hover-bg {
+    background-color: $atlas-secondary-success-hover;            
+}
 .atlas-caution-bg {
     background-color: $atlas-caution;
+}
+.atlas-caution-hover-bg {
+    background-color: $atlas-caution-hover;
+}
+.atlas-secondary-caution-hover-bg {
+    background-color: $atlas-secondary-caution-hover;
 }
 .atlas-error-bg {
     background-color: $atlas-error;
@@ -99,3 +111,27 @@
     color: $atlas-white;
     background: $JC-blue;
 }
+
+// body {
+//     /* width */
+// ::-webkit-scrollbar {
+//     width: 7px;
+//   }
+  
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     background: #ffffff; 
+//   }
+   
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: transparent;
+//   }
+  
+//   /* Handle on hover */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: #cccccc; 
+//     opacity: 0.4;
+//     border-radius: 7px;
+//   }
+// }

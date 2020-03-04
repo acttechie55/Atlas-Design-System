@@ -22,16 +22,19 @@ $atlas-darker-gray: rgb(73, 80, 87); // #495057
 $atlas-black: rgb(0,0,0); //#000000
 
 /*CAUTION COLORS */
-$atlas-caution: #F7B924;
+$atlas-caution: rgb(247,185,36); //#F7B924
+$atlas-caution-hover: rgb(218,157,8); //#DA9D08
+$atlas-secondary-caution-hover: rgb(254,245,225); //#FEF6E3 
 
 /*ERROR COLORS */
-$atlas-error: #D40000;
-$atlas-error-hover: #AA0000;
-$atlas-secondary-error-hover: #ffe8e8;
+$atlas-error: rgb(212,0,0); //#D40000
+$atlas-error-hover: rgb(170,0,0); //#AA0000
+$atlas-secondary-error-hover: rgb(255,232,232); //#FEF5E1
 
 /*SUCCESS COLORS */
-$atlas-success: $JC-green;
-
+$atlas-success: $JC-green; 
+$atlas-success-hover: rgb(86, 159, 60); // #569f3c
+$atlas-secondary-success-hover: rgb(243, 249, 240); //#f3f9f0
 
 /* FONT BASICS */
 $atlas-font-family-sans-serif: Segoe UI, sans-serif; //'Source Sans Pro', sans-serif;

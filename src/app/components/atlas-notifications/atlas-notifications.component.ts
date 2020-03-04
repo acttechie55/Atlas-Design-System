@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-atlas-notifications',
-  templateUrl: './atlas-notifications.component.html',
-  styleUrls: ['./atlas-notifications.component.scss']
+  templateUrl: './atlas-notifications.component.html'
 })
 export class AtlasNotificationsComponent implements OnInit {
 

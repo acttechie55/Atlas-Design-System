@@ -83,14 +83,27 @@
     </div>
     <div class="atlas-card-body atlas-mb-5">
         <div class="row">
-            <div class="col-lg-2" *ngFor="let color of successErrorColors">
+            <div class="col-lg-4" *ngFor="let category of contextualColors">
+                <div class="card atlas-card"> 
+                    <div class="atlas-card-title-wrapper">
+                        <h3 class="atlas-card-title">{{category.name}}</h3>
+                    </div>
+                    <div class="atlas-card-body atlas-mb-5">
+                        <div *ngFor="let color of category.successErrorColors" class="text-right atlas-p-3"  
+                        [copy-clipboard]="color.colorValue" (copied)="notify($event)" [ngClass]="color.className">
+                            <span class="badge atlas-light atlas-badge">{{color.colorValue}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-2" *ngFor="let color of successErrorColors">
                 <div class="card atlas-card border-0">
                     <div class="text-right atlas-p-3"  [copy-clipboard]="color.colorValue" 
                     (copied)="notify($event)" [ngClass]="color.className">
                         <span class="badge atlas-light atlas-badge">{{color.colorValue}}</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

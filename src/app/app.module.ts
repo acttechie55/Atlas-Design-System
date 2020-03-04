@@ -29,13 +29,14 @@ import { AtlasAccordionComponent } from './components/atlas-accordion/atlas-acco
 import { AtlasTablesComponent } from './components/atlas-tables/atlas-tables.component';
 import { AtlasBreadcrumbsComponent } from './components/atlas-breadcrumbs/atlas-breadcrumbs.component';
 import { AtlasHomeComponent } from './atlas-home/atlas-home.component';
+import { AtlasNotificationsComponent } from './components/atlas-notifications/atlas-notifications.component';
+import { AtlasBadgeComponent } from './components/atlas-badge/atlas-badge.component';
+import { AtlasFooterComponent } from './atlas-footer/atlas-footer.component';
+import { AtlasSpacingComponent } from './foundation/atlas-spacing/atlas-spacing.component';
+
 
 //SERVICES
 import {DataService} from './atlas-header/data.service';
-import { AtlasFooterComponent } from './atlas-footer/atlas-footer.component';
-import { AtlasNotificationsComponent } from './atlas-notifications/atlas-notifications.component';
-import { AtlasBadgeComponent } from './atlas-badge/atlas-badge.component';
-import { AtlasSpacingComponent } from './foundation/atlas-spacing/atlas-spacing.component';
 
 //DIRECTIVES
 import { CopyClipboardDirective } from './directives/copy-clipboard.directive';

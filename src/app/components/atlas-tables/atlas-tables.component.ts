@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { process, State } from '@progress/kendo-data-query';
-import { sampleProducts } from './products';
+import { products } from './products';
 
 import {
     GridComponent,
@@ -30,11 +30,13 @@ export class AtlasTablesComponent implements OnInit {
       }
   };
 
-  public gridData: GridDataResult = process(sampleProducts, this.state);
+  //public gridData: GridDataResult = process(sampleProducts, this.state);
 
-  public dataStateChange(state: DataStateChangeEvent): void {
-      this.state = state;
-      this.gridData = process(sampleProducts, this.state);
-  }
+  public gridData: any[] = products;
+
+  // public dataStateChange(state: DataStateChangeEvent): void {
+  //     this.state = state;
+  //     this.gridData = process(sampleProducts, this.state);
+  // }
 
 }
