@@ -1,6 +1,4 @@
 .atlas-sidebar {
-    padding-top: $atlas-spacing-base-half;
-    padding-bottom: $atlas-spacing-base-half;
     position: fixed;
     left: 0px;
     float: left;
@@ -20,6 +18,8 @@
     // }
     .atlas-nav-wrapper {
         height: 85%;
+        padding-top: $atlas-spacing-base-half;
+        padding-bottom: $atlas-spacing-base-half;
     }
     .atlas-nav-subtitle {
         padding:$atlas-spacing-base-half;
