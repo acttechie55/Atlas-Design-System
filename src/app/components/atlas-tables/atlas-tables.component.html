@@ -283,8 +283,18 @@
             <h3 class="atlas-card-title">Atlas Grid</h3>
         </div>
         <div class="atlas-card-body">
-            <div class="atlas-grid atlas-mb-5">
-                <kendo-grid [data]="gridData" [height]="400">
+            <div class="atlas-grid atlas-grid-sm atlas-mb-5">
+                <kendo-grid [data]="gridData" [height]="400"  
+                [pageSize]="pageSize"
+                [skip]="skip"
+                [pageable]="true"
+                (pageChange)="pageChange($event)"
+                [sortable]="{
+                    allowUnsort: allowUnsort,
+                    mode: multiple ? 'multiple' : 'single'
+                    }"
+                  [sort]="sort"
+                  (sortChange)="sortChange($event)">
                     <kendo-grid-column media="(max-width: 991.98px)" title="Opportunities">
                         <ng-template kendoGridCellTemplate let-dataItem>
                             <!-- template for mobile -->
@@ -297,10 +307,13 @@
             
                                 <dt>Region</dt>
                                 <dd>{{ dataItem.region }}</dd>
+
                                 <dt>Next Coverage Date</dt>
                                 <dd>{{ dataItem.nextCoverageDate }}</dd>
+
                                 <dt>End Coverage Date</dt>
                                 <dd>{{ dataItem.nextCoverageDate }}</dd>
+
                                 <dt>Recruiter</dt>
                                 <dd>{{ dataItem.recruiter }}</dd>
                             </dl>
@@ -309,20 +322,6 @@
                             </button>
                         </ng-template>
                     </kendo-grid-column>
-            
-                    <!-- columns for mid-size devices -->
-                    <!-- <kendo-grid-column
-                        media="(min-width: 600px)"
-                        field="ProductID" title="ID" width="40">
-                    </kendo-grid-column>
-                    <kendo-grid-column
-                        media="(min-width: 600px)"
-                        field="ProductName" title="Name">
-                    </kendo-grid-column>
-                    <kendo-grid-column
-                        media="(min-width: 600px)"
-                        field="Category.CategoryName" title="Category">
-                    </kendo-grid-column> -->
             
                     <!-- additional columns on large devices -->
                     <kendo-grid-column
@@ -353,7 +352,7 @@
                     <kendo-grid-column
                     media="(min-width: 991.98px)" width="65" class="text-center">
                     <ng-template kendoGridCellTemplate let-dataItem>
-                        <button class="btn atlas-primary">
+                        <button class="btn atlas-primary w-100">
                             Apply
                         </button>
                     </ng-template>

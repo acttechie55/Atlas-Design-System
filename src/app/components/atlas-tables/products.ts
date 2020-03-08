@@ -88,6 +88,15 @@ export const products = [
         "endCoverageDate": "05/29/2020",
         "recruiter": "April Marks",
         "Call to Action": "View Details"
+    },
+    {
+        "specialty": "Psychiatry",
+        "state": "NY",
+        "region": "NY - Southeast",
+        "nextCoverageDate": "03/04/2020",
+        "endCoverageDate": "05/29/2020",
+        "recruiter": "April Marks",
+        "Call to Action": "View Details"
     }
 ];
 
