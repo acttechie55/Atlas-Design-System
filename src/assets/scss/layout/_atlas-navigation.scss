@@ -7,15 +7,9 @@
     background-color: $atlas-white;
     height:100vh;
   //  overflow-y:scroll;
-    // @media #{$atlas-up-to-tablet} {
-    //     // @include atlas-transition-one;
-    //     // margin-left: -$navigation-width;
-    //     // width: $navigation-width;
-    //     .atlas-expanded {
-    //         margin-left: $atlas-spacing-base;
-    //         width: $navigation-width;
-    //     }
-    // }
+    @media #{$atlas-tablet-range} {
+        top: $header-mobile-height;
+    }
     .atlas-nav-wrapper {
         height: 85%;
         padding-top: $atlas-spacing-base-half;
@@ -69,10 +63,11 @@
     }
     @media #{$atlas-tablet-range} {                                                     //Mobile
         &.atlas-sidebar-modal {
+           // top: $header-mobile-height;
             width: $navigation-width;
             text-align: left;
             z-index:$zindex-modal;
-            @include atlas-transition-one;
+           // @include atlas-transition-one;
             height: 100%;
             .atlas-nav-list-item {
                 padding-left: $atlas-spacing-base-half;

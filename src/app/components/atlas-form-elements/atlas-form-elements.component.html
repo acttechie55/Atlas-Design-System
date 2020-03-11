@@ -42,25 +42,25 @@ and <a href="https://www.telerik.com/kendo-angular-ui/components/" class="atlas-
             </div>
         </div>
         <!-- END TEXT INPUT AND REQUIRED TEXT INPUT -->
-        <div class="row atlas-mb-5">
+        <div class="row">
             <div class="col-md-6">
-                  <div class="atlas-form-group atlas-time-select">
+                  <div class="atlas-form-group atlas-time-select atlas-mb-4">
                     <label class="atlas-label">Kendo Combo Box</label>
                     <kendo-combobox [data]="listItems" [allowCustom]="allowCustom">
                     </kendo-combobox>
                   </div>
             </div>
             <div class="col-md-6">
-                <div class="atlas-form-group">
+                <div class="atlas-form-group atlas-mb-4">
                     <label class="atlas-label">Kendo Dropdown List</label>
                     <kendo-dropdownlist [data]="listItems">
                     </kendo-dropdownlist>
                 </div>
             </div>
         </div>
-        <div class="row atlas-mb-5">
+        <div class="row">
             <div class="col-md-6">
-                <div class="atlas-form-group">
+                <div class="atlas-form-group atlas-mb-4">
                     <label class="atlas-label">Kendo Datepicker</label>
                     <kendo-datepicker
                         [(value)]="value"
@@ -227,7 +227,7 @@ and <a href="https://www.telerik.com/kendo-angular-ui/components/" class="atlas-
         
     </div>
 </div>
-<div class="atlas-card mb-4" atlas-altitude='raised'>
+<div class="atlas-card atlas-mb-16" atlas-altitude='raised'>
     <div class="atlas-card-title-wrapper">
         <h2 class="atlas-card-title">Checkboxes and Radio Buttons</h2>
     </div>
@@ -276,20 +276,23 @@ and <a href="https://www.telerik.com/kendo-angular-ui/components/" class="atlas-
             <div class="col-md-4">
                 <div class="atlas-card" atlas-altitude='basic'>
                     <div class="atlas-card-body">
-                <div class="custom-control custom-checkbox atlas-form-group custom-control-inline">
-                    <input type="checkbox" class="custom-control-input" id="customInlineCheck" name="example1">
-                    <label class="custom-control-label" for="customInlineCheck">Checkbox A</label>
-                </div>
-                <div class="custom-control custom-checkbox atlas-form-group custom-control-inline">
-                    <input type="checkbox" class="custom-control-input" id="customInlineCheck2" name="example2" >
-                    <label class="custom-control-label" for="customInlineCheck2">Checkbox B</label>
-                </div>
-                </div>
+                        <fieldset class="atlas-form-group">
+                            <legend class="atlas-form-legend">A Fieldset of Checkboxes, but Inline</legend>
+                            <div class="custom-control custom-checkbox atlas-form-group custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customInlineCheck" name="example1">
+                                <label class="custom-control-label" for="customInlineCheck">Checkbox A</label>
+                            </div>
+                            <div class="custom-control custom-checkbox atlas-form-group custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customInlineCheck2" name="example2" >
+                                <label class="custom-control-label" for="customInlineCheck2">Checkbox B</label>
+                            </div>
+                        </fieldset>
+                    </div>
                 </div>
             </div>
         </div>
         <hr class="atlas-line">
-        <div class="row">
+        <div class="row atlas-mb-5">
             <div class="col-md-4">
                 <div class="atlas-card" atlas-altitude='basic'>
                     <div class="atlas-card-body">
@@ -333,6 +336,106 @@ and <a href="https://www.telerik.com/kendo-angular-ui/components/" class="atlas-
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="atlas-card" atlas-altitude="basic">
+                    <div class="atlas-card-body">
+                        <!-- <fieldset class="atlas-form-group">
+                            <legend class="atlas-form-legend">A Fieldset of Radio Buttons</legend>
+                            <div class="custom-control custom-radio atlas-form-group">
+                                <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+                                <label class="custom-control-label" for="customRadio">An Unchecked Radio Button</label>
+                            </div>
+                            <div class="custom-control custom-radio atlas-form-group">
+                            <input type="radio" class="custom-control-input" id="customRadio1" name="example2" checked>
+                            <label class="custom-control-label" for="customRadio1">A Checked Radio Button</label>
+                            </div>  
+                              <div class="custom-control custom-radio atlas-form-group">
+                                <input type="radio" class="custom-control-input" id="customRadio2" name="example3" disabled>
+                                <label class="custom-control-label" for="customRadio2">A Disabled Radio Button</label>
+                              </div>  
+                              <div class="custom-control custom-radio atlas-form-group">
+                                <input type="radio" class="custom-control-input" id="customRadio3" name="example4" checked disabled>
+                                <label class="custom-control-label" for="customRadio3">A Disabled And Checked Radio Button</label>
+                              </div>  
+                        </fieldset> -->
+                        <style>
+                                                        .donate-now {
+                                list-style-type:none;
+                                margin:25px 0 0 0;
+                                padding:0;
+                            }
+
+                            .donate-now li {
+                                float:left;
+                                margin:0 5px 0 0;
+                                width:100%;
+                                height:40px;
+                                position:relative;
+                            }
+
+                            .donate-now label, .donate-now input {
+                                display:block;
+                                position:absolute;
+                                top:0;
+                                left:0;
+                                right:0;
+                                bottom:0;
+                            }
+
+                            .donate-now input[type="radio"] {
+                                opacity:0.011;
+                                z-index:100;
+                            }
+
+                            .donate-now input[type="radio"]:checked + label {
+                                background:yellow;
+                            }
+
+                            .donate-now label {
+                                padding:5px;
+                                border:1px solid #CCC; 
+                                cursor:pointer;
+                                z-index:90;
+                            }
+
+                            .donate-now label:hover {
+                                background:#DDD;
+                            }
+                        </style>
+                      
+
+
+                        <!-- <ul class="donate-now">
+                            <li>
+                                <input type="radio" id="a25" name="amount" />
+                                <label for="a25">$25</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="a50" name="amount" />
+                                <label for="a50">$50</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="a75" name="amount" checked="checked" />
+                                <label for="a75">$75</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="a100" name="amount" />
+                                <label for="a100">$100</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="other" name="amount" />
+                                <label for="other">other:</label>
+                            </li>
+                            <li>
+                                <input type="text" id="otherAmount" name="numAmount" />
+                            </li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="atlas-line">
         <!-- <h3>Other Inputs</h3>
         <div class="row">
             <div class="col-md-6">
@@ -367,7 +470,7 @@ and <a href="https://www.telerik.com/kendo-angular-ui/components/" class="atlas-
     <div class="atlas-card-body">
         <div class="row">
             <div class="col-md-6">
-                <div class="atlas-card" atlas-altitude='raised'>
+                <div class="atlas-card atlas-mb-5" atlas-altitude='raised'>
                     <div class="atlas-card-body text-center">
                         <div class="atlas-mb-5 atlas-upload-button">
                         <kendo-upload

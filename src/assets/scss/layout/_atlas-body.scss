@@ -12,6 +12,7 @@
         @include atlas-transition-one;
         margin-left: $atlas-spacing-base-0;
         padding:  $atlas-spacing-base;
+        top: $header-mobile-height;
     }
     &.atlas-main-body-expanded {
         @include atlas-transition-one;

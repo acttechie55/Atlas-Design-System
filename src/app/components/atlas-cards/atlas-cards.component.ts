@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { items } from './items';
 
 @Component({
   selector: 'app-atlas-cards',
@@ -66,6 +67,8 @@ export class AtlasCardsComponent implements OnInit {
       className: "atlas-card-circle-sm"
     }
   ]
+
+  public items: any[] = items;
 
   constructor() { }
 

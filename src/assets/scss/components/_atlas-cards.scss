@@ -67,6 +67,12 @@
         position: absolute;
         bottom: 8px; 
     }
+    &.atlas-card-title-forward, &.atlas-card-title-backward {
+        &:hover {
+            background-color: $atlas-white-gray;
+            cursor: pointer;
+        }
+    }
 }
 
 .atlas-card-body, .atlas-card-footer {

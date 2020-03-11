@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import 'bootstrap';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'; 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -11,6 +12,7 @@ import {DateInputsModule} from '@progress/kendo-angular-dateinputs';
 import {GridModule} from '@progress/kendo-angular-grid';
 import {InputsModule} from '@progress/kendo-angular-inputs';
 import {UploadModule} from '@progress/kendo-angular-upload';
+import { MenuModule } from '@progress/kendo-angular-menu';
 
 //COMPONENTS
 import { AppComponent } from './app.component';
@@ -40,6 +42,8 @@ import {DataService} from './atlas-header/data.service';
 
 //DIRECTIVES
 import { CopyClipboardDirective } from './directives/copy-clipboard.directive';
+
+
 
 const appRoutes: Routes = [
   { path: 'foundation/philosophy', component: AtlasPhilosophyComponent },
@@ -100,7 +104,8 @@ const appRoutes: Routes = [
     GridModule,
     InputsModule,
     UploadModule,
-    HttpClientModule
+    HttpClientModule,
+    MenuModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

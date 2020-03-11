@@ -37,7 +37,7 @@ $atlas-success-hover: rgb(86, 159, 60); // #569f3c
 $atlas-secondary-success-hover: rgb(243, 249, 240); //#f3f9f0
 
 /* FONT BASICS */
-$atlas-font-family-sans-serif: Segoe UI, sans-serif; //'Source Sans Pro', sans-serif;
+$atlas-font-family-sans-serif: Segoe UI, Arial, sans-serif; 
 
 $font-color: $atlas-black;
 $atlas-font-size-base: 1rem;                                                    // Assumes the browser default, typically `16px`;
@@ -49,6 +49,7 @@ $h5-font-size:                $atlas-font-size-base * 1.25;                     
 $h6-font-size:                $atlas-font-size-base;                            // 16px
 $atlas-font-small:            $atlas-font-size-base *.95;                       // 15px;
 $atlas-font-smaller:          $atlas-font-size-base *.9;                        // 14.4px;
+$atlas-font-smallest:         $atlas-font-size-base *.85;                        // 14.4px;
 $atlas-font-weight-light:           300;                                        // Light
 $atlas-font-weight-normal:          400;                                        // Normal
 $atlas-font-weight-bold:            600;                                        // Semi-Bold
@@ -97,6 +98,7 @@ $atlas-spacing-base-four: $atlas-spacing-base * 4;                              
 
 
 $header-height: 80px;
+$header-mobile-height: 55px;
 $navigation-width: 230px;
 $navigation-mini-width:80px;
 

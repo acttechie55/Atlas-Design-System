@@ -10,19 +10,23 @@ body {
 }
 .h2, h2 {
     font-size: $h2-font-size;
+    font-weight: $atlas-font-weight-normal;
 
 }
 .h3, h3 {
     font-size: $h3-font-size;
+    font-weight: $atlas-font-weight-normal;
 
 }
 .h4, h4 {
     font-size: $h4-font-size;
+    font-weight: $atlas-font-weight-normal;
     // font-weight: $atlas-font-weight-light;
 
 }
 .h5, h5 {
     font-size: $h5-font-size;
+    font-weight: $atlas-font-weight-normal;
 
 }
 .h6, h6 {
@@ -62,9 +66,14 @@ body {
 }
 
 .atlas-small-text {
+    font-size: $atlas-font-small;
+}
+.atlas-smaller-text {
     font-size: $atlas-font-smaller;
 }
-
+.atlas-smallest-text {
+    font-size: $atlas-font-smallest;
+}
 .atlas-text-slim {
     margin: $atlas-spacing-base-0;
 }
