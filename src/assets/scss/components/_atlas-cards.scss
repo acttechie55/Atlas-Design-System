@@ -77,6 +77,12 @@
 
 .atlas-card-body, .atlas-card-footer {
     padding: $atlas-spacing-base $atlas-spacing-base-one-quarter $atlas-spacing-base-0 $atlas-spacing-base-one-quarter;
+    @media #{$atlas-tablet-range} {
+        &.atlas-card-body-sm {
+            padding: $atlas-spacing-base-half $atlas-spacing-base-half $atlas-spacing-base-0$atlas-spacing-base-half;
+        }
+    }
+
 }
 .atlas-card-footer {
     padding: $atlas-spacing-base-three-quarters $atlas-spacing-base-one-quarter;
