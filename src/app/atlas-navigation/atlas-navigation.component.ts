@@ -8,26 +8,26 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-  { path: '/home',                      title: 'Home',          icon:'fas fa-home' },
-  { path: 'foundation/philosophy',      title: 'Philosophy',    icon:'far fa-lightbulb' },
-  { path: 'foundation/colors',          title: 'Colors',        icon:'fas fa-palette' },
-  { path: 'foundation/typography',      title: 'Typography',    icon:'far fa-file-word' },
-  { path: 'foundation/grid_system',     title: 'Grid System',   icon:'fas fa-th'},
-  { path: 'foundation/spacing',         title: 'Spacing',       icon:'fas fa-ruler-combined'}
+  { path: '/home',                      title: 'Home',          icon:'fal fa-home-lg-alt' },
+  { path: 'foundation/philosophy',      title: 'Philosophy',    icon:'fal fa-books' },
+  { path: 'foundation/colors',          title: 'Colors',        icon:'fal fa-palette' },
+  { path: 'foundation/typography',      title: 'Typography',    icon:'fal fa-text' },
+  { path: 'foundation/grid_system',     title: 'Grid System',   icon:'fal fa-th'},
+  { path: 'foundation/spacing',         title: 'Spacing',       icon:'fad fa-ruler-combined'}
 ];
 
 
 export const ROUTESTWO: RouteInfo[] = [
-  { path: 'components/buttons',         title: 'Buttons',       icon:'far fa-keyboard'},
-  { path: 'components/modals',          title: 'Modals',        icon:'far fa-window-restore' },
-  { path: 'components/form_elements',   title: 'Form Elements', icon:'far fa-file' },
-  { path: 'components/cards',           title: 'Cards',         icon:'far fa-square'},
-  { path: 'components/iconography',     title: 'Iconography',   icon:'fas fa-icons' },
+  { path: 'components/buttons',         title: 'Buttons',       icon:'fal fa-keyboard'},
+  { path: 'components/modals',          title: 'Modals',        icon:'fal fa-window-restore' },
+  { path: 'components/form_elements',   title: 'Form Elements', icon:'fal fa-file-alt' },
+  { path: 'components/cards',           title: 'Cards',         icon:'fal fa-square'},
+  { path: 'components/iconography',     title: 'Iconography',   icon:'fal fa-icons' },
   // { path: 'components/accordion',       title: 'Accordion',     icon:'fas fa-list' },
-  { path: 'components/tables',          title: 'Tables',        icon:'fas fa-table'},
+  { path: 'components/tables',          title: 'Tables',        icon:'fal fa-table'},
   // { path: 'components/breadcrumbs',     title: 'Breadcrumbs',   icon:'fas fa-road'},
-  { path: 'components/notifications',   title: 'Notifications', icon:'fas fa-bell'},
-  { path: 'components/badge',           title: 'Badges',        icon:'far fa-id-badge'}
+  { path: 'components/notifications',   title: 'Notifications', icon:'fad fa-bell'},
+  { path: 'components/badge',           title: 'Badges',        icon:'fal fa-id-badge'}
 ];
 
 
