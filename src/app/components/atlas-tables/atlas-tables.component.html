@@ -294,7 +294,8 @@
                     mode: multiple ? 'multiple' : 'single'
                     }"
                   [sort]="sort"
-                  (sortChange)="sortChange($event)">
+                  (sortChange)="sortChange($event)"
+                  filterable="menu">
                     <kendo-grid-column media="(max-width: 991.98px)" title="Opportunities">
                         <ng-template kendoGridCellTemplate let-dataItem>
                             <!-- template for mobile -->

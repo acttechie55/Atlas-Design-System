@@ -82,12 +82,17 @@
 }
 /*!
 =========================================================
-* ICONS
+* FONT AWESOME ICONS
 =========================================================
 */
-@mixin atlas-font-awesome-content {
-    font-family: "Font Awesome 5 Free"; 
+@mixin atlas-font-awesome-pro {
+    font-family: "Font Awesome 5 Pro"; 
     font-weight: $atlas-font-weight-bolder;
+    -webkit-font-smoothing: antialiased;
+}
+@mixin atlas-font-awesome-duotone {
+    font-family: "Font Awesome 5 Duotone"; 
+    font-weight: 900;
     -webkit-font-smoothing: antialiased;
 }
 /*!
@@ -101,7 +106,7 @@
     position: absolute;
     //right: 25px;
     &::before {
-        @include atlas-font-awesome-content;
+        @include atlas-font-awesome-pro;
         content: "\f12a";
     }
 }

@@ -39,13 +39,13 @@
                     &.collapsed {
                         &::after {
                             float: right;
-                            @include atlas-font-awesome-content();
+                            @include atlas-font-awesome-pro;
                             content: "\f054";
                         }
                     }
                     &::after {
                         float: right;
-                        @include atlas-font-awesome-content();
+                        @include atlas-font-awesome-pro;
                         content: "\f078";
                     }
                    &:not(.collapsed){
@@ -165,14 +165,20 @@
     .k-grid-header {
         .k-i-sort-asc-sm, .k-i-sort-desc-sm, .k-sort-order {
             color: $JC-cyan;
+            margin-bottom: $atlas-spacing-base-quarter;
         }
         .k-i-sort-asc-sm::before{
-            @include atlas-font-awesome-content();
-            content: "\f0de";
+            @include atlas-font-awesome-pro();
+            content: "\f30c";
         }
+        // .k-i-sort-asc-sm::after{
+        //    @include atlas-font-awesome-duotone();
+        //     opacity: .5;
+        //     content: "\10f0de";
+        // }
         .k-i-sort-desc-sm::before{
-            @include atlas-font-awesome-content();
-            content: "\f0dd";
+            @include atlas-font-awesome-pro();
+            content: "\f309";
         }
     }
     .k-pager-wrap .k-link, 
@@ -218,5 +224,33 @@
         }
     }
 }
-  
+
+.atlas-grid-filter-popup {
+    .k-popup.k-grid-filter-popup {
+        color: $atlas-black;
+        border-radius: 0px;
+        @include atlas-box-shadow-one;
+        .k-dropdown .k-dropdown-wrap, 
+        .k-dropdowntree .k-dropdown-wrap {
+            border: $atlas-border-three;
+            color: $atlas-black;
+            border-radius: 1px;
+            background-color: $atlas-white;
+            .k-select {
+                    .k-i-arrow-s {
+                        &::before {
+                        @include atlas-font-awesome-pro;
+                        content: "\f078";
+                        }
+                    }
+                    .k-icon {
+                        color: $JC-orange;
+                    }
+                }
+        }
+        .k-action-buttons .k-button {
+            padding: $atlas-spacing-base-quarter $atlas-spacing-base-three-quarters;
+        }
+    }
+}
 			
