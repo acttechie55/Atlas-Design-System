@@ -13,7 +13,7 @@
         color: $atlas-white;
         @include atlas-button();
         &:hover:not(:disabled) {
-            background-color: $atlas-error-hover;
+            background-color: $atlas-error-dark;
         }
     }
     &.atlas-secondary {
@@ -29,7 +29,7 @@
         color: $atlas-error;
         @include atlas-button();
         &:hover:not(:disabled) {
-            background-color: $atlas-secondary-error-hover;
+            background-color: $atlas-error-light;
         }
     }
     &.atlas-tertiary {

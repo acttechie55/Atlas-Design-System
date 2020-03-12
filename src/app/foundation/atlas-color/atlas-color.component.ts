@@ -140,11 +140,11 @@ export class AtlasColorComponent implements OnInit {
           colorValue: '#70be54'
         },
         {
-          className: 'atlas-success-hover-bg',
+          className: 'atlas-success-dark-bg',
           colorValue: '#569f3c'
         },
         {
-          className: 'atlas-secondary-success-hover-bg',
+          className: 'atlas-success-light-bg',
           colorValue: '#f3f9f0'
         }
       ]
@@ -157,11 +157,11 @@ export class AtlasColorComponent implements OnInit {
           colorValue: '#F7B924'
         },
         {
-          className: 'atlas-caution-hover-bg',
+          className: 'atlas-caution-dark-bg',
           colorValue: '#DA9D08'
         },
         {
-          className: 'atlas-secondary-caution-hover-bg',
+          className: 'atlas-caution-light-bg',
           colorValue: '#FEF6E3'
         }
       ]
@@ -174,11 +174,11 @@ export class AtlasColorComponent implements OnInit {
           colorValue: '#D40000'
         },
         {
-          className: 'atlas-error-hover-bg',
+          className: 'atlas-error-dark-bg',
           colorValue: '#AA0000'
         },
         {
-          className: 'atlas-secondary-error-hover-bg',
+          className: 'atlas-error-light-bg',
           colorValue: '#ffe8e8'
         }
       ]
@@ -305,16 +305,16 @@ export class AtlasColorComponent implements OnInit {
     this.neutralColors[7].colorValue = '$atlas-black';
 
     this.contextualColors[0].successErrorColors[0].colorValue = '$atlas-success';
-    this.contextualColors[0].successErrorColors[1].colorValue = '$atlas-success-hover';
-    this.contextualColors[0].successErrorColors[2].colorValue = '$atlas-secondary-success-hover';
+    this.contextualColors[0].successErrorColors[1].colorValue = '$atlas-success-dark';
+    this.contextualColors[0].successErrorColors[2].colorValue = '$atlas-success-light';
 
     this.contextualColors[1].successErrorColors[0].colorValue = '$atlas-caution';
-    this.contextualColors[1].successErrorColors[1].colorValue = '$atlas-caution-hover';
-    this.contextualColors[1].successErrorColors[2].colorValue = '$atlas-secondary-caution-hover';
+    this.contextualColors[1].successErrorColors[1].colorValue = '$atlas-caution-dark';
+    this.contextualColors[1].successErrorColors[2].colorValue = '$atlas-caution-light';
 
     this.contextualColors[2].successErrorColors[0].colorValue = '$atlas-error';
-    this.contextualColors[2].successErrorColors[1].colorValue = '$atlas-error-hover';
-    this.contextualColors[2].successErrorColors[2].colorValue = '$atlas-secondary-error-hover';
+    this.contextualColors[2].successErrorColors[1].colorValue = '$atlas-error-dark';
+    this.contextualColors[2].successErrorColors[2].colorValue = '$atlas-error-light';
   }
 
 }
