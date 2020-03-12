@@ -1,11 +1,3 @@
-/*FOCUS*/
-a:focus,.atlas-link:focus, button:focus, .btn:focus, 
-.k-button:focus, .k-button.k-state-focused, .k-pager-wrap .k-link:focus, 
-.k-pager-wrap .k-pager-nav:focus, .k-grid-header .k-grid-filter:focus, 
-.k-grid-header .k-header-column-menu:focus, 
-.k-grid-header .k-hierarchy-cell .k-icon:focus {
-    @include atlas-focus();
-}
 /*ATLAS BUTTON STYLING*/
 .btn {
     &.atlas-primary {

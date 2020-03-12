@@ -13,9 +13,8 @@
 
 //Base
 @import 'base/atlas-variables';
-//Mixins
-@import 'mixins/atlas-mixins';
-//Base Continued
+@import 'base/atlas-mixins';
+@import 'base/atlas-focus';
 @import 'base/atlas-typography';
 @import 'base/atlas-colors';
 @import 'base/atlas-media-queries';
