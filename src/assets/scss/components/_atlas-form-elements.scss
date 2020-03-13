@@ -10,7 +10,7 @@
         }
     }
     input, textarea, select {
-        border: $atlas-border-three;
+        border: 1px solid $atlas-line-color;
         border-radius: 1px;
         color: $atlas-black;
         &:disabled, [readonly] {
@@ -76,7 +76,7 @@
             &:not(:disabled):active ~ .custom-control-label::before {
                 opacity: .75;
                 background-color: $JC-cyan;
-                border:  $atlas-border-three;
+                border: 1px solid $atlas-line-color;
             }
         }
         .custom-control-label {
@@ -84,7 +84,7 @@
             font-size: $atlas-font-small;
             &:before {
                 top: 0;
-                border: $atlas-border-three;
+                border: 1px solid $atlas-line-color;
                 width: 1.5rem;
                 height: 1.5rem;
              }
@@ -122,7 +122,7 @@
       select:-webkit-autofill,
       select:-webkit-autofill:hover,
       select:-webkit-autofill:focus {
-          border: $atlas-border-three;
+          border: 1px solid $atlas-line-color;
           -webkit-text-fill-color: $atlas-black;
           // -webkit-box-shadow: $atlas-white;
           // box-shadow: $atlas-white;
@@ -138,7 +138,7 @@
         border-radius: 1px;
         //border: $atlas-border-three;
         .k-dropdown-wrap,.k-picker-wrap {
-            border: $atlas-border-three;
+            border: 1px solid $atlas-line-color;
             color: $atlas-black;
             border-radius: 1px;
             background-color: $atlas-white;
@@ -179,11 +179,11 @@
 .atlas-upload-button {
     .k-upload {
         background-color: $atlas-white;
-        border: $atlas-border-three;
+        border: 1px solid $atlas-line-color;
         .k-dropzone {
             color: $atlas-black;
             background-color: $atlas-off-white-two;
-            border-color: $atlas-blue-gray;
+            border-color: $atlas-gray;
         }
     }
     .k-upload .k-file-error .k-file-name, 

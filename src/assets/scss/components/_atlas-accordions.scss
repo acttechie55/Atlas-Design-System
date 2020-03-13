@@ -16,7 +16,7 @@
             content: "\f078";
         }
        &:not(.collapsed){
-            border-bottom: 1px solid $atlas-blue-gray;
+            border-bottom: 1px solid $atlas-line-color;
        }
         
     }
@@ -53,12 +53,12 @@
                 color: $JC-cyan;
             }
         &:not(.collapsed){
-                border-bottom: 1px solid $atlas-blue-gray;
+                border-bottom: 1px solid $atlas-line-color;
         }
             
         }
         .atlas-card {
-            border: 3px solid $atlas-blue-gray;
+            border: 3px solid $atlas-line-color;
            // padding: $atlas-spacing-base-half;
             &:hover {
                 border: 3px solid $JC-cyan;

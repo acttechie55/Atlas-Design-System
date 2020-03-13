@@ -4,11 +4,11 @@
         margin:$atlas-spacing-base-0;
         thead {
             th {
-                border-bottom: 1px solid $atlas-blue-gray;
+                border-bottom: 1px solid $atlas-line-color;
             }
         }
         th, td {
-            border-top: 1px solid $atlas-blue-gray;
+            border-top: 1px solid $atlas-line-color;
         }
         &.table-hover tbody tr {
             &:hover {
@@ -49,7 +49,7 @@
                         content: "\f078";
                     }
                    &:not(.collapsed){
-                        border-bottom: 1px solid $atlas-blue-gray;
+                        border-bottom: 1px solid $atlas-line-color;
                    }
                     
                 }
@@ -83,7 +83,7 @@
                     border: 0; 
                 }
                 .table-hover tbody tr {
-                    border: 1px solid  $atlas-blue-gray;
+                    border: 1px solid  $atlas-line-color;
                     &:hover {
                         color: $atlas-black;
                         background-color: $atlas-white;
@@ -92,7 +92,7 @@
                 td,th[scope=row] { 
                     /* Behave  like a "row" */
                     border: none;
-                    border-bottom: 1px solid  $atlas-blue-gray;
+                    border-bottom: 1px solid  $atlas-line-color;
                     position: relative;
                     padding-left: 45%; 
                     white-space: normal;
@@ -232,7 +232,7 @@
         @include atlas-box-shadow-one;
         .k-dropdown .k-dropdown-wrap, 
         .k-dropdowntree .k-dropdown-wrap {
-            border: $atlas-border-three;
+            border: 1px solid $atlas-line-color;
             color: $atlas-black;
             border-radius: 1px;
             background-color: $atlas-white;

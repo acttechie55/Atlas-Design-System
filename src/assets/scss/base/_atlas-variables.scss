@@ -5,7 +5,6 @@ $JC-green: rgb(112, 190, 84); //#70be54;
 $JC-cyan: rgb(5, 161, 220); //#05a1dc;
 
 /*BLUES*/
-$atlas-gray: #d2d6de; //card and input border
 $JC-cyan-dark: #0481b0;
 $JC-cyan-light: #e2f6fe;
 $JC-cyan-extra-light: rgba($JC-cyan, 15%);
@@ -16,7 +15,7 @@ $atlas-white: rgb(255,255,255); //#ffffff;
 $atlas-off-white: rgb(252,252,252); //#fcfcfc; body background
 $atlas-off-white-two: rgb(248, 249,250); //#f8f9fa; //modal header and footer
 $atlas-white-gray: rgb(241, 244, 246); //#f1f4f6; //card footer and table hover
-$atlas-blue-gray: rgb(221,224,236); //#DDE0EC 
+$atlas-gray: rgb(210,214,222); //#d2d6de; //card and input border
 $atlas-dark-gray: rgb(127,132,137); //#7F8489
 $atlas-darker-gray: rgb(73, 80, 87); // #495057
 $atlas-black: rgb(0,0,0); //#000000
@@ -58,8 +57,7 @@ $atlas-uppercase: uppercase;
 
 
 /*BORDER AND HORIZONTAL LINES COLORS*/
-$atlas-line-color: $atlas-blue-gray;
-$atlas-border-three: 1px solid $atlas-gray;
+$atlas-line-color: $atlas-gray;
 $atlas-orange-line: 1px solid $JC-orange;
 $atlas-green-line: 1px solid $JC-green;
 $atlas-heading-line: 3px solid $JC-cyan;
