@@ -17,7 +17,7 @@ export class AtlasColorComponent implements OnInit {
     },
     {
       className: 'atlas-jc-orange-bg',
-      colorValue: '#F48020'
+      colorValue: '#ED6D18'
     },
     {
       className: 'atlas-jc-green-bg',
@@ -110,7 +110,7 @@ export class AtlasColorComponent implements OnInit {
     },
     {
       className: 'atlas-white-gray-bg',
-      colorValue: '#f1f4f6'
+      colorValue: '#f4f4f4'
     },
     {
       className: 'atlas-gray-bg',
@@ -213,7 +213,7 @@ export class AtlasColorComponent implements OnInit {
   showHex() {
     this.brandColors[0].colorValue = '#004b8d';
     this.brandColors[1].colorValue = '#05a1dc';
-    this.brandColors[2].colorValue = '#F48020';
+    this.brandColors[2].colorValue = '#ED6D18';
     this.brandColors[3].colorValue = '#70be54';
 
     //this.bluesColors[0].colorValue = '#DDE0EC';
@@ -227,7 +227,7 @@ export class AtlasColorComponent implements OnInit {
     this.neutralColors[0].colorValue = '#ffffff';
     this.neutralColors[1].colorValue = '#fcfcfc';
     this.neutralColors[2].colorValue = '#f8f9fa';
-    this.neutralColors[3].colorValue = '#f1f4f6';
+    this.neutralColors[3].colorValue = '#f4f4f4';
     this.neutralColors[4].colorValue = '#d2d6de';
     this.neutralColors[5].colorValue = '#7F8489';
     this.neutralColors[6].colorValue = '#495057';
@@ -248,7 +248,7 @@ export class AtlasColorComponent implements OnInit {
   showRGB(){
     this.brandColors[0].colorValue = 'rgb(0, 75, 141)';
     this.brandColors[1].colorValue = 'rgb(5, 161, 220)';
-    this.brandColors[2].colorValue = 'rgb(244, 128, 32)';
+    this.brandColors[2].colorValue = 'rgb(237, 109, 24)';
     this.brandColors[3].colorValue = 'rgb(112, 190, 84)';
 
     //this.bluesColors[0].colorValue = 'rgb(221,224,236)';
@@ -262,7 +262,7 @@ export class AtlasColorComponent implements OnInit {
     this.neutralColors[0].colorValue = 'rgb(255, 255, 255)';
     this.neutralColors[1].colorValue = 'rgb(252, 252, 252)';
     this.neutralColors[2].colorValue = 'rgb(248, 249, 250)';
-    this.neutralColors[3].colorValue = 'rgb(241, 244, 246)';
+    this.neutralColors[3].colorValue = 'rgb(244, 244, 244)';
     this.neutralColors[4].colorValue = 'rgb(210, 214, 222)';
     this.neutralColors[5].colorValue = 'rgb(127,132,137)';
     this.neutralColors[6].colorValue = 'rgb(73, 80, 87)';
