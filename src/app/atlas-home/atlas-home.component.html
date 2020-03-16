@@ -9,9 +9,9 @@
         <p>Track the status of UI components across HTML and Web Component libraries.</p>
         <ul class="list-inline">
             <li class="list-inline-item" *ngFor="let status of componentStatus">
-                <span *ngIf="status.available"> <i class="fas fa-check-circle atlas-jc-green"></i></span> 
-                <span *ngIf="status.inProgress"> <i class="fas fa-sync-alt atlas-jc-cyan"></i></span> 
-                <span *ngIf="status.deprecated"> <i class="fas fa-exclamation-circle atlas-error"></i></span>
+                <span *ngIf="status.available"> <i class="fas fa-check-circle atlas-jc-green-text"></i></span> 
+                <span *ngIf="status.inProgress"> <i class="fas fa-sync-alt atlas-jc-cyan-text"></i></span> 
+                <span *ngIf="status.deprecated"> <i class="fas fa-exclamation-circle atlas-error-text"></i></span>
                 <span *ngIf="status.upcoming"> <i class="fas fa-ellipsis-h"></i></span> 
                 {{status.text}} 
             </li>

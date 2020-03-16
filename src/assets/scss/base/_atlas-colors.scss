@@ -86,23 +86,36 @@
 
 /*TEXT COLORS*/
 /*BRAND*/
-.atlas-jc-blue {
+.atlas-jc-blue-text {
     color: $JC-blue;
 }
-.atlas-jc-orange {
+.atlas-jc-orange-text {
     color: $JC-orange;
 }
-.atlas-jc-green {
+.atlas-jc-green-text, .atlas-success-text {
     color: $JC-green;                    
 }
-.atlas-jc-cyan {
+.atlas-jc-cyan-text {
     color: $JC-cyan;
 }
+/*BLUES*/
+.atlas-jc-cyan-light-text {
+    color: $JC-cyan-light;
+} 
+.atlas-jc-cyan-extra-light-text {
+    color: $JC-cyan-extra-light;
+}
+.atlas-jc-blue-light-text {
+    color: $JC-blue-light;
+}
+.atlas-jc-cyan-dark-text {
+    color: $JC-cyan-dark;
+}
 /*SUCCESS, CAUTION, ERROR*/
-.atlas-caution {
+.atlas-caution-text {
     color: $atlas-caution;
 }
-.atlas-error {
+.atlas-error-text {
     color: $atlas-error;
 }
 
