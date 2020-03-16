@@ -1,6 +1,6 @@
 .atlas-main-body {
     margin-left: $navigation-width;
-    padding: $atlas-spacing-base-two-half;
+    padding: $atlas-spacing-base-two;
     position: relative;
     top: $header-height;
     background-color: $atlas-off-white;
@@ -20,7 +20,7 @@
         @media #{$atlas-tablet-range} {
             @include atlas-transition-one;
             margin-left: $atlas-spacing-base-0;
-            padding: $atlas-spacing-base-two;
+            padding: $atlas-spacing-base;
         }
     }
 }

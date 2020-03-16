@@ -1,17 +1,15 @@
 .atlas-sidebar {
-    position: fixed;
     left: 0px;
     float: left;
     top: $header-height;
     width: $navigation-width;
     background-color: $atlas-white;
     height:100vh;
-  //  overflow-y:scroll;
     @media #{$atlas-tablet-range} {
         top: $header-mobile-height;
     }
     .atlas-nav-wrapper {
-        height: 85%;
+        height: 90%;
         padding-top: $atlas-spacing-base-half;
         padding-bottom: $atlas-spacing-base-half;
     }
@@ -63,11 +61,9 @@
     }
     @media #{$atlas-tablet-range} {                                                     //Mobile
         &.atlas-sidebar-modal {
-           // top: $header-mobile-height;
             width: $navigation-width;
             text-align: left;
             z-index:$zindex-modal;
-           // @include atlas-transition-one;
             height: 100%;
             .atlas-nav-list-item {
                 padding-left: $atlas-spacing-base-half;

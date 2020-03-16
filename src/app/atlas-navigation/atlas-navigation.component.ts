@@ -33,7 +33,10 @@ export const ROUTESTWO: RouteInfo[] = [
 
 @Component({
   selector: 'app-atlas-navigation',
-  templateUrl: './atlas-navigation.component.html'
+  templateUrl: './atlas-navigation.component.html',
+  host: {
+    "(window:resize)":"onWindowResize($event)"
+  }
 })
 export class AtlasNavigationComponent implements OnInit {
 
@@ -41,20 +44,35 @@ export class AtlasNavigationComponent implements OnInit {
   public menuItemsTwo: any[];
   //message:string;
   navExpanded:boolean;
+  isMobile: boolean = false;
+  width:number = window.innerWidth;
+  height:number = window.innerHeight;
+  mobileWidth:number  = 760;
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService) {
+    this.isMobile = this.width < this.mobileWidth;
+   }
 
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.menuItemsTwo = ROUTESTWO.filter(menuItemTwo => menuItemTwo);
     this.data.cast.subscribe(data => this.navExpanded = data);
-    //this.data.currentMessage.subscribe(message => this.message = message);
   }
+
+  onWindowResize(event) {
+    this.width = event.target.innerWidth;
+    this.height = event.target.innerHeight;
+    this.isMobile = this.width < this.mobileWidth;
+}
 
 
   navLink(){
-    //this.navExpanded = !this.navExpanded;
+    if(this.isMobile){
+      this.navExpanded = !this.navExpanded;
+    } else {
+      this.navExpanded == false;
+    }
   }
 
 }
