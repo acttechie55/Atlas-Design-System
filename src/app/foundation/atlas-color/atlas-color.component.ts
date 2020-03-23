@@ -307,7 +307,7 @@ export class AtlasColorComponent implements OnInit {
 
     this.contextualColors[2].successErrorColors[0].colorValue = '$atlas-danger';
     this.contextualColors[2].successErrorColors[1].colorValue = '$atlas-danger-dark';
-    this.contextualColors[2].successErrorColors[2].colorValue = '$atlas-dangwe-light';
+    this.contextualColors[2].successErrorColors[2].colorValue = '$atlas-danger-light';
   }
 
 }

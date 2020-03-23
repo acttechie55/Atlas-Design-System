@@ -11,7 +11,7 @@
             <li class="list-inline-item" *ngFor="let status of componentStatus">
                 <span *ngIf="status.available"> <i class="fas fa-check-circle atlas-jc-green-text"></i></span> 
                 <span *ngIf="status.inProgress"> <i class="fas fa-sync-alt atlas-jc-cyan-text"></i></span> 
-                <span *ngIf="status.deprecated"> <i class="fas fa-exclamation-circle atlas-error-text"></i></span>
+                <span *ngIf="status.deprecated"> <i class="fas fa-exclamation-circle atlas-danger-text"></i></span>
                 <span *ngIf="status.upcoming"> <i class="fas fa-ellipsis-h"></i></span> 
                 {{status.text}} 
             </li>

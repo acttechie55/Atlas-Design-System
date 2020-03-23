@@ -1,5 +1,11 @@
 <h1>Typography</h1>
 <p class="display-3">Segoe UI</p>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
 <div class="row">
     <div class="col-md-7">
       <p>'Segoe UI' is a sans serif typeface.
@@ -15,87 +21,85 @@
 </div>
 <hr class="atlas-hr">
 <!-- <h2>Type Scale</h2> -->
-<div class="card atlas-card">
-  <div class="atlas-card-body">
-      <div class="atlas-grid  atlas-mb-5">
-      <kendo-grid [data]="gridData" [height]="400">
-        <kendo-grid-column media="(max-width: 991.98px)" title="Type Scale">
-          <ng-template kendoGridCellTemplate let-dataItem>
-              <!-- template for mobile -->
-              <dl>
-                  <dt>Type</dt>
-                  <dd>{{ dataItem.type }}</dd>
 
-                  <dt>Size</dt>
-                  <dd>{{ dataItem.size }}</dd>
+<div class="atlas-grid  atlas-mb-5">
+<kendo-grid [data]="gridData" [height]="400">
+  <kendo-grid-column media="(max-width: 991.98px)" title="Type Scale">
+    <ng-template kendoGridCellTemplate let-dataItem>
+        <!-- template for mobile -->
+        <dl>
+            <dt>Type</dt>
+            <dd>{{ dataItem.type }}</dd>
 
-                  <dt>Weight</dt>
-                  <dd>{{ dataItem.weight }}</dd>
+            <dt>Size</dt>
+            <dd>{{ dataItem.size }}</dd>
 
-                  <dt>Code Example</dt>
-                  <dd> <code *ngIf="dataItem.type !== 'Link' && dataItem.type !== 'Card Titles' && dataItem.type !== 'Small Text'
-                    && dataItem.type !== 'Smaller Text' &&  dataItem.type !== 'Smallest Text'">&lt;{{dataItem.code}}&gt;&lt;/{{dataItem.code}}&gt;
-                    </code>
-                    <code *ngIf="dataItem.type == 'Link'">&lt;a href=&quot;#&quot; class=&quot;atlas-link&quot;&gt;&lt;/a&gt;
-                    </code>
-                    <code *ngIf="dataItem.type == 'Card Titles'">&lt;any-text-element class=&quot;atlas-card-title&quot;&gt;&lt;/any-text-element&gt;
-                    </code>
-                    <code *ngIf="dataItem.type == 'Small Text'">&lt;any-text-element class=&quot;atlas-small-text&quot;&gt;&lt;/any-text-element&gt;
-                    </code>
-                    <code *ngIf="dataItem.type == 'Smaller Text'">&lt;any-text-element class=&quot;atlas-smaller-text&quot;&gt;&lt;/any-text-element&gt;
-                    </code>
-                    <code *ngIf="dataItem.type == 'Smallest Text'">&lt;any-text-element class=&quot;atlas-smallest-text&quot;&gt;&lt;/any-text-element&gt;
-                    </code></dd>
-              </dl>
-          </ng-template>
-      </kendo-grid-column>
-          <!-- additional columns on large devices -->
-          <kendo-grid-column
-              media="(min-width: 991.98px)"
-              field="type" title="Type" width="80">
-              <ng-template kendoGridCellTemplate let-dataItem>
-                <span class="whole-cell" class="{{dataItem.class}}" *ngIf="dataItem.type !== 'Link'">
-                  {{ dataItem.type }}
-                </span>
-                <a href="#" class="atlas-link" *ngIf="dataItem.type == 'Link'">
-                  {{dataItem.type}}
-                </a>
-              </ng-template>
-          </kendo-grid-column>
-          <kendo-grid-column
-              media="(min-width: 991.98px)"
-              field="size" title="Size" width="40">
-          </kendo-grid-column>
-          <kendo-grid-column
-          media="(min-width: 991.98px)"
-          field="weight" title="Weight" width="30">
-          </kendo-grid-column>
-          <kendo-grid-column
-          media="(min-width: 991.98px)"
-          field="codeExample" title="Code Example" width="80">
-          <code>&lt;h1&gt;&lt;/h1&gt;
-          </code>
-          <ng-template kendoGridCellTemplate let-dataItem>
-            <code *ngIf="dataItem.type !== 'Link' && dataItem.type !== 'Card Titles' && dataItem.type !== 'Small Text'
-            && dataItem.type !== 'Smaller Text' &&  dataItem.type !== 'Smallest Text'">&lt;{{dataItem.code}}&gt;&lt;/{{dataItem.code}}&gt;
-            </code>
-            <code *ngIf="dataItem.type == 'Link'">&lt;a href=&quot;#&quot; class=&quot;atlas-link&quot;&gt;&lt;/a&gt;
-            </code>
-            <code *ngIf="dataItem.type == 'Card Titles'">&lt;any-text-element class=&quot;atlas-card-title&quot;&gt;&lt;/any-text-element&gt;
-            </code>
-            <code *ngIf="dataItem.type == 'Small Text'">&lt;any-text-element class=&quot;atlas-small-text&quot;&gt;&lt;/any-text-element&gt;
-            </code>
-            <code *ngIf="dataItem.type == 'Smaller Text'">&lt;any-text-element class=&quot;atlas-smaller-text&quot;&gt;&lt;/any-text-element&gt;
-            </code>
-            <code *ngIf="dataItem.type == 'Smallest Text'">&lt;any-text-element class=&quot;atlas-smallest-text&quot;&gt;&lt;/any-text-element&gt;
-            </code>
-          </ng-template>
-          </kendo-grid-column>
-      </kendo-grid>
-      </div>
-  </div>
-</div>  
-<hr class="atlas-hr">
+            <dt>Weight</dt>
+            <dd>{{ dataItem.weight }}</dd>
+
+            <dt>Code Example</dt>
+            <dd> <code *ngIf="dataItem.type !== 'Link' && dataItem.type !== 'Card Titles' && dataItem.type !== 'Small Text'
+              && dataItem.type !== 'Smaller Text' &&  dataItem.type !== 'Smallest Text'">&lt;{{dataItem.code}}&gt;&lt;/{{dataItem.code}}&gt;
+              </code>
+              <code *ngIf="dataItem.type == 'Link'">&lt;a href=&quot;#&quot; class=&quot;atlas-link&quot;&gt;&lt;/a&gt;
+              </code>
+              <code *ngIf="dataItem.type == 'Card Titles'">&lt;any-text-element class=&quot;atlas-card-title&quot;&gt;&lt;/any-text-element&gt;
+              </code>
+              <code *ngIf="dataItem.type == 'Small Text'">&lt;any-text-element class=&quot;atlas-small-text&quot;&gt;&lt;/any-text-element&gt;
+              </code>
+              <code *ngIf="dataItem.type == 'Smaller Text'">&lt;any-text-element class=&quot;atlas-smaller-text&quot;&gt;&lt;/any-text-element&gt;
+              </code>
+              <code *ngIf="dataItem.type == 'Smallest Text'">&lt;any-text-element class=&quot;atlas-smallest-text&quot;&gt;&lt;/any-text-element&gt;
+              </code></dd>
+        </dl>
+    </ng-template>
+</kendo-grid-column>
+    <!-- additional columns on large devices -->
+    <kendo-grid-column
+        media="(min-width: 991.98px)"
+        field="type" title="Type" width="80">
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <span class="whole-cell" class="{{dataItem.class}}" *ngIf="dataItem.type !== 'Link'">
+            {{ dataItem.type }}
+          </span>
+          <a href="#" class="atlas-link" *ngIf="dataItem.type == 'Link'">
+            {{dataItem.type}}
+          </a>
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column
+        media="(min-width: 991.98px)"
+        field="size" title="Size" width="40">
+    </kendo-grid-column>
+    <kendo-grid-column
+    media="(min-width: 991.98px)"
+    field="weight" title="Weight" width="30">
+    </kendo-grid-column>
+    <kendo-grid-column
+    media="(min-width: 991.98px)"
+    field="codeExample" title="Code Example" width="80">
+    <code>&lt;h1&gt;&lt;/h1&gt;
+    </code>
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <code *ngIf="dataItem.type !== 'Link' && dataItem.type !== 'Card Titles' && dataItem.type !== 'Small Text'
+      && dataItem.type !== 'Smaller Text' &&  dataItem.type !== 'Smallest Text'">&lt;{{dataItem.code}}&gt;&lt;/{{dataItem.code}}&gt;
+      </code>
+      <code *ngIf="dataItem.type == 'Link'">&lt;a href=&quot;#&quot; class=&quot;atlas-link&quot;&gt;&lt;/a&gt;
+      </code>
+      <code *ngIf="dataItem.type == 'Card Titles'">&lt;any-text-element class=&quot;atlas-card-title&quot;&gt;&lt;/any-text-element&gt;
+      </code>
+      <code *ngIf="dataItem.type == 'Small Text'">&lt;any-text-element class=&quot;atlas-small-text&quot;&gt;&lt;/any-text-element&gt;
+      </code>
+      <code *ngIf="dataItem.type == 'Smaller Text'">&lt;any-text-element class=&quot;atlas-smaller-text&quot;&gt;&lt;/any-text-element&gt;
+      </code>
+      <code *ngIf="dataItem.type == 'Smallest Text'">&lt;any-text-element class=&quot;atlas-smallest-text&quot;&gt;&lt;/any-text-element&gt;
+      </code>
+    </ng-template>
+    </kendo-grid-column>
+</kendo-grid>
+</div>
+
+<!-- <hr class="atlas-hr">
 <h2>List Styles</h2>
 <div class="row">
   <div class="col-lg-4">
@@ -176,7 +180,7 @@
     </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- <p class="atlas-semi-heading">Field of Practice</p>
 <p class="atlas-detailed-body-text">Recruiter: Khadijah James</p>
 <p class="atlas-detailed-body-text-dark">West Anaheim Medical Center</p> -->

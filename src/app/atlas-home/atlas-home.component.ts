@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-atlas-home',
-  templateUrl: './atlas-home.component.html',
-  styleUrls: ['./atlas-home.component.scss']
+  templateUrl: './atlas-home.component.html'
 })
 export class AtlasHomeComponent implements OnInit {
 
