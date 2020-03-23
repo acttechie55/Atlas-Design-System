@@ -45,13 +45,21 @@ body {
     }
 }
 .atlas-card-title {
-   // text-transform: $atlas-uppercase;
     font-size: $h6-font-size;
     font-weight: $atlas-font-weight-bold;
 }
+
+.atlas-card-title-lg {
+	 font-size: $h5-font-size;
+	 font-weight: $atlas-font-weight-bold;
+ }
+ .atlas-card-title-xl {
+	font-size: $h4-font-size;
+	font-weight: $atlas-font-weight-bold;
+}
 .atlas-semi-heading {
     color: $JC-blue;
-    text-transform: $atlas-uppercase;
+    text-transform: uppercase;
     font-weight: $atlas-font-weight-bold;
 }
 

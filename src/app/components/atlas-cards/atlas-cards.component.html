@@ -13,7 +13,7 @@
         or calling attention to a specific grouping of content.
     </p>
     <div class="card atlas-mb-8">
-        <div class="card atlas-card m-3 p-3" atlas-altitude='basic'>
+        <div class="card atlas-card m-3 p-3 atlas-card-basic">
             Basic Card
         </div>
     </div>
@@ -25,7 +25,7 @@
     <div class="card">
         <div class="row">
             <div class="col-md-3" *ngFor="let card of [0,1,2,3]">
-                <div class="atlas-card m-3 p-3" atlas-altitude='basic'>
+                <div class="atlas-card atlas-card-basic m-3 p-3">
                     Basic Card
                 </div>
             </div>
@@ -43,13 +43,13 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="atlas-card m-3 p-3" [attr.atlas-altitude]="card.cardAltitude">
+                    <div class="atlas-card m-3 p-3"  [ngClass]="card.className">
                         {{card.cardType}} Card
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="atlas-card p-3" atlas-altitude='basic'>
+                <div class="atlas-card p-3 atlas-card-basic">
                     <p class="atlas-detailed-body-text-dark atlas-text-slim">{{card.cardBenefitHeading}}</p>
                     <p class="atlas-text-slim">{{card.cardBenefitContent}}</p>
                 </div>
@@ -63,30 +63,22 @@
     <p>
         Border radius represents the curvature in the border of a particular element. 
         Cards can be changed to suit the needs of the page by adding one or more variations.
-        <!-- There are three types of border radii: sharp, curve, and circle. Circle cards will be addressed on <a href="#" class="atlas-link">another page</a>. -->
     </p>
     <div class="mb-4">
         <div class="row">
             <div class="col-md-6" *ngFor="let card of cardBorderRadii; let i = index">
                 <div class="mb-3">
-                    <div class="atlas-card p-3"  [ngClass]="card.className" [attr.atlas-altitude]="card.cardAltitude" [attr.atlas-border-radius]="card.cardBorderRadii">
+                    <div class="atlas-card p-3"  [ngClass]="card.className">
                         {{card.cardType}} Card
                     </div>
                 </div>
-                <div class="atlas-card p-3" atlas-altitude='basic'>
+                <div class="atlas-card p-3 atlas-card-basic">
                     <p class="atlas-detailed-body-text-dark atlas-text-slim">{{card.cardBenefitHeading}}</p>
                     <p class="atlas-text-slim">{{card.cardBenefitContent}}</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <p>Modifying cards to a circle is as easy as changing the atlas-border-radius attribute and choosing a atlas-card-circle** class</p> -->
-    <!-- <div class="row" *ngFor="let card of circleCards; let i = index">
-        <div class="col-lg-3">
-            <div class="atlas-card p-3"  [ngClass]="card.className" atlas-altitude="basic" atlas-border-radius="circle">
-            </div>
-        </div>
-    </div> -->
 </section>
 <section class="atlas-section atlas-mb-16">
     <h2>Other Card Examples</h2>
@@ -118,7 +110,7 @@
             </div>
         </div>
     </div>
-    <hr class="atlas-line  atlas-mb-16">
+    <hr class="atlas-line">
     <div class="row">
         <div class="col-md-6">
             <div class="card atlas-card">
@@ -226,9 +218,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <hr class="atlas-line  atlas-mb-5">
-    <div class="row">
         <div class="col-md-6">
             <div class="card atlas-card">
                 <div class="atlas-card-title-wrapper">
@@ -250,19 +239,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="card atlas-card atlas-card-cyan-border-top">
-                <div class="atlas-card-title-wrapper">
-                    <h3 class="atlas-card-title">Card with a Blue Border Top</h3>
-                </div>
-                <div class="atlas-card-body">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
-                        Donec eu libero sit amet quam egestas semper. Aliquam erat volutpat.</p>
-                </div>
-            </div>
-        </div>
     </div>
-
 </section>    
 

@@ -14,14 +14,8 @@
     background-color: $JC-cyan;              
 }
 /*BLUES*/
-// .atlas-blue-gray-bg {
-//     background-color: $atlas-blue-gray;
-// }
 .atlas-blue-light-bg {
     background-color: $JC-blue-light;
-}
-.atlas-jc-cyan-extra-light-bg {
-    background-color: $JC-cyan-extra-light
 }
 .atlas-jc-cyan-light-bg {
     background-color: $JC-cyan-light;
@@ -49,14 +43,14 @@
 .atlas-caution-light-bg {
     background-color: $atlas-caution-light;
 }
-.atlas-error-bg {
-    background-color: $atlas-error;
+.atlas-danger-bg {
+    background-color: $atlas-danger;
 }
-.atlas-error-dark-bg {
-    background-color: $atlas-error-dark;
+.atlas-danger-dark-bg {
+    background-color: $atlas-danger-dark;
 }
-.atlas-error-light-bg {
-    background-color: $atlas-error-light;
+.atlas-danger-light-bg {
+    background-color: $atlas-danger-light;
 }
 /*NEUTRAL*/
 .atlas-white-bg {
@@ -102,9 +96,6 @@
 .atlas-jc-cyan-light-text {
     color: $JC-cyan-light;
 } 
-.atlas-jc-cyan-extra-light-text {
-    color: $JC-cyan-extra-light;
-}
 .atlas-jc-blue-light-text {
     color: $JC-blue-light;
 }
@@ -115,35 +106,11 @@
 .atlas-caution-text {
     color: $atlas-caution;
 }
-.atlas-error-text {
-    color: $atlas-error;
+.atlas-danger-text {
+    color: $atlas-danger;
 }
 
-/*SELCTION COLORS*/
+/*SELECTION COLORS*/
 ::selection, .k-text-selection ::selection, .k-block ::selection, .k-panel ::selection, .k-widget ::selection {
     @include atlas-selection;
 }
-
-// body {
-//     /* width */
-// ::-webkit-scrollbar {
-//     width: 7px;
-//   }
-  
-//   /* Track */
-//   ::-webkit-scrollbar-track {
-//     background: #ffffff; 
-//   }
-   
-//   /* Handle */
-//   ::-webkit-scrollbar-thumb {
-//     background: transparent;
-//   }
-  
-//   /* Handle on hover */
-//   ::-webkit-scrollbar-thumb:hover {
-//     background: #cccccc; 
-//     opacity: 0.4;
-//     border-radius: 7px;
-//   }
-// }

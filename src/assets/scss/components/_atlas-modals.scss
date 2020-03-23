@@ -55,4 +55,25 @@
             }
         }
     }
+
+    &.atlas-dialog-right {
+        -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+        -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+        -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+        transition: opacity 0.3s linear, right 0.3s ease-out;
+        .k-widget, .k-window, .k-dialog {
+                    position: fixed;
+                    margin: auto;
+                    width: 320px;
+                    border-radius: 0px;
+		            height: 100%;
+                    -webkit-transform: translate3d(0%, 0, 0);
+                    -ms-transform: translate3d(0%, 0, 0);
+                    -o-transform: translate3d(0%, 0, 0);
+                    transform: translate3d(0%, 0, 0);
+                    right: 0px;
+
+                }
+	}
+
 }

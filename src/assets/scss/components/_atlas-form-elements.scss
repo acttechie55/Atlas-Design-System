@@ -1,7 +1,7 @@
 /*BOOTSTRAP FORM INPUT STYLING*/
 .atlas-form-group {
     .atlas-required {
-        color: $atlas-error;
+        color: $atlas-danger;
     }
     label {
         & ~ em {
@@ -188,12 +188,12 @@
     }
     .k-upload .k-file-error .k-file-name, 
     .k-upload .k-file-invalid .k-file-name{
-        color: $atlas-error;
+        color: $atlas-danger;
     }
     .k-upload .k-file-invalid-extension-wrapper::before, 
     .k-upload .k-multiple-files-invalid-extension-wrapper::before, 
     .k-upload .k-file-error .k-file-extension-wrapper::before {
-        border-color: transparent $atlas-error;
+        border-color: transparent $atlas-danger;
     }
     .k-button {
         background-color: $JC-cyan;
@@ -204,9 +204,9 @@
 
 .atlas-form-group {
     .k-invalid, .ng-invalid {
-        border: $atlas-error-border;
+        border: $atlas-danger-border;
         &:focus {
-            outline: 5px auto $atlas-error;
+            outline: 5px auto $atlas-danger;
         }
     }
     .k-valid, .ng-valid {

@@ -2,47 +2,15 @@
 .atlas-card {
     @include atlas-card;
 
-
-    // Altitude Types
-    &[atlas-altitude='basic'] {
-        @include atlas-card-border;
-    }
-    &[atlas-altitude='raised'] {
+    &.atlas-card-raised {
         @include atlas-box-shadow-two;
         @include atlas-card-border;
     }
-    &[atlas-altitude='base'] {
+    &.atlas-card-basic {
+        @include atlas-card-border;
+    }
+    &.atlas-card-base {
         border: none;
-    }
-
-    //Border Radii Types
-    &[atlas-border-radius='circle'] {
-        @include atlas-card-circle;
-    }
-    &[atlas-border-radius='sharp'] {
-        @include atlas-card-sharp;
-    }
-
-    // Circle Sizes
-    &.atlas-card-circle-xl {
-        width: 200px;
-        height: 200px;
-    }
-    &.atlas-card-circle-lg {
-        width: 100px;
-        height: 100px;
-    }
-    &.atlas-card-circle-md {
-        width: 50px;
-        height: 50px;
-    }
-    &.atlas-card-circle-sm {
-        width: 10px;
-        height: 10px;
-    }
-    &.atlas-card-circle-xs {
-        width: 5px;
-        height: 5px;
     }
     &.atlas-card-cyan-border-top {
         border-top: $atlas-heading-line;

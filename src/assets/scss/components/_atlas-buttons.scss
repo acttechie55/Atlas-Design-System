@@ -9,11 +9,11 @@
         }
     }
     &.atlas-primary-danger {
-        background-color: $atlas-error;
+        background-color: $atlas-danger;
         color: $atlas-white;
         @include atlas-button();
         &:hover:not(:disabled) {
-            background-color: $atlas-error-dark;
+            background-color: $atlas-danger-dark;
         }
     }
     &.atlas-secondary {
@@ -25,11 +25,11 @@
         }
     }
     &.atlas-secondary-danger {
-        border:2px solid $atlas-error;
-        color: $atlas-error;
+        border: 2px solid $atlas-danger;
+        color: $atlas-danger;
         @include atlas-button();
         &:hover:not(:disabled) {
-            background-color: $atlas-error-light;
+            background-color: $atlas-danger-light;
         }
     }
     &.atlas-tertiary {

@@ -35,10 +35,6 @@ export class AtlasColorComponent implements OnInit {
       colorValue: '#e2f6fe'
     },
     {
-      className: 'atlas-jc-cyan-extra-light-bg',
-      colorValue: "#05a1dc26"
-    },
-    {
       className: 'atlas-blue-light-bg',
       colorValue: "#dbeeff"
     },
@@ -170,15 +166,15 @@ export class AtlasColorComponent implements OnInit {
       name: 'Error',
       successErrorColors: [
         {
-          className: 'atlas-error-bg',
+          className: 'atlas-danger-bg',
           colorValue: '#D40000'
         },
         {
-          className: 'atlas-error-dark-bg',
+          className: 'atlas-danger-dark-bg',
           colorValue: '#AA0000'
         },
         {
-          className: 'atlas-error-light-bg',
+          className: 'atlas-danger-light-bg',
           colorValue: '#ffe8e8'
         }
       ]
@@ -218,11 +214,10 @@ export class AtlasColorComponent implements OnInit {
 
     //this.bluesColors[0].colorValue = '#DDE0EC';
     this.bluesColors[0].colorValue = '#e2f6fe';
-    this.bluesColors[1].colorValue = '#05a1dc26';
-    this.bluesColors[2].colorValue = '#dbeeff';
-    this.bluesColors[3].colorValue = '#05a1dc';
-    this.bluesColors[4].colorValue = '#0481b0';
-    this.bluesColors[5].colorValue = '#004b8d';
+    this.bluesColors[1].colorValue = '#dbeeff';
+    this.bluesColors[2].colorValue = '#05a1dc';
+    this.bluesColors[3].colorValue = '#0481b0';
+    this.bluesColors[4].colorValue = '#004b8d';
 
     this.neutralColors[0].colorValue = '#ffffff';
     this.neutralColors[1].colorValue = '#fcfcfc';
@@ -253,11 +248,10 @@ export class AtlasColorComponent implements OnInit {
 
     //this.bluesColors[0].colorValue = 'rgb(221,224,236)';
     this.bluesColors[0].colorValue = 'rgb(226, 246, 254)';
-    this.bluesColors[1].colorValue = 'rgba(5, 161, 220, 0.15)';
-    this.bluesColors[2].colorValue = 'rgb(219, 238, 255)';
-    this.bluesColors[3].colorValue = 'rgb(5, 161, 220)';
-    this.bluesColors[4].colorValue = 'rgb(4, 129, 176)';
-    this.bluesColors[5].colorValue = 'rgb(0, 75, 141)';
+    this.bluesColors[1].colorValue = 'rgb(219, 238, 255)';
+    this.bluesColors[2].colorValue = 'rgb(5, 161, 220)';
+    this.bluesColors[3].colorValue = 'rgb(4, 129, 176)';
+    this.bluesColors[4].colorValue = 'rgb(0, 75, 141)';
 
     this.neutralColors[0].colorValue = 'rgb(255, 255, 255)';
     this.neutralColors[1].colorValue = 'rgb(252, 252, 252)';
@@ -289,11 +283,10 @@ export class AtlasColorComponent implements OnInit {
 
     //this.bluesColors[0].colorValue = '$atlas-blue-gray';
     this.bluesColors[0].colorValue = '$JC-cyan-light';
-    this.bluesColors[1].colorValue = '$JC-cyan-extra-light';
-    this.bluesColors[2].colorValue = '$JC-blue-light';
-    this.bluesColors[3].colorValue = '$JC-cyan';
-    this.bluesColors[4].colorValue = '$JC-cyan-dark';
-    this.bluesColors[5].colorValue = '$JC-blue';
+    this.bluesColors[1].colorValue = '$JC-blue-light';
+    this.bluesColors[2].colorValue = '$JC-cyan';
+    this.bluesColors[3].colorValue = '$JC-cyan-dark';
+    this.bluesColors[4].colorValue = '$JC-blue';
 
     this.neutralColors[0].colorValue = '$atlas-white';
     this.neutralColors[1].colorValue = '$atlas-off-white';
@@ -312,9 +305,9 @@ export class AtlasColorComponent implements OnInit {
     this.contextualColors[1].successErrorColors[1].colorValue = '$atlas-caution-dark';
     this.contextualColors[1].successErrorColors[2].colorValue = '$atlas-caution-light';
 
-    this.contextualColors[2].successErrorColors[0].colorValue = '$atlas-error';
-    this.contextualColors[2].successErrorColors[1].colorValue = '$atlas-error-dark';
-    this.contextualColors[2].successErrorColors[2].colorValue = '$atlas-error-light';
+    this.contextualColors[2].successErrorColors[0].colorValue = '$atlas-danger';
+    this.contextualColors[2].successErrorColors[1].colorValue = '$atlas-danger-dark';
+    this.contextualColors[2].successErrorColors[2].colorValue = '$atlas-dangwe-light';
   }
 
 }

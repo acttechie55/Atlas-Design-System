@@ -4,7 +4,7 @@
     //font-size: $atlas-font-smaller;
     font-weight: $atlas-font-weight-bold;
     &.atlas-danger {
-        background-color: $atlas-error;
+        background-color: $atlas-danger;
         color: $atlas-white;
     }
     &.atlas-success {
@@ -39,7 +39,7 @@
         padding: $atlas-spacing-base-quarter;
     }
     &.atlas-danger {
-        background-color: $atlas-error;
+        background-color: $atlas-danger;
         color: $atlas-white;
     }
     &.atlas-success {

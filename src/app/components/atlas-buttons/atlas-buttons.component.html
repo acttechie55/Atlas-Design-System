@@ -1,40 +1,81 @@
 <h1>{{title}}</h1>
 <p>Buttons trigger interactions throughout the experience.</p>
-<p class="display-4">Primary</p>
-<p>Use for highest-priority actions that are required to complete the user’s task.</p>
-<button class="btn atlas-primary">A Primary Button</button>
-<button class="btn atlas-primary-danger">A Primary Button, But Red</button>
+
+<div class="card atlas-card atlas-card-basic">
+    <div class="atlas-card-title-wrapper">
+        <h2 class="atlas-card-title">Primary Buttons</h2>
+    </div>
+    <div class="atlas-card-body">
+        <p>Use for a user's prinicipal action to completing their goal. </p>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn atlas-primary">A Primary Button</button>
+                <hr class="atlas-hr">
+                <p><strong>When To Use:</strong></p>
+                <p>Use this button if the user's action is positive (i.e. 'Send' or 'Submit').</p>
+                <hr class="atlas-hr">
+                <p><strong>Code:</strong></p>
+                <p><code>&lt;button class=&quot;btn atlas-primary&quot;&gt;&lt;/button&gt;</code></p>
+            </div>
+            <div class="col-md-6">
+                <button class="btn atlas-primary-danger">A Primary, But Red Button</button>
+                <hr class="atlas-hr">
+                <p><strong>When To Use:</strong></p>
+                <p>Use this button if the user's action is negative or "dangerous" (i.e. 'Replace' or 'Delete').</p>
+                <hr class="atlas-hr">
+                <p><strong>Code:</strong></p>
+                <p><code>&lt;button class=&quot;btn atlas-primary-danger&quot;&gt;&lt;/button&gt;</code></p>
+            </div>
+        </div>
+    </div>
+</div>
 <hr class="atlas-hr">
-<p class="display-4">Secondary</p>
-<p>Use for non-critical actions.</p>
-<button class="btn atlas-secondary">A Secondary Button</button>
-<button class="btn atlas-secondary-danger">A Secondary Button, But Red</button>
+<div class="card atlas-card atlas-card-basic">
+    <div class="atlas-card-title-wrapper">
+        <h2 class="atlas-card-title">Secondary Buttons</h2>
+    </div>
+    <div class="atlas-card-body">
+        <p>Use for non-critical actions like "Cancel", "Go Back", "Reset", "Save for Later". These actions are typically counter to people's primary goal.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn atlas-secondary">A Secondary Button</button>
+                <hr class="atlas-hr">
+                <p><strong>Code:</strong></p>
+                <p><code>&lt;button class=&quot;btn atlas-secondary&quot;&gt;&lt;/button&gt;</code></p>
+            </div>
+            <div class="col-md-6">
+                <button class="btn atlas-secondary-danger">A Secondary, But Red Button</button>
+                <hr class="atlas-hr">
+                <p><strong>Code:</strong></p>
+                <p><code>&lt;button class=&quot;btn atlas-secondary-danger&quot;&gt;&lt;/button&gt;</code></p>
+            </div>
+        </div>
+    </div>
+</div>
 <hr class="atlas-hr">
-<p class="display-4">Tertiary</p>
-<p>Use for actions that are not directly tied to the user's current action.</p>
-<button class="btn atlas-tertiary">A Tertiary Button</button>
+<div class="card atlas-card">
+    <div class="atlas-card-title-wrapper">
+        <h2 class="atlas-card-title">Tertiary Buttons</h2>
+    </div>
+    <div class="atlas-card-body">
+        <p>Use for actions that are not directly tied to the person's current goal. This will be used based on the particular context of its placement. It intentionally has less visual prominence than the other two because we do not want to distract from the user's goal.</p>
+        <button class="btn atlas-tertiary">A Tertiary Button</button>
+        <hr class="atlas-hr">
+        <p><strong>Code:</strong></p>
+        <p><code>&lt;button class=&quot;btn atlas-tertiary&quot;&gt;&lt;/button&gt;</code></p>
+    </div>
+</div>
 <hr class="atlas-hr">
-<p class="display-4">Disabled</p>
-<button class="btn atlas-primary" disabled>A Disabled Primary Button</button>
-<button class="btn atlas-secondary-danger" disabled>A Disabled Secondary Button</button>
-<button class="btn atlas-tertiary" disabled>A Disabled Tertiary Button</button>
-<hr class="atlas-hr">
-<p class="display-4">Icon Only</p>
-<hr class="atlas-hr">
-<div class="row">
-    <!-- <div class="col-xs-12 col-sm-6 example-col">
-        <p>Tabs</p>
-        <kendo-buttongroup [selection]="'single'">
-            <button class="atlas-tab-button" kendoButton [toggleable]="true">Heading 1</button>
-            <button class="atlas-tab-button" kendoButton [toggleable]="true">Heading 2</button>
-        </kendo-buttongroup>
-    </div> -->
-    <!-- <div class="col-xs-12 col-sm-6 example-col">
-        <p>Multiple selection mode</p>
-        <kendo-buttongroup>
-            <button kendoButton [toggleable]="true" [icon]="'bold'"></button>
-            <button kendoButton [toggleable]="true" [icon]="'italic'"></button>
-            <button kendoButton [toggleable]="true" [icon]="'underline'"></button>
-        </kendo-buttongroup>
-    </div> -->
+<div class="card atlas-card">
+    <div class="atlas-card-title-wrapper">
+        <h2 class="atlas-card-title">Disabled Buttons</h2>
+    </div>
+    <div class="atlas-card-body">
+        <button class="btn atlas-primary" disabled>A Disabled Primary Button</button>
+        <button class="btn atlas-secondary-danger" disabled>A Disabled Secondary Button</button>
+        <button class="btn atlas-tertiary" disabled>A Disabled Tertiary Button</button>
+        <hr class="atlas-hr">
+        <p><strong>Code:</strong></p>
+        <p>Add <code>disabled</code> attribute to button.</p>
+    </div>
 </div>

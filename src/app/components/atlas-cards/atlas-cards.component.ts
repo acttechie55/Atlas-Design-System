@@ -10,19 +10,19 @@ export class AtlasCardsComponent implements OnInit {
   cardAltitudes = [
     {
       cardType: "Basic",
-      cardAltitude: "basic",
+      className: "atlas-card-basic",
       cardBenefitHeading: "Default",
       cardBenefitContent: "The default appearance"
     },
     {
       cardType: "Raised",
-      cardAltitude: "raised",
+      className: "atlas-card-raised",
       cardBenefitHeading: "Adds Shadow",
       cardBenefitContent: "Increases visual hierachy; Makes content feel more important"
     },
     {
       cardType: "Base",
-      cardAltitude: "base",
+      className: "atlas-card-base",
       cardBenefitHeading: "Removes Border",
       cardBenefitContent: "De-emphasizes content next to other cards"
     }
@@ -31,15 +31,13 @@ export class AtlasCardsComponent implements OnInit {
   cardBorderRadii = [
     {
       cardType: "Sharp",
-      cardAltitude: "basic",
-      cardBorderRadii: "sharp",
+      className: "atlas-card-sharp",
       cardBenefitHeading: "Makes Corners Less Rounded",
       cardBenefitContent: "Use in cards nested in other cards to keep corners smoothies"
     },
     {
       cardType: "Basic",
-      cardAltitude: "basic",
-      cardBorderRadii: "",
+      className: "atlas-card-basic",
       cardBenefitHeading: "Rounded Corners",
       cardBenefitContent: "Used in the majority of containers"
     }

@@ -28,21 +28,18 @@
         padding:  $atlas-spacing-base;
         border-top-right-radius: $atlas-border-radius;
         border-bottom-right-radius: $atlas-border-radius;
-        // .atlas-notification-list{
-
-        // }
     }
 
     &.atlas-error {
         .atlas-notification-status {
-            background-color: $atlas-error;
-            border: $atlas-error-border;
+            background-color: $atlas-danger;
+            border: $atlas-danger-border;
             color: $atlas-white;
         }
         .atlas-notification-body {
             color: $atlas-black;
             background-color: $atlas-white;
-            border: $atlas-error-border;
+            border: $atlas-danger-border;
         }
     }
     &.atlas-caution {

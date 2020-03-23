@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-atlas-spacing',
-  templateUrl: './atlas-spacing.component.html',
-  styleUrls: ['./atlas-spacing.component.scss']
+  templateUrl: './atlas-spacing.component.html'
 })
 export class AtlasSpacingComponent implements OnInit {
 

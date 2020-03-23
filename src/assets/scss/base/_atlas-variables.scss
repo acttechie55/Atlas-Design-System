@@ -1,3 +1,5 @@
+/* PLACE ATLAS VARIABLES IN THIS FILE*/
+
 /* BRAND COLORS */
 $JC-blue: rgb(0, 75, 141); //#004b8d;
 $JC-orange: rgb(237, 109, 24); //#ED6D18;
@@ -7,7 +9,6 @@ $JC-cyan: rgb(5, 161, 220); //#05a1dc;
 /*BLUES*/
 $JC-cyan-dark: #0481b0;
 $JC-cyan-light: #e2f6fe;
-$JC-cyan-extra-light: rgba($JC-cyan, 15%);
 $JC-blue-light: #dbeeff;
 
 /* NEUTRAL COLORS */
@@ -25,10 +26,10 @@ $atlas-caution: rgb(247,185,36); //#F7B924
 $atlas-caution-dark: rgb(218,157,8); //#DA9D08
 $atlas-caution-light: rgb(254,245,225); //#FEF6E3 
 
-/*ERROR COLORS */
-$atlas-error: rgb(212,0,0); //#D40000
-$atlas-error-dark: rgb(170,0,0); //#AA0000
-$atlas-error-light: rgb(255,232,232); //#FEF5E1
+/*DANGER/"ERROR"/"ALERT" COLORS */
+$atlas-danger: rgb(212,0,0); //#D40000
+$atlas-danger-dark: rgb(170,0,0); //#AA0000
+$atlas-danger-light: rgb(255,232,232); //#FEF5E1
 
 /*SUCCESS COLORS */
 $atlas-success: $JC-green; 
@@ -53,7 +54,6 @@ $atlas-font-weight-light:           300;                                        
 $atlas-font-weight-normal:          400;                                        // Normal
 $atlas-font-weight-bold:            600;                                        // Semi-Bold
 $atlas-font-weight-bolder:          700;                                        // Bold
-$atlas-uppercase: uppercase;
 
 
 /*BORDER AND HORIZONTAL LINES COLORS*/
@@ -61,7 +61,7 @@ $atlas-line-color: $atlas-gray;
 $atlas-orange-line: 1px solid $JC-orange;
 $atlas-green-line: 1px solid $JC-green;
 $atlas-heading-line: 3px solid $JC-cyan;
-$atlas-error-border: 1px solid $atlas-error;
+$atlas-danger-border: 1px solid $atlas-danger;
 $atlas-caution-border: 1px solid $atlas-caution;
 $atlas-info-border: 1px solid $atlas-dark-gray;
 
@@ -95,7 +95,7 @@ $atlas-spacing-base-four: $atlas-spacing-base * 4;                              
 
 
 
-$header-height: 80px;
+$header-height: 70px;
 $header-mobile-height: 55px;
 $navigation-width: 230px;
 $navigation-mini-width:80px;
