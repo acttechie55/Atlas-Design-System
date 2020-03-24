@@ -1,4 +1,4 @@
-<h1>Tables</h1>
+<!-- <h1>Tables</h1> -->
 
 <!-- <div class="atlas-card atlas-mb-15" atlas-altitude="raised">
     <div class="atlas-card-body">
@@ -275,7 +275,7 @@
         </ng-template>
     </kendo-grid-column>
     </kendo-grid> -->
-    <div class="atlas-card atlas-mb-15 atlas-card-raised">
+    <!-- <div class="atlas-card atlas-mb-15 atlas-card-raised">
         <div class="atlas-card-title-wrapper">
             <h3 class="atlas-card-title">Atlas Grid</h3>
         </div>
@@ -295,7 +295,6 @@
                   filterable="menu">
                     <kendo-grid-column media="(max-width: 991.98px)" title="Opportunities">
                         <ng-template kendoGridCellTemplate let-dataItem>
-                            <!-- template for mobile -->
                             <dl class="atlas-mb-0">
                                 <dt>Specialty</dt>
                                 <dd class="atlas-mb-0">{{ dataItem.specialty }}</dd>
@@ -320,8 +319,6 @@
                             </button>
                         </ng-template>
                     </kendo-grid-column>
-            
-                    <!-- additional columns on large devices -->
                     <kendo-grid-column
                         media="(min-width: 991.98px)"
                         field="specialty" title="Specialty" width="80">
@@ -354,18 +351,83 @@
                             Apply
                         </button>
                     </ng-template>
-                    <!-- <button class="btn atlas-primary">
-                        Apply
-                    </button> -->
                     </kendo-grid-column>
-                    <!-- <kendo-grid-column
-                        media="(min-width: 991.98px)"
-                        title="Discontinued" width="120">
-                        <ng-template kendoGridCellTemplate let-dataItem>
-                            <input type="checkbox" [checked]="dataItem.Discontinued" disabled />
-                        </ng-template>
-                    </kendo-grid-column> -->
                 </kendo-grid>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <kendo-grid [data]="gridData" [height]="400"  
+    [pageSize]="pageSize"
+    [skip]="skip"
+    [pageable]="false"
+    (pageChange)="pageChange($event)"
+    [sortable]="{
+    allowUnsort: allowUnsort,
+    mode: multiple ? 'multiple' : 'single'
+    }"
+    [sort]="sort"
+    (sortChange)="sortChange($event)"
+    filterable="menu">
+
+    <!--For Tablets and Mobile Phones -->
+    <kendo-grid-column media="(max-width: 991.98px)">
+       <ng-template kendoGridCellTemplate let-dataItem>
+          <div class="list-group">
+             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                   <p class="mb-0"><strong>Specialty</strong></p>
+                   <i class="fal fa-chevron-right"></i>
+                </div>
+                <p class="mb-0">{{ dataItem.specialty }}</p>
+                <div class="d-flex w-100 justify-content-between">
+                   <p class="mb-0"><strong>State</strong></p>
+                </div>
+                <p class="mb-1">{{ dataItem.state }}</p>
+                <div class="d-flex w-100 justify-content-between">
+                   <p class="mb-0"><strong>Region</strong></p>
+                </div>
+                <p class="mb-0">{{ dataItem.region }}</p>
+                <p>Any extra content you want</p>
+             </a>
+          </div>
+       </ng-template>
+    </kendo-grid-column>
+    <!--For Tablets and Mobile Phones -->
+
+    <!--For Desktop -->
+    <kendo-grid-column
+       media="(min-width: 991.98px)"
+       field="specialty" title="Specialty" width="80">
+    </kendo-grid-column>
+    <kendo-grid-column
+       media="(min-width: 991.98px)"
+       field="state" title="State" width="40">
+    </kendo-grid-column>
+    <kendo-grid-column
+       media="(min-width: 991.98px)"
+       field="region" title="Region" width="80">
+    </kendo-grid-column>
+    <kendo-grid-column
+       media="(min-width: 991.98px)"
+       field="nextCoverageDate" title="Next Coverage Date" width="80">
+    </kendo-grid-column>
+    <kendo-grid-column
+       media="(min-width: 991.98px)"
+       field="endCoverageDate" title="End Coverage Date" width="80">
+    </kendo-grid-column>
+    <kendo-grid-column
+       media="(min-width: 991.98px)"
+       field="recruiter" title="Recruiter" width="70">
+       <a href="" class="atlas-link"></a>
+    </kendo-grid-column>
+    <kendo-grid-column
+       media="(min-width: 991.98px)" width="65" class="text-center">
+       <ng-template kendoGridCellTemplate let-dataItem>
+          <button class="btn atlas-primary w-100">
+          Apply
+          </button>
+       </ng-template>
+    </kendo-grid-column>
+     <!--For Desktop -->
+</kendo-grid>
