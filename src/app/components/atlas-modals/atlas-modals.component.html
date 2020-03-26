@@ -1,17 +1,79 @@
-<h1>{{title}}</h1>
-    <button class="btn atlas-primary" *ngIf="!dialogOpened && !windowOpened" (click)="open('dialog')">Open dialog</button>
+<p>Currently Testing Sliding Modals</p>
     <!-- <button kendoButton *ngIf="!dialogOpened && !windowOpened" (click)="open('window')">Open window</button> -->
-    <kendo-dialog class="atlas-dialog" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
+    <!-- <kendo-dialog class="atlas-dialog" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
         <p class="atlas-m-8 text-center">Are you sure you want to continue?</p>
         <kendo-dialog-actions>
             <button class="btn atlas-primary"  (click)="action('yes')" *ngIf="dialogOpened">Yes</button>
             <button class="btn atlas-secondary"  (click)="action('no')">No</button>
         </kendo-dialog-actions>
-    </kendo-dialog>
+    </kendo-dialog> -->
 <!-- 
     <kendo-window [minWidth]="200" [minHeight]="125" title="About" *ngIf="windowOpened" (close)="close('window')">
       <p style="text-align: center;">Additional info</p>
     </kendo-window> -->
+<!-- 
+    <div class="example-config">
+        <label><input type="checkbox" [(ngModel)]="enabled"/> Animate</label>
+        <hr />
+        <label><input type="number" min="0" [(ngModel)]="duration" [disabled]="!animate" style="width:60px;" /> Duration</label>
+        <hr />
+        <label><input type="radio" value="slide" name="type" [(ngModel)]="type" [disabled]="!animate" /> Slide</label>
+        <label><input type="radio" value="expand" name="type" [(ngModel)]="type" [disabled]="!animate" /> Expand</label>
+        <label><input type="radio" value="zoom" name="type" [(ngModel)]="type" [disabled]="!animate" /> Zoom</label>
+        <label><input type="radio" value="fade" name="type" [(ngModel)]="type" [disabled]="!animate" /> Fade</label>
+        <hr />
+        <label><input type="radio" value="down" name="direction" [(ngModel)]="direction" [disabled]="!animate || !hasDirection" /> Down</label>
+        <label><input type="radio" value="up" name="direction" [(ngModel)]="direction" [disabled]="!animate || !hasDirection" /> Up</label>
+        <label><input type="radio" value="left" name="direction" [(ngModel)]="direction" [disabled]="!animate || !hasDirection" /> Left</label>
+        <label><input type="radio" value="right" name="direction" [(ngModel)]="direction" [disabled]="!animate || !hasDirection" /> Right</label>
+    </div>
+    <button #anchor (click)="onToggle()" class="k-button">{{toggleText}} Popup</button>
+    <div class="atlas-sliding-modal">
+        <div class="k-overlay" *ngIf="show"></div>
+        <kendo-popup [animate]="animate" [anchor]="anchor" [popupClass]="'content popup'" *ngIf="show">
+        <p>Popup content!</p>
+        </kendo-popup>
+    </div> -->
+
+    <button class="btn atlas-primary" *ngIf="!dialogOpened && !windowOpened" (click)="open('dialog')">Open Kendo Dialog</button>
 
 
-  
+    <!-- Sliding Kendo Modal-->
+    <kendo-dialog [@slideInOut] class="atlas-sliding-kendo-dialog" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
+        <p class="atlas-m-8 text-center">Are you sure you want to continue?</p>
+        <kendo-dialog-actions>
+            <button kendoButton  (click)="action('yes')" *ngIf="dialogOpened">Yes</button>
+            <button kendoButton  (click)="action('no')">No</button>
+        </kendo-dialog-actions>
+    </kendo-dialog>
+     <!-- Sliding Kendo Modal-->
+
+    <!-- Sliding Bootstrap Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4" data-backdrop="static" data-keyboard="false">
+        Open Bootstrap Modal
+    </button>
+    <div class="atlas-bs-modal">
+        <div class="modal fade pr-0" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout modal-small" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal sideout small</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words, sentences or paragraphs. Commonly used as placeholder text in the graphic and print industries, Lorem Ipsum's origins extend far back to a scrambled Latin passage from Cicero in the middle ages.</p>
+                <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words, sentences or paragraphs. Commonly used as placeholder text in the graphic and print industries, Lorem Ipsum's origins extend far back to a scrambled Latin passage from Cicero in the middle ages.</p>
+                <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words, sentences or paragraphs. Commonly used as placeholder text in the graphic and print industries, Lorem Ipsum's origins extend far back to a scrambled Latin passage from Cicero in the middle ages.</p>
+                <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words, sentences or paragraphs. Commonly used as placeholder text in the graphic and print industries, Lorem Ipsum's origins extend far back to a scrambled Latin passage from Cicero in the middle ages.</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sliding Bootstrap Modal -->

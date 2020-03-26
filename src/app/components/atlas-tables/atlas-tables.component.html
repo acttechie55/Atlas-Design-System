@@ -357,7 +357,7 @@
         </div>
     </div> -->
 
-    <kendo-grid [data]="gridData" [height]="400"  
+    <kendo-grid [data]="gridData" [height]="900"  
     [pageSize]="pageSize"
     [skip]="skip"
     [pageable]="false"
@@ -369,28 +369,51 @@
     [sort]="sort"
     (sortChange)="sortChange($event)"
     filterable="menu">
-
     <!--For Tablets and Mobile Phones -->
-    <kendo-grid-column media="(max-width: 991.98px)">
+    <kendo-grid-column class="p-0" media="(max-width: 991.98px)">
        <ng-template kendoGridCellTemplate let-dataItem>
           <div class="list-group">
-             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+             <button type="button" class="list-group-item border-left-0 border-right-0 border-bottom-0 list-group-item-action align-items-start px-1 py-2
+             rounded-0">
                 <div class="d-flex w-100 justify-content-between">
-                   <p class="mb-0"><strong>Specialty</strong></p>
-                   <i class="fal fa-chevron-right"></i>
+                   <h6 class="mb-0 atlas-jc-cyan-text">{{ dataItem.specialty }}</h6>
+                   <span class="float-right">
+                        <i class="fa fa-chevron-right"></i>
+                    </span>
                 </div>
-                <p class="mb-0">{{ dataItem.specialty }}</p>
                 <div class="d-flex w-100 justify-content-between">
-                   <p class="mb-0"><strong>State</strong></p>
+                    <p class="mb-0">{{ dataItem.region }}</p>
                 </div>
-                <p class="mb-1">{{ dataItem.state }}</p>
                 <div class="d-flex w-100 justify-content-between">
-                   <p class="mb-0"><strong>Region</strong></p>
+                    <div class="card-schedule-date-caption">Dates of Coverage:</div>
                 </div>
-                <p class="mb-0">{{ dataItem.region }}</p>
-                <p>Any extra content you want</p>
-             </a>
+                <p class="mb-0">{{ dataItem.nextCoverageDate }} - {{dataItem.endCoverageDate}}</p>
+                <div class="d-flex w-100 justify-content-between">
+                    <div class="card-schedule-date-caption">Recruiter: {{dataItem.recruiter}}</div>
+                </div>
+            </button>
           </div>
+          <!-- <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-0 text-primary">{{ dataItem.specialty}}</h6>
+                <i class="fa fa-chevron-right"></i>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <div class="mb-0 card-schedule-city-state p-0"> {{ dataItem.regionName }}</div>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <div class="card-schedule-date-caption">Dates of Coverage:</div>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <div class="schedule-card-dates">{{dataItem.nextDate | date : dateFormat}} - {{dataItem.endDate | date : dateFormat}}</div>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <div class="card-schedule-date-caption">Recruiter: {{dataItem.recruiterName}}</div>
+              </div>
+            </a>
+          </div> -->
+  
        </ng-template>
     </kendo-grid-column>
     <!--For Tablets and Mobile Phones -->

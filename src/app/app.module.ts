@@ -13,6 +13,7 @@ import {GridModule} from '@progress/kendo-angular-grid';
 import {InputsModule} from '@progress/kendo-angular-inputs';
 import {UploadModule} from '@progress/kendo-angular-upload';
 import { MenuModule } from '@progress/kendo-angular-menu';
+import { PopupModule } from '@progress/kendo-angular-popup';
 
 //COMPONENTS
 import { AppComponent } from './app.component';
@@ -42,6 +43,7 @@ import {DataService} from './atlas-header/data.service';
 
 //DIRECTIVES
 import { CopyClipboardDirective } from './directives/copy-clipboard.directive';
+
 
 
 
@@ -105,7 +107,8 @@ const appRoutes: Routes = [
     InputsModule,
     UploadModule,
     HttpClientModule,
-    MenuModule
+    MenuModule,
+    PopupModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

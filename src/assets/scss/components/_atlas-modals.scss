@@ -77,3 +77,73 @@
 	}
 
 }
+
+/*Atlas Bootstrap Sliding Modal*/
+.atlas-bs-modal {
+    .modal-dialog-slideout {
+        min-height: 100%;
+        margin: 0 0 0 auto;
+        background: #fff;
+        &.modal-small {
+            max-width: 345px;
+            @media only screen and (max-width: 767.98px) {
+                max-width: 100%;
+            }
+        }
+        .modal-content {
+            border: 0;
+        }
+        .modal-header {
+            height: auto;
+            display: block;
+        }
+        .modal-footer {
+            height: auto;
+            display: block;
+        }
+    }
+    .modal.fade {
+        .modal-dialog.modal-dialog-slideout {
+            -webkit-transform: translate(100%,0)scale(1);
+            transform: translate(100%,0)scale(1);
+        }
+    }
+    .modal.fade.show {
+        .modal-dialog.modal-dialog-slideout {
+            transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
+            -webkit-transform: translate(0,0);
+            transform: translate(0,0);
+            display: flex;
+            align-items: stretch;
+            -webkit-box-align: stretch;
+            height: 100%;
+            .modal-body {
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+        }
+    }
+}
+body:not(.modal-open){
+    padding-right: 0px !important;
+}
+/*Atlas Bootstrap Sliding Modal*/
+
+ /*Atlas Kendo Sliding Modal*/ 
+.atlas-sliding-kendo-dialog {
+    .atlas-no-close-button {
+        .k-window-actions {
+            display: none;
+        }
+    }
+    .k-widget, .k-window, .k-dialog { 
+      position: fixed;
+      min-height: 100%;
+      border-radius: 0rem;
+      right: 0px;
+       @media only screen and (max-width: 767.98px) {
+           width: 100%;
+       }
+    }
+}
+ /*Atlas Kendo Sliding Modal*/
