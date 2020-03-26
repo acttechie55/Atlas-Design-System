@@ -26,6 +26,7 @@ export class AtlasModalsComponent implements OnInit {
 
   /*Code That Came From Kendo Dialog. Not Even Sure What It Means*/
   public dialogOpened = false;
+  public windowOpened = false;
  
     public close(component) {
       this[component + 'Opened'] = false;
