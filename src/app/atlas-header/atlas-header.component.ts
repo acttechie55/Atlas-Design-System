@@ -8,7 +8,7 @@ import { DataService } from "./data.service";
 export class AtlasHeaderComponent implements OnInit {
 
   navExpanded:boolean;
-  navExpandedMobile:boolean;
+  //navExpandedMobile:boolean;
 
   today: number = Date.now();
   // @Output() messageEvent = new EventEmitter<boolean>();
@@ -19,7 +19,7 @@ export class AtlasHeaderComponent implements OnInit {
 
   ngOnInit() {
     this.data.cast.subscribe(data => this.navExpanded = data);
-    this.data.castMobile.subscribe(data => this.navExpandedMobile = data);
+   // this.data.castMobile.subscribe(data => this.navExpandedMobile = data);
   }
 
   expansionMenuDesktop(){
@@ -28,9 +28,9 @@ export class AtlasHeaderComponent implements OnInit {
     // this.messageEvent.emit(this.navExpanded);
     //this.data.changeMessage("Hello from Sibling")
   }
-  expansionMenuMobile(){
-    this.data.changeNavMobile();
-  }
+  // expansionMenuMobile(){
+  //   this.data.changeNavMobile();
+  // }
   // sendValue(value) {
   //   this.data.setBehaviorView({textVal: value});
   //   }

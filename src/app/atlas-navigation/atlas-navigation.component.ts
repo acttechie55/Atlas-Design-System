@@ -48,7 +48,7 @@ export class AtlasNavigationComponent implements OnInit {
   isMobile: boolean = false;
   width:number = window.innerWidth;
   height:number = window.innerHeight;
-  mobileWidth:number  = 760;
+  mobileWidth:number  = 992;
 
   constructor(private data: DataService) {
     this.isMobile = this.width < this.mobileWidth;
@@ -59,13 +59,18 @@ export class AtlasNavigationComponent implements OnInit {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.menuItemsTwo = ROUTESTWO.filter(menuItemTwo => menuItemTwo);
     this.data.cast.subscribe(data => this.navExpanded = data);
-    this.data.castMobile.subscribe(data => this.navExpandedMobile = data);
+   // this.data.castMobile.subscribe(data => this.navExpandedMobile = data);
   }
 
   onWindowResize(event) {
     this.width = event.target.innerWidth;
     this.height = event.target.innerHeight;
     this.isMobile = this.width < this.mobileWidth;
+    // if(this.isMobile){
+    //   this.navExpanded = false;
+    // } else {
+    //   this.navExpanded = true;
+    // }
 }
 
 
@@ -76,5 +81,6 @@ export class AtlasNavigationComponent implements OnInit {
       this.navExpanded == false;
     }
   }
+
 
 }

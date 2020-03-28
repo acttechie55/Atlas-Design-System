@@ -5,17 +5,17 @@ import { BehaviorSubject, Observable} from 'rxjs';
 export class DataService {
     
 private navExpanded = new BehaviorSubject<boolean>(false);
-private navExpandedMobile = new BehaviorSubject<boolean>(false);
+//private navExpandedMobile = new BehaviorSubject<boolean>(false);
 cast = this.navExpanded.asObservable();
-castMobile = this.navExpandedMobile.asObservable();
+//castMobile = this.navExpandedMobile.asObservable();
 
 constructor() { }
 
 changeNavDesktop(){
     this.navExpanded.next(!this.navExpanded.value);
 }
-changeNavMobile(){
-  this.navExpandedMobile.next(!this.navExpandedMobile.value);
-}
+// changeNavMobile(){
+//   this.navExpandedMobile.next(!this.navExpandedMobile.value);
+// }
 
 }
