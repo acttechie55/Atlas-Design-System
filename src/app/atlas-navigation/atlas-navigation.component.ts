@@ -13,7 +13,7 @@ export const ROUTES: RouteInfo[] = [
   { path: 'foundation/colors',          title: 'Colors',        icon:'fal fa-palette' },
   { path: 'foundation/typography',      title: 'Typography',    icon:'fal fa-text' },
   { path: 'foundation/grid_system',     title: 'Grid System',   icon:'fal fa-th'},
-  { path: 'foundation/spacing',         title: 'Spacing',       icon:'fad fa-ruler-combined'}
+  { path: 'foundation/spacing',         title: 'Spacing',       icon:'fal fa-ruler-combined'}
 ];
 
 
@@ -26,7 +26,7 @@ export const ROUTESTWO: RouteInfo[] = [
   // { path: 'components/accordion',       title: 'Accordion',     icon:'fas fa-list' },
   { path: 'components/tables',          title: 'Tables',        icon:'fal fa-table'},
   // { path: 'components/breadcrumbs',     title: 'Breadcrumbs',   icon:'fas fa-road'},
-  { path: 'components/notifications',   title: 'Notifications', icon:'fad fa-bell'},
+  { path: 'components/notifications',   title: 'Notifications', icon:'fal fa-bell'},
   { path: 'components/badge',           title: 'Badges',        icon:'fal fa-id-badge'}
 ];
 
@@ -44,6 +44,7 @@ export class AtlasNavigationComponent implements OnInit {
   public menuItemsTwo: any[];
   //message:string;
   navExpanded:boolean;
+  navExpandedMobile:boolean;
   isMobile: boolean = false;
   width:number = window.innerWidth;
   height:number = window.innerHeight;
@@ -58,6 +59,7 @@ export class AtlasNavigationComponent implements OnInit {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.menuItemsTwo = ROUTESTWO.filter(menuItemTwo => menuItemTwo);
     this.data.cast.subscribe(data => this.navExpanded = data);
+    this.data.castMobile.subscribe(data => this.navExpandedMobile = data);
   }
 
   onWindowResize(event) {
