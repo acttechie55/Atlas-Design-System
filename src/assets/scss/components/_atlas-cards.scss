@@ -62,8 +62,11 @@
         margin-bottom: $atlas-spacing-base-0;
     }
 }
-.atlas-card-body.atlas-scrollable {
-    overflow-y: scroll;
-    max-height:250px;
+.atlas-card-body{
+    &.atlas-scrollable {
+        overflow-y: scroll;
+        max-height:250px;
+        @include atlas-scroll;
+    }
+    
 }
-
