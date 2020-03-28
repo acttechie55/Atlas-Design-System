@@ -14,6 +14,7 @@ import {InputsModule} from '@progress/kendo-angular-inputs';
 import {UploadModule} from '@progress/kendo-angular-upload';
 import { MenuModule } from '@progress/kendo-angular-menu';
 import { PopupModule } from '@progress/kendo-angular-popup';
+import { LayoutModule } from '@progress/kendo-angular-layout';
 
 //COMPONENTS
 import { AppComponent } from './app.component';
@@ -43,6 +44,9 @@ import {DataService} from './atlas-header/data.service';
 
 //DIRECTIVES
 import { CopyClipboardDirective } from './directives/copy-clipboard.directive';
+import { AtlasTestComponent } from './atlas-test/atlas-test.component';
+
+
 
 
 
@@ -64,6 +68,7 @@ const appRoutes: Routes = [
   { path: 'components/notifications', component: AtlasNotificationsComponent},
   { path: 'components/badge', component: AtlasBadgeComponent},
   { path: 'home', component: AtlasHomeComponent },
+  { path: 'test', component: AtlasTestComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
@@ -89,7 +94,8 @@ const appRoutes: Routes = [
     AtlasNotificationsComponent,
     AtlasBadgeComponent,
     AtlasSpacingComponent,
-    CopyClipboardDirective
+    CopyClipboardDirective,
+    AtlasTestComponent
   ],
   imports: [
     BrowserModule,
@@ -108,7 +114,8 @@ const appRoutes: Routes = [
     UploadModule,
     HttpClientModule,
     MenuModule,
-    PopupModule
+    PopupModule,
+    LayoutModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
