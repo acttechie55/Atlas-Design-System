@@ -70,6 +70,7 @@
             text-align: left;
             z-index:$zindex-modal;
             height: 100%;
+            overflow-y: auto;
             @include atlas-scroll;
             @include atlas-transition-one;
             .atlas-nav-list-item {
