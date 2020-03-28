@@ -12,6 +12,11 @@
         height: 90%;
         padding-top: $atlas-spacing-base-half;
         padding-bottom: $atlas-spacing-base-half;
+        overflow-y: hidden;
+        &:hover {
+            overflow-y: auto;
+            @include atlas-scroll;
+        }
     }
     .atlas-nav-subtitle {
         padding:$atlas-spacing-base-half;
@@ -65,6 +70,8 @@
             text-align: left;
             z-index:$zindex-modal;
             height: 100%;
+            @include atlas-scroll;
+            @include atlas-transition-one;
             .atlas-nav-list-item {
                 padding-left: $atlas-spacing-base-half;
                 .atlas-nav-link-text {
@@ -77,13 +84,21 @@
 }
 @media #{$atlas-tablet-range} {                                                         //Sidebar Overlay
     .atlas-sidebar-overlay {
-        position: fixed;
-        height: 100%;
-        left: 0;
-        top: 50px;
-        width: 100%;
+        // position: fixed;
+        // height: 100%;
+        // left: 0;
+        // top: 50px;
+        // width: 100%;
+        // z-index:$zindex-dropdown;
+        // background-color: rgba(0, 0, 0, 0.6);
+        // overflow: hidden;
         z-index:$zindex-dropdown;
-        background-color: rgba(0, 0, 0, 0.6);
-        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.5;
+        position: fixed;
+        top: 0;
+        left: 0;
     } 
 }

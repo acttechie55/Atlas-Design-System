@@ -1,4 +1,11 @@
-.atlas-main-body {
+body {
+    @include atlas-scroll;
+    overflow-x: hidden;
+    .atlas-app-wrapper {
+        height: 100vh;
+    }
+}
+.atlas-main-content {
     margin-left: $navigation-width;
     padding: $atlas-spacing-base-two;
     position: relative;
@@ -7,18 +14,18 @@
     @include atlas-transition-one;
     @include atlas-box-shadow-one;
     height: auto;
-    min-height: 100vh;
+    min-height: 100%;
     @media #{$atlas-tablet-range} {
         @include atlas-transition-one;
         margin-left: $atlas-spacing-base-0;
         padding:  $atlas-spacing-base;
         top: $header-mobile-height;
     }
-    &.atlas-main-body-expanded {
-        @include atlas-transition-one;
+    &.atlas-main-content-expanded {
+       // @include atlas-transition-one;
         margin-left: $navigation-mini-width;
         @media #{$atlas-tablet-range} {
-            @include atlas-transition-one;
+           // @include atlas-transition-one;
             margin-left: $atlas-spacing-base-0;
             padding: $atlas-spacing-base;
         }

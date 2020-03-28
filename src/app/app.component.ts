@@ -7,9 +7,11 @@ import { DataService } from "./atlas-header/data.service";
 export class AppComponent {
   title = 'atlas-style-guide';
   navExpanded:boolean;
+  navExpandedMobile:boolean;
 
   constructor(private data: DataService) {
     this.data.cast.subscribe(data => this.navExpanded = data);
+    this.data.castMobile.subscribe(data => this.navExpandedMobile = data);
    }
 
 
