@@ -89,7 +89,7 @@
             text-decoration: none;
         }
     }
-    @media #{$atlas-mobile-range} { 
+    @media #{$atlas-mobile-max} { 
         .k-pager-wrap {
             display:block;
             .k-pager-info {
@@ -160,13 +160,13 @@
     &.atlas-table-accordion {
         .table {
             display:table;
-            @media #{$atlas-tablet-range} {
+            @media #{$atlas-tablet-max} {
                 display:none;
             }
         }
         .accordion {
             display:none;
-            @media #{$atlas-tablet-range} {
+            @media #{$atlas-tablet-max} {
                 display:block;
 
                 button {
@@ -203,7 +203,7 @@
         }
     }
     &.atlas-table-card-list {
-        @media #{$atlas-tablet-range} {
+        @media #{$atlas-tablet-max} {
             	/* Force table to not be like tables anymore */
                 table, thead, tbody, th, td, tr { 
                     display: block; 

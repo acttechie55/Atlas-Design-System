@@ -2,7 +2,7 @@
 /*FOOTER*/
 .atlas-footer {
     top: $header-height;
-    @media #{$atlas-tablet-range} {
+    @media #{$atlas-tablet-max} {
        top: $header-mobile-height;
     }
     footer {
@@ -11,7 +11,7 @@
         color: $atlas-black;
         margin-left: $navigation-width;
         @include atlas-box-shadow-one;
-        @media #{$atlas-tablet-range} {
+        @media #{$atlas-tablet-max} {
             margin-left: $atlas-spacing-base-0;
         }
     }
@@ -19,7 +19,7 @@
         footer {
             @include atlas-transition-one;
             margin-left: $navigation-mini-width;
-            @media #{$atlas-tablet-range} {
+            @media #{$atlas-tablet-max} {
                 @include atlas-transition-one;
                 margin-left: $atlas-spacing-base-0;
                 padding: $atlas-spacing-base-two;

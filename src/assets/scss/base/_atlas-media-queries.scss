@@ -19,8 +19,8 @@ $atlas-desktop-lg: "(min-width: 1200px)";                                   //  
 
 
 //Target a range of screen sizes using the below variables
-$atlas-mobile-xs-range: "only screen and (max-width: 575.98px)";            // From 0 to all of xs-mobile
-$atlas-mobile-range: "only screen and (max-width: 767.98px)";               // From 0 to all of mobile
-$atlas-tablet-range: "only screen and (max-width: 991.98px)";               // From 0 to all of tablet
-$atlas-desktop-range: "only screen and (max-width: 1199.98px)";             // From 0 to all of desktop
+$atlas-mobile-xs-max: "only screen and (max-width: 575.98px)";            // From 0 to all of xs-mobile
+$atlas-mobile-max: "only screen and (max-width: 767.98px)";               // From 0 to all of mobile
+$atlas-tablet-max: "only screen and (max-width: 991.98px)";               // From 0 to all of tablet
+$atlas-desktop-max: "only screen and (max-width: 1199.98px)";             // From 0 to all of desktop
 

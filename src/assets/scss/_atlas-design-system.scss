@@ -11,7 +11,7 @@
     li {
         border-bottom: 1px solid $atlas-line-color;
         &:first-child {
-            @media #{$atlas-mobile-xs-range} {
+            @media #{$atlas-mobile-xs-max} {
                 @include breakpoint-highlighter;
             }
         }

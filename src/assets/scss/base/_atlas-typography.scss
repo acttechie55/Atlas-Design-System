@@ -7,14 +7,14 @@ body {
 .h1, h1 {
     font-size: $h1-font-size;
 	font-weight: $atlas-font-weight-bold;
-	@media #{$atlas-tablet-range} {
+	@media #{$atlas-tablet-max} {
 		font-size: $h1-font-size - .35rem;
 	}
 }
 .h2, h2 {
     font-size: $h2-font-size;
 	font-weight: $atlas-font-weight-normal;
-	@media #{$atlas-tablet-range} {
+	@media #{$atlas-tablet-max} {
 		font-size: $h2-font-size - .25rem;
 	}
 
@@ -22,7 +22,7 @@ body {
 .h3, h3 {
     font-size: $h3-font-size;
 	font-weight: $atlas-font-weight-normal;
-	@media #{$atlas-tablet-range} {
+	@media #{$atlas-tablet-max} {
 		font-size: $h3-font-size - .25rem;
 	}
 
@@ -30,7 +30,7 @@ body {
 .h4, h4 {
     font-size: $h4-font-size;
 	font-weight: $atlas-font-weight-normal;
-	@media #{$atlas-tablet-range} {
+	@media #{$atlas-tablet-max} {
 		font-size: $h4-font-size - .25rem;
 	}
 }
@@ -38,7 +38,7 @@ body {
 .h5, h5 {
     font-size: $h5-font-size;
 	font-weight: $atlas-font-weight-normal;
-	@media #{$atlas-tablet-range} {
+	@media #{$atlas-tablet-max} {
 		font-size: $h5-font-size - .15rem ;
 	}
 

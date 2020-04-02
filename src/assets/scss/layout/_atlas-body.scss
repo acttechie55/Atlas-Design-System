@@ -15,7 +15,7 @@ body {
     @include atlas-box-shadow-one;
     height: auto;
     min-height: 100%;
-    @media #{$atlas-tablet-range} {
+    @media #{$atlas-tablet-max} {
         @include atlas-transition-one;
         margin-left: $atlas-spacing-base-0;
         padding:  $atlas-spacing-base;
@@ -24,7 +24,7 @@ body {
     &.atlas-main-content-expanded {
        // @include atlas-transition-one;
         margin-left: $navigation-mini-width;
-        @media #{$atlas-tablet-range} {
+        @media #{$atlas-tablet-max} {
            // @include atlas-transition-one;
             margin-left: $atlas-spacing-base-0;
             padding: $atlas-spacing-base;

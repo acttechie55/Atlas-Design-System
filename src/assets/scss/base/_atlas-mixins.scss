@@ -16,7 +16,7 @@ BUTTONS MIXINS
             background-color: none;
         }
     }
-    @media #{$atlas-mobile-range} {
+    @media #{$atlas-mobile-max} {
        width: 100%;
        line-height: 1;
        padding-top: $atlas-spacing-base-three-quarters;

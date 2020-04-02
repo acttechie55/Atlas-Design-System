@@ -5,7 +5,7 @@
     width: $navigation-width;
     background-color: $atlas-white;
     height:100vh;
-    @media #{$atlas-tablet-range} {
+    @media #{$atlas-tablet-max} {
         top: $header-mobile-height;
     }
     .atlas-nav-wrapper {
@@ -62,7 +62,7 @@
             }
         }
     }
-    @media #{$atlas-tablet-range} {                                                     //Mobile
+    @media #{$atlas-tablet-max} {                                                     //Mobile
         &.atlas-sidebar-modal {
             width: $navigation-width;
             text-align: left;
@@ -83,7 +83,7 @@
         
     }
 }
-@media #{$atlas-tablet-range} {                                                         //Sidebar Overlay
+@media #{$atlas-tablet-max} {                                                         //Sidebar Overlay
     .atlas-sidebar-overlay {
         // position: fixed;
         // height: 100%;

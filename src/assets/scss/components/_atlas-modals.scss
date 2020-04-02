@@ -6,21 +6,21 @@
     }
     .k-window-title {
         font-size: $h2-font-size;
-        @media #{$atlas-mobile-range} {
+        @media #{$atlas-mobile-max} {
            font-size: $h2-font-size * 0.85;
         }
     }
     .k-widget[role="dialog"], .k-window [role="dialog"], .k-dialog[role="dialog"] {
         border-radius: .25rem;
         width:900px;
-        @media #{$atlas-tablet-range} {
+        @media #{$atlas-tablet-max} {
             width:700px;
         }
-        @media #{$atlas-mobile-range} {
+        @media #{$atlas-mobile-max} {
             width:500px;
             margin: auto 10px;
         }
-        @media #{$atlas-mobile-xs-range} {
+        @media #{$atlas-mobile-xs-max} {
             width: 320px;
             margin: auto 10px;
         }
@@ -49,7 +49,7 @@
     .k-dialog-buttongroup {
         justify-content: center;
         background-color:$atlas-off-white-two;
-        @media #{$atlas-mobile-range} {
+        @media #{$atlas-mobile-max} {
             button {
                 margin-right: $atlas-spacing-base-0;
             }
