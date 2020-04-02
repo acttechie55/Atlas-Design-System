@@ -8,8 +8,8 @@
  */
  @-webkit-keyframes slide-in-left {
     0% {
-      -webkit-transform: translateX(-$navigation-width);
-              transform: translateX(-$navigation-width);
+      -webkit-transform: translateX(-500px);
+              transform: translateX(-500px);
     }
     100% {
       -webkit-transform: translateX(0px);
@@ -18,8 +18,8 @@
   }
   @keyframes slide-in-left {
     0% {
-      -webkit-transform: translateX(-$navigation-width);
-              transform: translateX(-$navigation-width);
+      -webkit-transform: translateX(-500px);
+              transform: translateX(-500px);
     }
     100% {
       -webkit-transform: translateX(0px);
