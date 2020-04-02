@@ -81,6 +81,21 @@ body {
     font-weight: $atlas-font-weight-bold;
 }
 
+.atlas-body-text {
+    font-size: 1rem;
+}
+.atlas-md-text {
+    font-size: 1.15rem;
+}
+.atlas-lg-text {
+    font-size: 1.25rem;
+}
+.atlas-xl-text {
+    font-size: 1.5rem;
+}
+.atlas-xxl-text {
+    font-size: 2rem;
+}
 .atlas-small-text {
     font-size: $atlas-font-small;
 }

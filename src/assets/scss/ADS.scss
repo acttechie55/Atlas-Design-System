@@ -11,7 +11,7 @@
 */
 
 
-//Base
+/* Base */
 @import 'base/atlas-variables';
 @import 'base/atlas-mixins';
 @import 'base/atlas-media-queries';
@@ -19,7 +19,7 @@
 @import 'base/atlas-typography';
 @import 'base/atlas-colors';
 @import 'base/atlas-spacing';
-//Components
+/*Components*/
 @import 'components/atlas-buttons';
 @import 'components/atlas-cards';
 @import 'components/atlas-form-elements';
@@ -29,11 +29,11 @@
 @import 'components/atlas-tables';
 @import 'components/atlas-modals';
 @import 'components/atlas-accordions';
-//Layout of Atlas Design System Website
+/* Layout of Atlas Design System */
 @import 'layout/atlas-header';
 @import 'layout/atlas-navigation';
 @import 'layout/atlas-body';
 @import 'layout/atlas-footer';
 
-//DO NOT COPY THIS
+/* DO NOT COPY THIS */
 @import 'atlas-design-system';

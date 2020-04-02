@@ -10,7 +10,6 @@
     }
     .atlas-nav-wrapper {
         height: 90%;
-        padding-top: $atlas-spacing-base-half;
         padding-bottom: $atlas-spacing-base-half;
         overflow-y: hidden;
         &:hover {
@@ -21,7 +20,6 @@
     .atlas-nav-subtitle {
         padding:$atlas-spacing-base-half;
         font-weight: $atlas-font-weight-bold;
-        text-transform: uppercase;
         margin: $atlas-spacing-base-0;
     
     }
@@ -70,13 +68,15 @@
             text-align: left;
             z-index:$zindex-modal;
             height: 100%;
-            overflow-y: auto;
             @include atlas-scroll;
             @include atlas-transition-one;
-            .atlas-nav-list-item {
-                padding-left: $atlas-spacing-base-half;
-                .atlas-nav-link-text {
-                    display:inline-block;
+            .atlas-nav-wrapper {
+                overflow-y: auto;
+                .atlas-nav-list-item {
+                    padding-left: $atlas-spacing-base-half;
+                    .atlas-nav-link-text {
+                        display:inline-block;
+                    }
                 }
             }
         }

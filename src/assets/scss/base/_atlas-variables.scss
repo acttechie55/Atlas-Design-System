@@ -37,7 +37,7 @@ $atlas-success-dark: rgb(86, 159, 60); // #569f3c
 $atlas-success-light: rgb(243, 249, 240); //#f3f9f0
 
 /* FONT BASICS */
-$atlas-font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$atlas-font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 
 $font-color: $atlas-black;
 $atlas-font-size-base: 1rem;                                                    // Assumes the browser default, typically `16px`;
@@ -95,9 +95,9 @@ $atlas-spacing-base-four: $atlas-spacing-base * 4;                              
 
 
 
-$header-height: 70px;
+$header-height: 65px;
 $header-mobile-height: 55px;
-$navigation-width: 230px;
+$navigation-width: 215px;
 $navigation-mini-width:80px;
 
 /*Z-index*/

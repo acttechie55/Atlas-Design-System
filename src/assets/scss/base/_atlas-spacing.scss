@@ -36,3 +36,16 @@
     @include generateAuto(atlas-mt, margin-top);
     @include generateAuto(atlas-mb, margin-bottom);
 }
+
+.atlas-top {
+    top: 0
+}
+.atlas-bottom {
+    bottom: 0
+}
+.atlas-left {
+    left: 0
+}
+.atlas-right {
+    right: 0
+}

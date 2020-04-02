@@ -1,25 +1,17 @@
 <!-- BEGIN HEADER -->
 <header class="atlas-header">
-    <div class="atlas-header-container pl-3 py-2">
+    <div class="atlas-header-logo-container py-2">
       <!-- BEGIN LOGO -->
-   
         <a href="index.html" class="jclt-logo-link">
           <img src="assets\images\jcte-logo.svg" alt="Jackson & Coker Time & Expense"> 
         </a>
-      
       <!-- END LOGO -->
       <!-- BEGIN MENU HAMBURGER BUTTON -->
-      <!-- [ngClass]="{'float-right': navExpanded}" -->
-      
-        <button class="btn atlas-nav-menu-button" (click)="expansionMenuDesktop()">
-          <i class="far fa-bars fa-2x"></i>
+        <button class="btn atlas-nav-menu-button bg-transparent" (click)="expansionMenuDesktop()">
+          <i class="fal fa-bars fa-2x"></i>
         </button>
-        <!-- <button class="btn atlas-nav-menu-button d-none d-md-block d-lg-none" (click)="expansionMenuMobile()">
-          <i class="far fa-bars fa-2x"></i>
-        </button> -->
-    
        <!-- END MENU HAMBURGER BUTTON -->
     </div>
-    <span class="h4 d-none d-lg-block atlas-pl-10"> {{today | date:'fullDate'}}</span>
+    <span class="atlas-md-text d-none d-lg-block atlas-pl-8"> {{today | date:'fullDate'}}</span>
 </header>
 <!-- END HEADER -->

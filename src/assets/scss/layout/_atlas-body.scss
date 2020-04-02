@@ -1,13 +1,13 @@
 body {
     @include atlas-scroll;
     overflow-x: hidden;
-    .atlas-app-wrapper {
+    &.atlas-app-wrapper {
         height: 100vh;
     }
 }
 .atlas-main-content {
     margin-left: $navigation-width;
-    padding: $atlas-spacing-base-two;
+    padding:  $atlas-spacing-base $atlas-spacing-base-two;
     position: relative;
     top: $header-height;
     background-color: $atlas-off-white;

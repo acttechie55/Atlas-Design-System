@@ -2,9 +2,9 @@
   <div class="atlas-nav-wrapper position-relative">
     <nav class="atlas-sidebar-nav">
         <p class="atlas-nav-subtitle" *ngIf="!navExpanded">Foundation</p>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled atlas-mb-1">
             <li class="atlas-nav-list-item" *ngFor="let menuItem of menuItems" routerLinkActive="active">
-                <a  [routerLink]="[menuItem.path]" class="atlas-nav-link" (click)="navLink()"><i class="atlas-nav-link-icon {{menuItem.icon}}"></i>
+                <a  [routerLink]="[menuItem.path]" class="atlas-nav-link" (click)="navLink()"><i class="atlas-nav-link-icon atlas-jc-blue-text {{menuItem.icon}}"></i>
                   <span class="atlas-nav-link-text">{{menuItem.title}}</span></a>
             </li>
         </ul>
@@ -12,7 +12,7 @@
         <hr *ngIf="navExpanded">
         <ul class="list-unstyled">
             <li class="atlas-nav-list-item" *ngFor="let menuItemTwo of menuItemsTwo" routerLinkActive="active">
-                <a [routerLink]="[menuItemTwo.path]" class="atlas-nav-link" (click)="navLink()"><i class="atlas-nav-link-icon {{menuItemTwo.icon}}"></i>
+                <a [routerLink]="[menuItemTwo.path]" class="atlas-nav-link" (click)="navLink()"><i class="atlas-nav-link-icon atlas-jc-blue-text {{menuItemTwo.icon}}"></i>
                   <span class="atlas-nav-link-text">{{menuItemTwo.title}}</span></a>
             </li>
         </ul>

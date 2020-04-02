@@ -1,8 +1,7 @@
-<div class="atlas-app-wrapper" [ngClass]="{'overflow-hidden': navExpanded}">
-    <app-atlas-header></app-atlas-header>
-    <app-atlas-navigation></app-atlas-navigation>
-    <main class="atlas-main-content" [ngClass]="{'atlas-main-content-expanded': navExpanded}">
-        <router-outlet></router-outlet>
-    </main>
-    <app-atlas-footer class="atlas-footer position-relative" [ngClass]="{'atlas-footer-expanded': navExpanded}"></app-atlas-footer>
-</div>
+<!-- [ngClass]="{'overflow-hidden': navExpanded}" -->
+<app-atlas-header></app-atlas-header>
+<app-atlas-navigation></app-atlas-navigation>
+<main class="atlas-main-content" [ngClass]="{'atlas-main-content-expanded': navExpanded}">
+    <router-outlet></router-outlet>
+</main>
+<app-atlas-footer class="atlas-footer position-relative" [ngClass]="{'atlas-footer-expanded': navExpanded}"></app-atlas-footer>

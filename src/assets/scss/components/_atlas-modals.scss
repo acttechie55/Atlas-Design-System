@@ -10,7 +10,7 @@
            font-size: $h2-font-size * 0.85;
         }
     }
-    .k-widget, .k-window, .k-dialog {
+    .k-widget[role="dialog"], .k-window [role="dialog"], .k-dialog[role="dialog"] {
         border-radius: .25rem;
         width:900px;
         @media #{$atlas-tablet-range} {
@@ -58,7 +58,7 @@
     /*Atlas Kendo Sliding Modal*/ 
     &.atlas-sliding-kendo-dialog {
         &.atlas-dialog-sm {
-            .k-widget, .k-window, .k-dialog {
+            .k-widget[role="dialog"], .k-window [role="dialog"], .k-dialog[role="dialog"] {
                 width:320px;
                 @media only screen and (max-width: 767.98px) {
                     width: 100%;
@@ -71,7 +71,7 @@
                 display: none;
             }
         }
-        .k-widget, .k-window, .k-dialog { 
+        .k-widget[role="dialog"], .k-window [role="dialog"], .k-dialog[role="dialog"] { 
             position: fixed;
             min-height: 100%;
             border-radius: 0rem;
