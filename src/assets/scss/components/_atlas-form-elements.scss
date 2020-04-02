@@ -124,10 +124,8 @@
       select:-webkit-autofill:focus {
           border: 1px solid $atlas-line-color;
           -webkit-text-fill-color: $atlas-black;
-          // -webkit-box-shadow: $atlas-white;
-          // box-shadow: $atlas-white;
           background-color: $atlas-white;
-          @include atlas-transition-background-color-one();
+          @include atlas-transition-background-color-one;
       }
 }
 

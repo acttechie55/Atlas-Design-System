@@ -1,11 +1,11 @@
-
+/* Header Styling */
 .atlas-header {
     background-color: $JC-blue;
     color: $atlas-white;
     @include atlas-box-shadow-one;
     position: fixed;
     top: 0px;
-    z-index: $zindex-sticky;
+    z-index: $atlas-zindex-fixed;
     height: $header-height;
     display: flex;
     align-items:center;

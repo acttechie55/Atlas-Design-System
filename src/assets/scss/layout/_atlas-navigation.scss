@@ -64,12 +64,12 @@
     }
     @media #{$atlas-tablet-max} {                                                     //Mobile
         &.atlas-sidebar-modal {
-            width: $navigation-width;
+            width: $navigation-mobile-width;
             text-align: left;
-            z-index:$zindex-modal;
+            z-index:$atlas-zindex-modal;
             height: 100%;
             @include atlas-scroll;
-            @include atlas-transition-one;
+            @include atlas-slide-in-left;
             .atlas-nav-wrapper {
                 overflow-y: auto;
                 .atlas-nav-list-item {
@@ -85,18 +85,10 @@
 }
 @media #{$atlas-tablet-max} {                                                         //Sidebar Overlay
     .atlas-sidebar-overlay {
-        // position: fixed;
-        // height: 100%;
-        // left: 0;
-        // top: 50px;
-        // width: 100%;
-        // z-index:$zindex-dropdown;
-        // background-color: rgba(0, 0, 0, 0.6);
-        // overflow: hidden;
-        z-index:$zindex-dropdown;
+        z-index: $atlas-zindex-mobile-navigation-modal-backdrop;
         width: 100%;
         height: 100%;
-        background-color: #000000;
+        background-color: $atlas-black;
         opacity: 0.5;
         position: fixed;
         top: 0;
