@@ -48,7 +48,7 @@
             margin-bottom: $atlas-spacing-base-quarter;
         }
         .k-i-sort-asc-sm::before{
-            @include atlas-font-awesome-pro();
+            @include atlas-font-awesome-pro-solid;
             content: "\f30c";
         }
         // .k-i-sort-asc-sm::after{
@@ -57,7 +57,7 @@
         //     content: "\10f0de";
         // }
         .k-i-sort-desc-sm::before{
-            @include atlas-font-awesome-pro();
+            @include atlas-font-awesome-pro-solid;
             content: "\f309";
         }
     }
@@ -120,7 +120,7 @@
             .k-select {
                     .k-i-arrow-s {
                         &::before {
-                        @include atlas-font-awesome-pro;
+                        @include atlas-font-awesome-pro-solid;
                         content: "\f078";
                         }
                     }
@@ -176,13 +176,13 @@
                     &.collapsed {
                         &::after {
                             float: right;
-                            @include atlas-font-awesome-pro;
+                            @include atlas-font-awesome-pro-solid;
                             content: "\f054";
                         }
                     }
                     &::after {
                         float: right;
-                        @include atlas-font-awesome-pro;
+                        @include atlas-font-awesome-pro-solid;
                         content: "\f078";
                     }
                    &:not(.collapsed){

@@ -30,15 +30,26 @@ export class AtlasModalsComponent implements OnInit {
  
     public close(component) {
       this[component + 'Opened'] = false;
+     // this.startBodyScroll()
     }
 
     public open(component) {
       this[component + 'Opened'] = true;
+      this.stopBodyScroll()
+    }
+    stopBodyScroll() {
+      var element = document.getElementById("atlas-body");
+      element.classList.add("overflow-hidden");
+    }
+    startBodyScroll() {
+      var element = document.getElementById("atlas-body");
+      element.classList.remove("overflow-hidden");
     }
 
     public action(status) {
       console.log(`Dialog result: ${status}`);
       this.dialogOpened = false;
+      this.startBodyScroll()
     }
 
 }

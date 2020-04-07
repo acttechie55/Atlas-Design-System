@@ -4,12 +4,13 @@
     color: $atlas-white;
     @include atlas-box-shadow-one;
     position: fixed;
+    right: 0px;
     top: 0px;
     z-index: $atlas-zindex-fixed;
     height: $header-height;
-    display: flex;
-    align-items:center;
-    align-content: center;
+    // display: flex;
+    // align-items:center;
+    // align-content: center;
     @include atlas-transition-one;
     width: 100%;
     @media #{$atlas-tablet-max}{
@@ -17,8 +18,15 @@
     }
     .atlas-header-logo-container {
        width: $navigation-width;
-       display: flex;
-       align-items:center;
+       float: left;
+      // height: 50px;
+      // padding: 0 20px;
+       position: relative;
+     //  text-align: center;
+      // width: 230px;
+      // z-index: 1;
+    //    display: flex;
+    //    align-items:center;
        @media #{$atlas-tablet-max}{
         @include atlas-transition-one;
            width: 100%;
@@ -56,15 +64,16 @@
             color: $atlas-white;
             margin-left:auto;
             padding-right: $atlas-spacing-base-0;
-            padding-top: $atlas-spacing-base-three-quarters;
+            padding-top: $atlas-spacing-base-half;
+            float: right;
             @media #{$atlas-tablet-max} {
                 right: auto;
                 left: 0;
-                top: 0px;
+                top: 3px;
                 position: absolute;
                 margin-left: $atlas-spacing-base-0;
                 padding-right: $atlas-spacing-base;
-                padding-top: $atlas-spacing-base-half;
+                //padding-top: $atlas-spacing-base-half;
             }
         }
     }
@@ -72,6 +81,41 @@
         @media #{$atlas-tablet-max}{
             position: absolute;
             width: 100%;
+        }
+    }
+    .atlas-header-date-text {
+        top: 15px;
+    }
+
+    .atlas-dropdown.atlas-header-dropdown {
+        top: 15px;
+        position: relative;
+        color: $atlas-black;
+        @media #{$atlas-tablet-max}{
+            position: absolute;
+            display: block;
+            right: 0;
+            top:12px;
+        }
+        .dropdown-toggle {
+            padding: $atlas-spacing-base-0 $atlas-spacing-base $atlas-spacing-base-0 $atlas-spacing-base-0;
+            @media #{$atlas-tablet-max}{
+                padding-left: $atlas-spacing-base-one-half;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        .dropdown-menu {
+            color: $atlas-black;
+            width: 300px;
+            .dropdown-item {
+                color: $atlas-black;
+                @include atlas-hover-blue;
+                &:focus {
+                    background-color: transparent;
+                }
+            }
         }
     }
 }

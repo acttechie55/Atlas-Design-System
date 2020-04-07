@@ -51,14 +51,16 @@
             margin-left:$atlas-spacing-base-one-quarter;
         }
     }
-    &.atlas-mini-sidebar {                                                              //When the Navigation is Minimized
-        @include atlas-transition-one;
-        text-align: center;
-        width: $navigation-mini-width;
-        .atlas-nav-list-item {
-            padding-left: $atlas-spacing-base-0;
-            .atlas-nav-link-text {
-                display:none;
+    @media #{$atlas-tablet-min} {        
+        &.atlas-mini-sidebar {                                                              //When the Navigation is Minimized
+        //  @include atlas-transition-one;
+            text-align: center;
+            width: $navigation-mini-width;
+            .atlas-nav-list-item {
+                padding-left: $atlas-spacing-base-0;
+                .atlas-nav-link-text {
+                    display:none;
+                }
             }
         }
     }
@@ -69,7 +71,17 @@
             z-index:$atlas-zindex-modal;
             height: 100%;
             @include atlas-scroll;
-            @include atlas-slide-in-left;
+            @include keyframes(slide-in-left) {
+                0% {
+                    -webkit-transform: translateX(-500px);
+                    transform: translateX(-500px); 
+                }
+                100% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0); 
+                }
+            }
+            @include animation('slide-in-left 500ms 1');
             .atlas-nav-wrapper {
                 overflow-y: auto;
                 .atlas-nav-list-item {

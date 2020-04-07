@@ -6,13 +6,13 @@
         &.collapsed {
             &::after {
                 float: right;
-                @include atlas-font-awesome-pro();
+                @include atlas-font-awesome-pro-solid;
                 content: "\f054";
             }
         }
         &::after {
             float: right;
-            @include atlas-font-awesome-pro();
+            @include atlas-font-awesome-pro-solid;
             content: "\f078";
         }
        &:not(.collapsed){
@@ -41,14 +41,14 @@
             &.collapsed {
                 &::after {
                     float: right;
-                    @include atlas-font-awesome-pro();
+                    @include atlas-font-awesome-pro-solid;
                     content: "\f054";
                     color: $JC-cyan;
                 }
             }
             &::after {
                 float: right;
-                @include atlas-font-awesome-pro();
+                @include atlas-font-awesome-pro-solid;
                 content: "\f078";
                 color: $JC-cyan;
             }

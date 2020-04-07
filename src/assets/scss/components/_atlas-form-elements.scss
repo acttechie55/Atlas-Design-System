@@ -28,7 +28,7 @@
         width: 100%;
         position: relative;
         &::after {
-            @include atlas-font-awesome-pro;
+            @include atlas-font-awesome-pro-solid;
             content: "\f078";
             position: absolute;
             text-align: center;
@@ -150,7 +150,7 @@
         .k-select {
             .k-i-arrow-s {
                 &::before {
-                @include atlas-font-awesome-pro;
+                @include atlas-font-awesome-pro-solid;
                 content: "\f078";
                 font-size: 23px;
                 }

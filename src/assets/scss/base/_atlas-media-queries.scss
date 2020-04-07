@@ -24,3 +24,6 @@ $atlas-mobile-max: "only screen and (max-width: 767.98px)";               // Fro
 $atlas-tablet-max: "only screen and (max-width: 991.98px)";               // From 0 to all of tablet
 $atlas-desktop-max: "only screen and (max-width: 1199.98px)";             // From 0 to all of desktop
 
+$atlas-mobile-xs-min: "only screen and (min-width: 575.98px)";            // From xs-mobile and up
+$atlas-mobile-min: "only screen and (min-width: 767.98px)";               // From mobile and up
+$atlas-tablet-min: "only screen and (min-width: 991.98px)";               // From tablet and up

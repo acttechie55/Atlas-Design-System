@@ -9,6 +9,10 @@
     &.atlas-card-basic {
         @include atlas-card-border;
     }
+    &.atlas-card-sharp {
+        @include atlas-card-border;
+        border-radius: 0px;
+    }
     &.atlas-card-base {
         border: none;
     }

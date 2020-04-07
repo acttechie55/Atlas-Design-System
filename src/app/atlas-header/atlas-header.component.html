@@ -12,6 +12,22 @@
         </button>
        <!-- END MENU HAMBURGER BUTTON -->
     </div>
-    <span class="atlas-md-text d-none d-lg-block atlas-pl-8"> {{today | date:'fullDate'}}</span>
+    <span class="atlas-header-date-text atlas-lg-text d-none d-lg-inline-block atlas-pl-8 float-left position-absolute"> {{today | date:'fullDate'}}</span>
+    <!-- BEGIN DROPDOWN MENU-->
+    <div class="atlas-dropdown atlas-header-dropdown float-right">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle atlas-lg-text text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user-circle fa-lg"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right atlas-card atlas-card-raised atlas-card-sharp" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Reset Password</a>
+          <a class="dropdown-item" href="#">Edit Email Address</a>
+          <a class="dropdown-item" href="#">Help</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+    <!-- END DROPDOWN MENU--> 
 </header>
 <!-- END HEADER -->

@@ -58,12 +58,37 @@ BUTTONS MIXINS
     transition: background-color 5000s ease-in-out 0s;
     
 }
-@mixin  atlas-slide-in-left {
-    -webkit-animation: slide-in-left 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    -moz-animation: slide-in-left 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-left 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
 }
-  
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}  
 /*!
 =========================================================
 * CARDS MIXINS
@@ -91,11 +116,25 @@ BUTTONS MIXINS
 * FONT AWESOME ICONS MIXINS
 =========================================================
 */
-@mixin atlas-font-awesome-pro {
+//Font Awesome Pro 5 - Solid
+@mixin atlas-font-awesome-pro-solid {
     font-family: "Font Awesome 5 Pro"; 
     font-weight: $atlas-font-weight-bolder;
     -webkit-font-smoothing: antialiased;
 }
+//Font Awesome Pro 5 - Regular
+@mixin atlas-font-awesome-pro-regular {
+    font-family: "Font Awesome 5 Pro"; 
+    font-weight: $atlas-font-weight-normal;
+    -webkit-font-smoothing: antialiased;
+}
+//Font Awesome Pro 5 - Light
+@mixin atlas-font-awesome-pro-light {
+    font-family: "Font Awesome 5 Pro"; 
+    font-weight: $atlas-font-weight-light;
+    -webkit-font-smoothing: antialiased;
+}
+//Font Awesome Pro 5 - Duotone
 @mixin atlas-font-awesome-duotone {
     font-family: "Font Awesome 5 Duotone"; 
     font-weight: 900;
@@ -111,7 +150,7 @@ BUTTONS MIXINS
     float: right;
     position: absolute;
     &::before {
-        @include atlas-font-awesome-pro;
+        @include atlas-font-awesome-pro-solid;
         content: "\f12a";
     }
 }
@@ -230,6 +269,12 @@ BUTTONS MIXINS
 }
 /*!
 =========================================================
-* SCROLLBAR MIXINS
+* HOVER MIXINS
 =========================================================
 */
+@mixin atlas-hover-blue {
+    &:hover {
+        background-color: $JC-blue-light;
+        font-weight:$atlas-font-weight-bold;
+    }
+}
