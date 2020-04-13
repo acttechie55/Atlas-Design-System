@@ -89,10 +89,25 @@
             text-decoration: none;
         }
     }
-    @media #{$atlas-mobile-max} { 
+    @media #{$atlas-mobile-max} {
+        .k-grid-pager {
+            kendo-pager-prev-buttons, kendo-pager-next-buttons {
+                width: 50%;
+            }
+            &.k-pager-wrap .k-link, 
+            &.k-pager-wrap .k-pager-nav {
+                height: 50px;
+                width: 50%;
+                box-sizing: border-box;
+            }
+            .k-pager-nav + .k-pager-nav {
+                margin-left: 0px;
+            }
+        } 
         .k-pager-wrap {
-            display:block;
+           // display:block;
             .k-pager-info {
+                display:none;
                 justify-content: flex-start;
                 margin-top: $atlas-spacing-base-half;
                 margin-left: $atlas-spacing-base-0;

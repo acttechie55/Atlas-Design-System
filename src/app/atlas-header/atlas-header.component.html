@@ -7,9 +7,16 @@
         </a>
       <!-- END LOGO -->
       <!-- BEGIN MENU HAMBURGER BUTTON -->
-        <button class="btn atlas-nav-menu-button bg-transparent" (click)="expansionMenuDesktop()">
+        <!-- BEGIN DESKTOP BUTTON -->
+        <button class="btn atlas-nav-menu-button d-none d-lg-inline-block bg-transparent" (click)="data.toggle()">
           <i class="fal fa-bars fa-2x"></i>
         </button>
+        <!-- END DESKTOP BUTTON -->
+        <!-- BEGIN MOBILE BUTTON -->
+        <button class="btn atlas-nav-menu-button d-lg-none bg-transparent" (click)="data.toggleMobile()">
+          <i class="fal fa-bars fa-2x"></i>
+        </button>
+        <!-- END DESKTOP BUTTON -->
        <!-- END MENU HAMBURGER BUTTON -->
     </div>
     <span class="atlas-header-date-text atlas-lg-text d-none d-lg-inline-block atlas-pl-8 float-left position-absolute"> {{today | date:'fullDate'}}</span>

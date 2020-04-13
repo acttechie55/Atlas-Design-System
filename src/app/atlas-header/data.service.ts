@@ -1,21 +1,27 @@
-import { Injectable } from '@angular/core'; 
-import { BehaviorSubject, Observable} from 'rxjs'; 
+import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 export class DataService {
-    
-private navExpanded = new BehaviorSubject<boolean>(false);
-//private navExpandedMobile = new BehaviorSubject<boolean>(false);
-cast = this.navExpanded.asObservable();
-//castMobile = this.navExpandedMobile.asObservable();
 
-constructor() { }
+    /**
+     * Variable to hold our setting.
+     */
+    public navExpanded: boolean;
+    public navExpandedMobile: boolean;
 
-changeNavDesktop(){
-    this.navExpanded.next(!this.navExpanded.value);
-}
-// changeNavMobile(){
-//   this.navExpandedMobile.next(!this.navExpandedMobile.value);
-// }
+    public toggle(): void {
 
+        this.navExpanded = !this.navExpanded;
+        console.log('hello')
+
+    }
+
+    public toggleMobile(): void {
+
+        this.navExpandedMobile = !this.navExpandedMobile;
+        console.log('hello')
+
+    }
 }

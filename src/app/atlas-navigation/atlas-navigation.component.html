@@ -1,15 +1,47 @@
-<div class="atlas-sidebar position-fixed" [ngClass]="{'atlas-mini-sidebar': navExpanded, 'atlas-sidebar-modal':navExpanded}">
+<div class="atlas-sidebar position-fixed" [ngClass]="{'atlas-mini-sidebar': data.navExpanded, 'atlas-sidebar-modal':data.navExpandedMobile}">
   <div class="atlas-nav-wrapper position-relative">
     <nav class="atlas-sidebar-nav">
-        <p class="atlas-nav-subtitle" *ngIf="!navExpanded">Foundation</p>
-        <ul class="list-unstyled atlas-mb-1">
-            <li class="atlas-nav-list-item" *ngFor="let menuItem of menuItems" routerLinkActive="active">
-                <a  [routerLink]="[menuItem.path]" class="atlas-nav-link" (click)="navLink()"><i class="atlas-nav-link-icon atlas-jc-blue-text {{menuItem.icon}}"></i>
-                  <span class="atlas-nav-link-text">{{menuItem.title}}</span></a>
+        <p class="atlas-nav-subtitle" *ngIf="!data.navExpanded">Foundation</p>
+        <ul class="list-unstyled">
+          <!-- START Regular List Item -->
+          <ng-container *ngFor="let menuItem of menuItems; let i = index">
+            <li *ngIf="!menuItem.subMenu" class="atlas-nav-list-item" routerLinkActive="active">
+                <a [routerLink]="[menuItem.path]" class="atlas-nav-link" (click)="navLink()"><i class="atlas-nav-link-icon atlas-jc-blue-text {{menuItem.icon}}"></i>
+                  <span class="atlas-nav-link-text">{{menuItem.title}}</span>
+                </a>
             </li>
+          </ng-container>
+          <!-- END Regular List Item -->
+          <!-- What if I need is a list item that opens to a submenu of children navigation  -->
+          <li class="atlas-nav-list-item atlas-nav-sub-menu-link"  routerLinkActive="active">
+            <a href="#" role="button" class="atlas-nav-link" data-toggle="collapse" data-target="#yourIDHere" 
+            aria-controls="yourIDHere" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="atlas-nav-link-icon atlas-jc-blue-text far fa-ruler-combined"></i>
+            <span class="atlas-nav-link-text">Test</span>
+          </a>
+        </li>
+          <!-- Clicking the above list item will display the below submenu -->
+          <ul class="list-unstyled atlas-nav-submenu collapse"  id="yourIDHere">
+            <li class="atlas-nav-submenu-list-item py-2 pl-3" routerLinkActive="active">
+              <a routerLink="/test"  class="atlas-smallest-text">
+                <span class="atlas-ml-13">Unapproved</span>
+              </a>
+            </li>
+            <li class="atlas-nav-submenu-list-item py-2 pl-3" routerLinkActive="active">
+              <a routerLink="/testb"  class="atlas-smallest-text">
+                <span class="atlas-ml-13">Approved</span>
+              </a>
+            </li>
+            <li class="atlas-nav-submenu-list-item py-2 pl-3" routerLinkActive="active">
+              <a routerLink="/testc"  class="atlas-smallest-text">
+                <span class="atlas-ml-13">Declined</span>
+              </a>
+            </li>
+          </ul>
+          <!-- End of the submenu the above list item will display the below submenu -->
         </ul>
-        <p class="atlas-nav-subtitle" *ngIf="!navExpanded">Components</p>
-        <hr *ngIf="navExpanded">
+        <p class="atlas-nav-subtitle" *ngIf="!data.navExpanded">Components</p>
+        <hr class="atlas-hr" *ngIf="data.navExpanded">
         <ul class="list-unstyled">
             <li class="atlas-nav-list-item" *ngFor="let menuItemTwo of menuItemsTwo" routerLinkActive="active">
                 <a [routerLink]="[menuItemTwo.path]" class="atlas-nav-link" (click)="navLink()"><i class="atlas-nav-link-icon atlas-jc-blue-text {{menuItemTwo.icon}}"></i>
@@ -19,4 +51,4 @@
     </nav>
   </div>
 </div>
-<div class="atlas-sidebar-overlay" *ngIf="isMobile && navExpanded"></div>
+<div class="atlas-sidebar-overlay" *ngIf="data.navExpandedMobile"></div>

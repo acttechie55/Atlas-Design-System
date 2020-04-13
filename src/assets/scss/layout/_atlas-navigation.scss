@@ -50,10 +50,69 @@
         .atlas-nav-link-text {
             margin-left:$atlas-spacing-base-one-quarter;
         }
+        &.atlas-nav-sub-menu-link {                                                           //When a Navigation Link Triggers A SubMenu
+            background-color: $atlas-white;
+            border-right: none;
+            .atlas-nav-link {
+                &:not(.collapsed) {
+                    font-weight: $atlas-font-weight-bold;
+                }
+                &[aria-expanded='false'] .atlas-nav-link-text::after {
+                    @include atlas-font-awesome-pro-light;
+                    content: '\f078';
+                    position: absolute;
+                    right: 25px;
+                }
+                &[aria-expanded='true'] .atlas-nav-link-text::after {
+                    @include atlas-font-awesome-pro-light;
+                    content: '\f077';
+                    position: absolute;
+                    right: 25px;
+                }
+            }
+            &:hover {
+                background-color:$JC-blue-light;
+                font-weight: $atlas-font-weight-bold;
+            }
+        }
+        @media #{$atlas-tablet-min} {   
+            &.atlas-nav-menu-lg-link {
+                .atlas-nav-link {
+                    padding: 0px 4px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: flex-start;
+                    position: relative;
+                    .atlas-nav-link-text {
+                        margin-left: $atlas-spacing-base-one-half;
+                    }
+                }
+            }   
+        }
+    }
+    .atlas-nav-submenu {                                                                        //Submenu Styles
+        background-color: $atlas-off-white-two;
+        .atlas-nav-submenu-list-item {
+            &:hover {
+                background-color:$JC-blue-light;
+                font-weight: $atlas-font-weight-bold;
+            }
+            &.active {
+                background-color:$JC-blue-light;
+                border-right: 5px solid $JC-cyan;
+                font-weight: $atlas-font-weight-bold;    
+            }
+            a {
+                color: $atlas-black;
+                display: block;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
     }
     @media #{$atlas-tablet-min} {        
         &.atlas-mini-sidebar {                                                              //When the Navigation is Minimized
-        //  @include atlas-transition-one;
             text-align: center;
             width: $navigation-mini-width;
             .atlas-nav-list-item {
@@ -61,6 +120,32 @@
                 .atlas-nav-link-text {
                     display:none;
                 }
+                &.atlas-nav-sub-menu-link {
+                    &:hover {
+                        background-color:$JC-blue-light;
+                        font-weight: $atlas-font-weight-bold;
+                    }
+                    &.active {
+                        background-color:$JC-blue-light;
+                        border-right: 5px solid $JC-cyan;
+                        font-weight: $atlas-font-weight-bold;
+                    }
+                    a {
+                        color: $atlas-black;
+                        display: block;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &.atlas-nav-menu-lg-link {
+                    .atlas-nav-link {
+                       display:block;
+                    }
+                }   
+            }
+            .atlas-nav-submenu {
+                display: none;
             }
         }
     }
@@ -88,6 +173,7 @@
                     padding-left: $atlas-spacing-base-half;
                     .atlas-nav-link-text {
                         display:inline-block;
+                        //width:85%;
                     }
                 }
             }

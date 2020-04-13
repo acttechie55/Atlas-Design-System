@@ -9,18 +9,23 @@ import { DataService } from "./atlas-header/data.service";
 })
 export class AppComponent {
   title = 'atlas-style-guide';
-  navExpanded:boolean;
   isMobile: boolean = false;
   width:number = window.innerWidth;
   height:number = window.innerHeight;
   mobileWidth:number  = 992;
-  //navExpandedMobile:boolean;
 
-  constructor(private data: DataService) {
-    this.data.cast.subscribe(data => this.navExpanded = data);
-    this.isMobile = this.width < this.mobileWidth;
-    //this.data.castMobile.subscribe(data => this.navExpandedMobile = data);
-    
+
+  /**
+     * Inject the service which will be called by our button (click).
+     *
+     *
+     *                       
+     * @param {DataService} data instance.
+     */
+
+
+  public constructor(public data: DataService) {
+    this.isMobile = this.width < this.mobileWidth;    
    }
 
    onWindowResize(event) {
@@ -32,10 +37,4 @@ export class AppComponent {
     //   this.navExpanded = true;
     // }
 }
-
-
-  // ngOnInit() {
-  //   this.data.cast.subscribe(data => this.navExpanded = data);
-  //   //this.data.currentMessage.subscribe(message => this.message = message);
-  // }
 }

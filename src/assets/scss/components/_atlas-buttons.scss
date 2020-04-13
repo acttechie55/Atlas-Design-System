@@ -65,11 +65,14 @@
     }
 }
 
-// .atlas-button-group {
-//     .k-button {
-//         background-color: $JC-blue;
-//         color: $atlas-white;
-//         font-weight: $atlas-font-weight-bold;
-//         border-color: $JC-blue;
-//     }
-// }
+.atlas-button-group {
+    .k-button {
+        background-color: $atlas-white;
+        color: $atlas-black;
+        border-color: $JC-blue;
+        &.k-state-active {
+            background-color: $JC-blue;
+            color: $atlas-white;
+        }
+    }
+}
