@@ -1,11 +1,13 @@
 
 /*FOOTER*/
 .atlas-footer {
+   // @include atlas-transition-one;
     top: $header-height;
     @media #{$atlas-tablet-max} {
        top: $header-mobile-height;
     }
     footer {
+        @include atlas-transition-one;
         background-color: $atlas-white-gray;
        // padding: $atlas-spacing-base-half $atlas-spacing-base-quarter;
         color: $atlas-black;
