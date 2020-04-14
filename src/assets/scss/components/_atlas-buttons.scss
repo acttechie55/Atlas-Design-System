@@ -17,16 +17,18 @@
         }
     }
     &.atlas-secondary {
-        border:2px solid $JC-cyan;
+        border:1px solid $JC-cyan;
         color: $JC-cyan;
+        background-color: transparent;
         @include atlas-button();
         &:hover:not(:disabled) {
             background-color: $JC-cyan-light;
         }
     }
     &.atlas-secondary-danger {
-        border: 2px solid $atlas-danger;
+        border: 1px solid $atlas-danger;
         color: $atlas-danger;
+        background-color: transparent;
         @include atlas-button();
         &:hover:not(:disabled) {
             background-color: $atlas-danger-light;
@@ -34,34 +36,11 @@
     }
     &.atlas-tertiary {
         color: $atlas-darker-gray;
+        background: transparent;
         @include atlas-button();
         &:hover:not(:disabled) {
             text-decoration: underline;
         }
-    }
-}
-
-.atlas-tab-button {
-    &.k-button {
-        border: none;
-        background-color: $atlas-white;
-        -moz-transition: none;
-        -webkit-transition: none;
-        -o-transition: color 0 ease-in;
-        transition: none;
-        @include atlas-heading-one;
-        // border-top-left-radius: 0rem;
-        // border-bottom-left-radius: 0rem;
-        &:hover {
-            border-bottom: 3px solid $JC-cyan;
-            border-top-left-radius: 0rem;
-            border-bottom-left-radius: 0rem;
-            border-top-right-radius: 0rem;
-            border-bottom-right-radius: 0rem;
-        }
-    }
-    &.k-state-active {
-        border-bottom: 3px solid $JC-cyan;
     }
 }
 

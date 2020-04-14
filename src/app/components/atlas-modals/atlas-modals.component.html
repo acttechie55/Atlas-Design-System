@@ -2,16 +2,16 @@
 
 <button class="btn atlas-primary" *ngIf="!dialogOpened && !windowOpened" (click)="open('dialog')">Open Kendo Dialog</button>
 
-<!-- <kendo-dialog class="atlas-dialog" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
+<kendo-dialog class="atlas-dialog" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
     <p class="atlas-m-8 text-center">Are you sure you want to continue?</p>
     <kendo-dialog-actions>
         <button class="btn atlas-primary"  (click)="action('yes')" *ngIf="dialogOpened">Yes</button>
         <button class="btn atlas-secondary"  (click)="action('no')">No</button>
     </kendo-dialog-actions>
-</kendo-dialog> -->
+</kendo-dialog>
 
 <!-- Sliding Kendo Modal-->
-<kendo-dialog [@slideInOut] class="atlas-sliding-kendo-dialog atlas-dialog atlas-dialog-sm" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
+<!-- <kendo-dialog [@slideInOut] class="atlas-sliding-kendo-dialog atlas-dialog atlas-dialog-sm" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
     <ul>
         <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
         <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
@@ -42,5 +42,5 @@
     <button class="btn atlas-primary"  (click)="action('yes')" *ngIf="dialogOpened">Yes</button>
     <button class="btn atlas-secondary"  (click)="action('no')">No</button>
 </kendo-dialog-actions>
-</kendo-dialog>
+</kendo-dialog> -->
 <!-- Sliding Kendo Modal-->

@@ -3,7 +3,8 @@
 .atlas-grid {
     .k-grid, .k-widget {
         color: $atlas-black;
-        font-family:$atlas-font-family-sans-serif;
+        margin-bottom: $atlas-spacing-base-0;
+      //  font-family:$atlas-font-family-sans-serif;
         tbody tr {
            
             &:nth-of-type(even){
@@ -30,6 +31,9 @@
         color: $atlas-black;
         font-weight: $atlas-font-weight-bold;
         background-color: $atlas-white;
+        a {
+            color: $atlas-black;
+        }
     }
     &.atlas-grid-sm {
         .k-grid, .k-widget {
@@ -38,29 +42,29 @@
             }
         }
     }
-    .k-grid-header .k-header > .k-link > .k-icon.k-i-sort-desc-sm, 
-    .k-grid-header .k-header > .k-link > .k-icon.k-i-sort-asc-sm {
-        vertical-align: middle;
-    }
-    .k-grid-header {
-        .k-i-sort-asc-sm, .k-i-sort-desc-sm, .k-sort-order {
-            color: $JC-cyan;
-            margin-bottom: $atlas-spacing-base-quarter;
-        }
-        .k-i-sort-asc-sm::before{
-            @include atlas-font-awesome-pro-solid;
-            content: "\f30c";
-        }
-        // .k-i-sort-asc-sm::after{
-        //    @include atlas-font-awesome-duotone();
-        //     opacity: .5;
-        //     content: "\10f0de";
-        // }
-        .k-i-sort-desc-sm::before{
-            @include atlas-font-awesome-pro-solid;
-            content: "\f309";
-        }
-    }
+    // .k-grid-header .k-header > .k-link > .k-icon.k-i-sort-desc-sm, 
+    // .k-grid-header .k-header > .k-link > .k-icon.k-i-sort-asc-sm {
+    //     vertical-align: middle;
+    // }
+    // .k-grid-header {
+    //     .k-i-sort-asc-sm, .k-i-sort-desc-sm, .k-sort-order {
+    //         color: $JC-cyan;
+    //         margin-bottom: $atlas-spacing-base-quarter;
+    //     }
+    //     .k-i-sort-asc-sm::before{
+    //         @include atlas-font-awesome-pro-solid;
+    //         content: "\f30c";
+    //     }
+    //     // .k-i-sort-asc-sm::after{
+    //     //    @include atlas-font-awesome-duotone();
+    //     //     opacity: .5;
+    //     //     content: "\10f0de";
+    //     // }
+    //     .k-i-sort-desc-sm::before{
+    //         @include atlas-font-awesome-pro-solid;
+    //         content: "\f309";
+    //     }
+    // }
     .k-pager-wrap .k-link, 
     .k-pager-wrap .k-pager-nav{
         color: $JC-cyan;
@@ -147,126 +151,5 @@
         .k-action-buttons .k-button {
             padding: $atlas-spacing-base-quarter $atlas-spacing-base-three-quarters;
         }
-    }
-}
-			
-.atlas-table{
-    .table {
-        color: $atlas-black;
-        margin:$atlas-spacing-base-0;
-        thead {
-            th {
-                border-bottom: 1px solid $atlas-line-color;
-            }
-        }
-        th, td {
-            border-top: 1px solid $atlas-line-color;
-        }
-        &.table-hover tbody tr {
-            &:hover {
-                color: $atlas-black;
-                background-color: $atlas-white-gray;
-            }
-        }
-        th[scope=row] {
-            font-weight:$atlas-font-weight-normal;
-        }
-    }
-    &.atlas-table-accordion {
-        .table {
-            display:table;
-            @media #{$atlas-tablet-max} {
-                display:none;
-            }
-        }
-        .accordion {
-            display:none;
-            @media #{$atlas-tablet-max} {
-                display:block;
-
-                button {
-                    width: 100%;
-                    text-align: left;
-                    border-radius: 0px;
-                    &.collapsed {
-                        &::after {
-                            float: right;
-                            @include atlas-font-awesome-pro-solid;
-                            content: "\f054";
-                        }
-                    }
-                    &::after {
-                        float: right;
-                        @include atlas-font-awesome-pro-solid;
-                        content: "\f078";
-                    }
-                   &:not(.collapsed){
-                        border-bottom: 1px solid $atlas-line-color;
-                   }
-                    
-                }
-                .atlas-card {
-                    h2,h3,h4,h5,h6 {
-                        &:hover {
-                            background-color: $atlas-white-gray;
-                        }
-
-                        //background-color: $atlas-white-gray-two;
-                    }
-                }
-            }
-        }
-    }
-    &.atlas-table-card-list {
-        @media #{$atlas-tablet-max} {
-            	/* Force table to not be like tables anymore */
-                table, thead, tbody, th, td, tr { 
-                    display: block; 
-                }
-                /* Hide table headers (but not display: none;, for accessibility) */
-                thead tr {
-                    position: absolute; 
-                    overflow: hidden; 
-                    clip: rect(0 0 0 0); 
-                    height: 1px; 
-                    width: 1px; 
-                    margin: -1px; 
-                    padding: $atlas-spacing-base-0;
-                    border: 0; 
-                }
-                .table-hover tbody tr {
-                    border: 1px solid  $atlas-line-color;
-                    &:hover {
-                        color: $atlas-black;
-                        background-color: $atlas-white;
-                    }
-                }
-                td,th[scope=row] { 
-                    /* Behave  like a "row" */
-                    border: none;
-                    border-bottom: 1px solid  $atlas-line-color;
-                    position: relative;
-                    padding-left: 45%; 
-                    white-space: normal;
-                    text-align:left;
-                    &:hover {
-                        background-color: $atlas-white-gray;
-                    }
-                    &:last-child {
-                        border:none;
-                    }
-                }
-                 td:before,th[scope=row]::before { 
-                    /* Now like a table header */
-                    position: absolute;
-                    left: 6px;
-                    width: 40%; 
-                    //padding-right: $atlas-spacing-base-three-quarters; 
-                    white-space: nowrap;
-                    text-align:left;
-                    font-weight: bold;
-                    content: attr(data-title); 
-                }
-            }
     }
 }

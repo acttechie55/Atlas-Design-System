@@ -37,7 +37,7 @@ $atlas-success-dark: rgb(86, 159, 60); // #569f3c
 $atlas-success-light: rgb(243, 249, 240); //#f3f9f0
 
 /* FONT BASICS */
-$atlas-font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+$atlas-font-family-sans-serif: -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif !important;
 
 $font-color: $atlas-black;
 $atlas-font-size-base: 1rem;                                                    // Assumes the browser default, typically `16px`;
