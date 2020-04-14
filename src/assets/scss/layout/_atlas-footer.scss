@@ -16,11 +16,11 @@
         }
     }
     &.atlas-footer-expanded {
+        @include atlas-transition-one;
         footer {
             @include atlas-transition-one;
             margin-left: $navigation-mini-width;
             @media #{$atlas-tablet-max} {
-                @include atlas-transition-one;
                 margin-left: $atlas-spacing-base-0;
                 padding: $atlas-spacing-base-two;
             }

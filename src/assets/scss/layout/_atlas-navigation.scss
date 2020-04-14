@@ -50,7 +50,12 @@
         .atlas-nav-link-text {
             margin-left:$atlas-spacing-base-one-quarter;
         }
-        &.atlas-nav-sub-menu-link {                                                           //When a Navigation Link Triggers A SubMenu
+        &.atlas-nav-list-last-item {                                                     //When a Navigation Link Needs To Sit At The Bottom
+            position: absolute;
+            width:100%;
+            bottom: 0;
+        }
+        &.atlas-nav-sub-menu-link {                                                      //When a Navigation Link Triggers A SubMenu
             background-color: $atlas-white;
             border-right: none;
             .atlas-nav-link {
@@ -84,7 +89,7 @@
                     justify-content: flex-start;
                     position: relative;
                     .atlas-nav-link-text {
-                        margin-left: $atlas-spacing-base-one-half;
+                        margin-left: $atlas-spacing-base-one-three-quarters;
                     }
                 }
             }   

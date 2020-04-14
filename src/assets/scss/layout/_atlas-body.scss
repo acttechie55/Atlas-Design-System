@@ -16,13 +16,13 @@ body {
     height: auto;
     min-height: 100%;
     @media #{$atlas-tablet-max} {
-        @include atlas-transition-one;
+       // @include atlas-transition-one;
         margin-left: $atlas-spacing-base-0;
         padding:  $atlas-spacing-base;
         top: $header-mobile-height;
     }
     &.atlas-main-content-expanded {
-       // @include atlas-transition-one;
+       @include atlas-transition-one;
         margin-left: $navigation-mini-width;
         @media #{$atlas-tablet-max} {
            // @include atlas-transition-one;
