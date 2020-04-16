@@ -5,6 +5,8 @@
 .k-grid-header .k-header-column-menu:focus, 
 .k-grid-header .k-hierarchy-cell .k-icon:focus, input:focus, select:focus, textarea:focus, .form-control:focus, .k-combobox:focus, 
 .k-combobox .k-state-focused, .k-dropdown .k-state-focused, .k-datepicker .k-state-focused,
-.k-upload .k-file.k-state-focused {
+.k-upload .k-file.k-state-focused, .k-button-group .k-button.k-state-focused, 
+.k-button-group .k-button:focus, .k-button-group>input[type=checkbox]:focus+.k-button, 
+.k-button-group>input[type=radio]:focus+.k-button {
     @include atlas-focus;
 }
