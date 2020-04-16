@@ -89,11 +89,7 @@ export class AtlasNavigationComponent implements OnInit {
 
 
   navLink(){
-    if(this.isMobile){
-      this.data.toggle()
-    } else {
-      this.data.navExpanded == false;
-    }
+    this.data.toggleMobile();
   }
 
 
