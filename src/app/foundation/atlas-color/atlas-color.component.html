@@ -1,19 +1,21 @@
 <h1>Colors</h1>
 <p>Click on the color to copy on your clipboard.</p>
-<div class="atlas-button-group">
-    <kendo-buttongroup [selection]="'single'">
-        <button kendoButton [toggleable]="true" (click)="showHex()">
-          Hex
-        </button>
-        <button kendoButton [toggleable]="true" (click)="showRGB()">
-          RGB
-        </button>
-        <button kendoButton [toggleable]="true" (click)="showSass()">
-          Sass
-        </button>
-    </kendo-buttongroup>
+
+<div class="row">
+    <div class="col-lg-4">
+        <kendo-buttongroup class="atlas-button-group" [selection]="'single'" [width]="'100%'">
+            <button kendoButton [toggleable]="true"  [selected]="true" (click)="showHex()">
+              Hex
+            </button>
+            <button kendoButton [toggleable]="true" (click)="showRGB()">
+              RGB
+            </button>
+            <button kendoButton [toggleable]="true" (click)="showSass()">
+              Sass
+            </button>
+        </kendo-buttongroup>
+    </div>
 </div>
-    <pre>{{status}}</pre>
 
 <div class="card atlas-card atlas-card atlas-card-raised atlas-mb-16">
     <div class="atlas-card-title-wrapper">

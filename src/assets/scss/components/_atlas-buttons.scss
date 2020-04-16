@@ -44,11 +44,15 @@
     }
 }
 
-.atlas-button-group {
+.atlas-button-group.k-button-group {
     .k-button {
         background-color: $atlas-white;
         color: $atlas-black;
         border-color: $JC-blue;
+        &:hover {
+            border-color: $JC-blue;
+            background-color: $JC-blue-light;
+        }
         &.k-state-active {
             background-color: $JC-blue;
             color: $atlas-white;
