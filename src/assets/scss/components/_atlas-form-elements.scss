@@ -201,7 +201,7 @@
 }
 
 .atlas-form-group {
-    .k-invalid, .ng-invalid {
+    .k-invalid, .form-control.ng-invalid:not(.ng-pristine.ng-touched) {
         border: $atlas-danger-border;
         &:focus {
             outline: 5px auto $atlas-danger;

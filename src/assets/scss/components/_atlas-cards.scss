@@ -19,6 +19,18 @@
     &.atlas-card-cyan-border-top {
         border-top: $atlas-heading-line;
     }
+    &.atlas-list-group {
+        .list-group-flush .list-group-item {
+            border-bottom: 1px solid $atlas-line-color;
+        }
+        .list-group-item-action {
+            color: $atlas-black;
+            @include atlas-hover-gray;
+            &:active {
+                background-color: $atlas-white-gray;
+            }
+        }
+    }
 }
 
 .atlas-card-title-wrapper {

@@ -49,6 +49,7 @@
         background-color: $atlas-white;
         color: $atlas-black;
         border-color: $JC-blue;
+        background-image: inherit;
         &:hover {
             border-color: $JC-blue;
             background-color: $JC-blue-light;

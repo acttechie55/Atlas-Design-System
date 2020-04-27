@@ -2,16 +2,20 @@
 
 <button class="btn atlas-primary" *ngIf="!dialogOpened && !windowOpened" (click)="open('dialog')">Open Kendo Dialog</button>
 
-<kendo-dialog class="atlas-dialog" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
+<!-- <kendo-dialog class="atlas-dialog" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
     <p class="atlas-m-8 text-center">Are you sure you want to continue?</p>
     <kendo-dialog-actions>
         <button class="btn atlas-primary"  (click)="action('yes')" *ngIf="dialogOpened">Yes</button>
         <button class="btn atlas-secondary"  (click)="action('no')">No</button>
     </kendo-dialog-actions>
-</kendo-dialog>
+</kendo-dialog>  -->
 
 <!-- Sliding Kendo Modal-->
-<!-- <kendo-dialog [@slideInOut] class="atlas-sliding-kendo-dialog atlas-dialog atlas-dialog-sm" title="Title of a Modal" *ngIf="dialogOpened" (close)="close('dialog')">
+<kendo-dialog [@slideInOut] class="atlas-sliding-kendo-dialog atlas-dialog atlas-dialog-sm align-items-end" *ngIf="dialogOpened">
+    
+    <kendo-dialog-titlebar class="atlas-no-close-button">
+        <button aria-label="Close" class="close float-left" data-dismiss="modal" type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button><div class="text-center">Filter</div>
+      </kendo-dialog-titlebar>
     <ul>
         <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
         <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
@@ -39,8 +43,8 @@
 </ul>
                  
 <kendo-dialog-actions>
-    <button class="btn atlas-primary"  (click)="action('yes')" *ngIf="dialogOpened">Yes</button>
+    <button class="btn atlas-primary mr-2"  (click)="action('yes')" *ngIf="dialogOpened">Yes</button>
     <button class="btn atlas-secondary"  (click)="action('no')">No</button>
 </kendo-dialog-actions>
-</kendo-dialog> -->
+</kendo-dialog>
 <!-- Sliding Kendo Modal-->

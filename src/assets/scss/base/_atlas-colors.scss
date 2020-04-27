@@ -109,7 +109,13 @@
 .atlas-danger-text {
     color: $atlas-danger;
 }
-
+/*NEUTRALS*/
+.atlas-black-text {
+    color: $atlas-black;
+}
+.atlas-white-text {
+    color: $atlas-white;
+}
 /*SELECTION COLORS*/
 ::selection, .k-text-selection ::selection, .k-block ::selection, .k-panel ::selection, .k-widget ::selection {
     @include atlas-selection;

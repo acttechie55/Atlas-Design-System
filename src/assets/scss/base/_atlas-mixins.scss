@@ -278,3 +278,8 @@ BUTTONS MIXINS
         font-weight:$atlas-font-weight-bold;
     }
 }
+@mixin atlas-hover-gray {
+    &:hover {
+        background-color: $atlas-off-white-two;
+    }
+}

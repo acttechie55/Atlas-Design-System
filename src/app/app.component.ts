@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+//import { DOCUMENT } from '@angular/platform-browser';
+// import { AtlasHeaderComponent} from "./atlas-header/atlas-header.component";
 import { DataService } from "./atlas-header/data.service";
 @Component({
   selector: 'app-root',
@@ -8,12 +10,14 @@ import { DataService } from "./atlas-header/data.service";
   }
 })
 export class AppComponent {
+ 
+
   title = 'atlas-style-guide';
   isMobile: boolean = false;
   width:number = window.innerWidth;
   height:number = window.innerHeight;
   mobileWidth:number  = 992;
-
+  headerWithImpersonationHeight: number;
 
   /**
      * Inject the service which will be called by our button (click).
@@ -26,6 +30,8 @@ export class AppComponent {
 
   public constructor(public data: DataService) {
     this.isMobile = this.width < this.mobileWidth;    
+    // var offsetHeight = document.getElementById('atlas-header').offsetHeight
+    // console.log(offsetHeight)
    }
 
    onWindowResize(event) {

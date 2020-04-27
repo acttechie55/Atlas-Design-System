@@ -8,6 +8,8 @@ import { DataService } from "./data.service";
 export class AtlasHeaderComponent  {
 
   navExpanded:boolean;
+  impersonatingHeader:boolean = true;
+  message:string;
 
 
   today: number = Date.now();

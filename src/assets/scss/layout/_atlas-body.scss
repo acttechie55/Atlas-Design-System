@@ -17,6 +17,7 @@ body {
     min-height: 100%;
     @media #{$atlas-tablet-max} {
        // @include atlas-transition-one;
+       box-shadow: inherit;
         margin-left: $atlas-spacing-base-0;
         padding:  $atlas-spacing-base;
         top: $header-mobile-height;
@@ -31,3 +32,9 @@ body {
         }
     }
 }
+
+@media #{$atlas-tablet-max} {
+    .atlas-mobile-overflow-hidden {
+        overflow: hidden;
+    }
+ }

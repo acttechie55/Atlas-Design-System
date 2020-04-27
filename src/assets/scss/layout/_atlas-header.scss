@@ -111,11 +111,61 @@
             width: 300px;
             .dropdown-item {
                 color: $atlas-black;
+                background-color: $atlas-white;
                 @include atlas-hover-blue;
                 &:focus {
                     background-color: transparent;
+                }
+                &:visited {
+                    color: $atlas-black;
+                    background-color: $atlas-white;
                 }
             }
         }
     }
 }
+
+.atlas-card-tab {
+    position: fixed;
+    right: 0px;
+    top: $header-height;
+    z-index: $atlas-zindex-fixed;
+    height: auto;
+    width: 100%;
+    @media #{$atlas-tablet-max} {
+        top: $header-mobile-height;
+    }
+    .atlas-card-tab-body {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: $atlas-white;
+        padding: $atlas-spacing-base-quarter;
+        width: 25%;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        @media #{$atlas-tablet-max} {
+           width: 100%;
+           text-align: inherit;
+           border-bottom-right-radius: 0;
+           border-bottom-left-radius: 0;
+           p {
+               width: 75%
+           }
+           .btn.atlas-tertiary {
+               float: right;
+               margin-right: $atlas-spacing-base-0;
+               width: auto;
+               line-height: 1;
+               margin-bottom: $atlas-spacing-base-0;
+           }
+        }
+    }
+
+}
+
+// #atlas-header {
+//     background-color: $atlas-white;
+//     z-index: 100;
+//     min-height: 100%;
+// }

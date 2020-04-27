@@ -155,7 +155,9 @@
         }
     }
     @media #{$atlas-tablet-max} {                                                     //Mobile
+        display: none;
         &.atlas-sidebar-modal {
+            display:block;
             width: $navigation-mobile-width;
             text-align: left;
             z-index:$atlas-zindex-modal;

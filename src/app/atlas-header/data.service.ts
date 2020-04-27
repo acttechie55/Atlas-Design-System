@@ -22,6 +22,12 @@ export class DataService {
 
         this.navExpandedMobile = !this.navExpandedMobile;
         console.log('hello')
+        let body = document.getElementsByTagName('body')[0];
+        if(this.navExpandedMobile) {
+            body.classList.add("atlas-mobile-overflow-hidden");   //add the class
+        } else {
+            body.classList.remove("atlas-mobile-overflow-hidden");  //remove the class
+        }
 
     }
 }
