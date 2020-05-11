@@ -1,0 +1,198 @@
+<h1 class="mb-lg-4 mb-4">Sample Site</h1>
+
+<div class="row atlas-mb-8">
+    <div class="col-lg-8">
+        <div class="card atlas-card atlas-card-raised">
+            <div class="atlas-card-title-forward atlas-card-title-wrapper atlas-border-bottom-lg-0" tabindex="0">
+                <h3 class="atlas-card-title-xl">Time<i class="fal fa-chevron-right float-right atlas-pr-2" aria-hidden="true"></i></h3>
+            </div>
+            <div class="p-lg-3 atlas-white-gray-bg atlas-lg-height-228 atlas-md-height-450">
+                <div class="d-flex flex-wrap">
+                    <div class="mr-lg-2 atlas-lg-w-49 atlas-ie-vertical-center atlas-hover-danger-light atlas-min-height-90 
+                    atlas-border-right-lg-0 atlas-border-bottom-lg-0 atlas-cursor-pointer card atlas-card 
+                    atlas-card-sharp atlas-border-left-danger mb-lg-3" role="button" tabindex="0">	
+                       <i aria-hidden="true" class="fal fa-chevron-right position-absolute atlas-right pr-2 pt-2"></i>	
+                       <div class="my-auto pl-3 pr-2">	
+                          <p class="atlas-mb-0 atlas-danger-text atlas-font-weight-semi-bold"> # Declined/Past Due Timesheets </p>	
+                       </div>	
+                    </div>
+                    <div class="atlas-lg-w-49 atlas-ie-vertical-center atlas-hover-danger-light atlas-min-height-90 	
+                          atlas-border-right-lg-0 atlas-border-bottom-lg-0 atlas-cursor-pointer card atlas-card 	
+                          atlas-card-sharp atlas-border-left-danger mb-lg-3" role="button" tabindex="0">	
+                          <i aria-hidden="true" class="fal fa-chevron-right position-absolute atlas-right pr-2 pt-2"></i>	
+                          <div class="pl-3 pr-2 my-auto">	
+                             <p class="atlas-mb-0 atlas-font-weight-semi-bold w-75 text-truncate"> Hospital Name </p>	
+                             <p class="atlas-mb-0 atlas-danger-text atlas-font-weight-semi-bold"> Past Due: # Days </p>	
+                             <p class="atlas-mb-0  w-75 text-truncate">Week of Apr 26 - May 2</p>	
+                          </div>	
+                    </div>
+                    <div class="mr-lg-2 atlas-lg-w-49 atlas-ie-vertical-center atlas-hover-success-light atlas-min-height-90 atlas-border-right-lg-0 card atlas-card atlas-card-sharp atlas-border-left-success atlas-border-bottom-lg-0" role="button" tabindex="0">	
+                        <i aria-hidden="true" class="fal fa-chevron-right position-absolute atlas-right pr-2 pt-2"></i>	
+                        <div class="pl-3 pr-2 my-auto">	
+                           <p class="atlas-mb-0 atlas-font-weight-semi-bold w-75 text-truncate"> Hospital Name</p>	
+                           <p class="atlas-mb-0"><span class="atlas-font-weight-semi-bold">Due:</span> May 4 </p>	
+                           <p class="atlas-mb-0  w-75 text-truncate">Week of Apr 26 - May 2</p>	
+                        </div>	
+                     </div>
+                     <div class="atlas-lg-w-49 atlas-ie-vertical-center atlas-hover-success-light atlas-min-height-90 card atlas-card atlas-card-sharp atlas-border-left-success atlas-border-right-lg-0" role="button" tabindex="0">	
+                        <i aria-hidden="true" class="fal fa-chevron-right position-absolute atlas-right pr-2 pt-2"></i>	
+                        <div class="pl-3 pr-2 my-auto">	
+                           <p class="atlas-mb-0 atlas-font-weight-semi-bold w-75 text-truncate"> Hospital Name </p>	
+                           <p class="atlas-mb-0"><span class="atlas-font-weight-semi-bold">Due:</span> May 4 </p>	
+                           <p class="atlas-mb-0  w-75 text-truncate">Week of Apr 26 - May 2</p>	
+                        </div>	
+                     </div>		
+                     <!-- <div class="atlas-lg-w-49 atlas-ie-vertical-center atlas-hover-success-light atlas-min-height-90 card atlas-card atlas-card-sharp atlas-border-left-success atlas-border-bottom-lg-0 atlas-border-right-lg-0" role="button" tabindex="0">	
+                        <i aria-hidden="true" class="fal fa-chevron-right position-absolute atlas-right pr-2 pt-2"></i>	
+                        <div class="pl-3 pr-2 my-auto">	
+                           <p class="atlas-mb-0 atlas-font-weight-semi-bold w-75 text-truncate"> Hospital Name </p>	
+                           <p class="atlas-mb-0"><span class="atlas-font-weight-semi-bold">Due:</span> May 4 </p>	
+                           <p class="atlas-mb-0  w-75 text-truncate">Week of Apr 26 - May 2</p>	
+                        </div>	
+                     </div>				 -->
+                </div>
+            </div>     
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card atlas-card atlas-card-raised mb-2 h-100">
+            <div class="atlas-card-title-forward atlas-card-title-wrapper" tabindex="0">
+                <h3 class="atlas-card-title-xl">Expense<i class="fal fa-chevron-right float-right atlas-pr-2"></i></h3>
+            </div>
+            <div class="px-4 py-1 card atlas-card atlas-card-base h-100">
+                <div class="mx-auto my-auto text-center">
+                    <p class="atlas-my-4">You currently do not have any unsubmitted expenses.</p>
+                    <button class="btn atlas-primary mt-lg-4 mr-0">Create An Expense</button>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>  
+
+<div class="row atlas-mb-4">
+    <div class="col-lg-8">
+       <div class="card atlas-card atlas-list-group atlas-card-raised">
+          <div class="atlas-card-title-forward atlas-card-title-wrapper"  tabindex="0">
+             <h3 class="atlas-card-title-xl">Schedule <span class="badge atlas-light atlas-badge-number atlas-body-text">#</span><i class="fal fa-chevron-right float-right atlas-pr-2" aria-hidden="true"></i></h3>
+          </div>
+          <div class="list-group list-group-flush border-left-0 atlas-white-gray-bg atlas-min-height-162">
+             <button (click)="expandSchedule = !expandSchedule" type="button" class="rounded-0 atlas-pl-4 atlas-pr-0 atlas-py-2 list-group-item list-group-item-action">
+                <i class="fal fa-chevron-down position-absolute atlas-right pr-2" aria-hidden="true"></i>
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <p class="atlas-mb-0 atlas-font-weight-semi-bold">Elmhurst Hospital Center</p>
+                        <p class="atlas-mb-0 atlas-smallest-text">79-01 Broadway <br>
+                           Elmhurst, NY 
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <p class="atlas-mb-0 pr-2 atlas-bottom-right-to-bottom-left">Apr 27, 2020 - Jun 29, 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters atlas-pt-4" *ngIf="expandSchedule">
+                    <div class="col-md-6">
+                        <p class="atlas-mb-0 atlas-font-weight-semi-bold atlas-smaller-text">Service Coordinator</p>
+                        <p class="atlas-mb-0 atlas-smallest-text"><a href="#/yes" class="atlas-link">John Doe</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="atlas-mb-0 atlas-font-weight-semi-bold text-md-right atlas-smaller-text pr-md-2">Recruiting Consultant</p>
+                        <p class="atlas-mb-0 atlas-smallest-text text-md-right pr-md-2"><a href="#/no" class="atlas-link">Jane Doe</a>
+                        </p>
+                    </div>
+                </div>
+            </button>
+             <button type="button" (click)="expandScheduleTwo = !expandScheduleTwo" class="rounded-0 atlas-pl-3 atlas-pr-0 atlas-py-2 list-group-item list-group-item-action">
+                <i class="fal fa-chevron-down position-absolute atlas-right pr-2" aria-hidden="true"></i>
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <p class="atlas-mb-0 atlas-font-weight-semi-bold">Wards Island Shelter</p>
+                        <p class="atlas-mb-0 atlas-smallest-text">600 East 125 St.<br>Wards Island, NY
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <p class="atlas-mb-0 pr-2 atlas-bottom-right-to-bottom-left">Apr 28, 2020 - Jun 30, 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters atlas-pt-4" *ngIf="expandScheduleTwo">
+                    <div class="col-md-6">
+                        <p class="atlas-mb-0 atlas-font-weight-semi-bold atlas-smaller-text">Service Coordinator</p>
+                        <p class="atlas-mb-0 atlas-smallest-text"><a href="#/yes" class="atlas-link">John Doe</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="atlas-mb-0 atlas-font-weight-semi-bold text-md-right atlas-smaller-text pr-md-2">Recruiting Consultant</p>
+                        <p class="atlas-mb-0 atlas-smallest-text text-md-right pr-md-2"><a href="#/no" class="atlas-link">Jane Doe</a>
+                        </p>
+                    </div>
+                </div>
+            </button>
+          </div>
+       </div>
+       <div class="card atlas-card atlas-list-group atlas-card-raised">
+          <div class="atlas-card-title-forward atlas-card-title-wrapper">
+             <h3 class="atlas-card-title-xl">Applied Jobs <span class="badge atlas-light atlas-badge-number atlas-body-text">#</span> <i class="fal fa-chevron-right float-right atlas-pr-2"></i></h3>
+          </div>
+          <div class="atlas-min-height-133 atlas-white-gray-bg">
+          <ul class="list-group list-group-flush border-left-0">
+             <li class="rounded-0 atlas-pl-4 py-2 list-group-item">
+                 <div class="row">
+                     <div class="col-md-4">
+                        <p class="atlas-mb-0 atlas-lg-text atlas-font-weight-semi-bold text-truncate">Psychiatry</p>
+                        <p class="atlas-mb-0 atlas-smallest-text">NY - Manhattan</p>
+                     </div>
+                     <div class="col-md-4">
+                        <p class="atlas-mb-0 atlas-font-weight-semi-bold text-md-center">Start/End Dates</p>
+                        <p class="atlas-mb-0 text-truncate text-md-center">Mar 25, 2020 - Apr 10, 2020</p>
+                     </div>
+                     <div class="col-md-4">
+                        <p class="atlas-mb-0 atlas-font-weight-semi-bold text-md-right">Applied</p>
+                        <p class="atlas-mb-0 atlas-bottom-right-to-bottom-left pr-md-3 text-md-right">Feb 28, 2020
+                        </p>
+                    </div>
+                 </div>
+             </li>
+          </ul>
+        </div>
+       </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card atlas-card atlas-list-group atlas-card-raised">
+            <div class="atlas-card-title-forward atlas-card-title-wrapper"  tabindex="0">
+               <h3 class="atlas-card-title-xl">Opportunities <i class="fal fa-chevron-right float-right atlas-pr-2" aria-hidden="true"></i></h3>
+            </div>
+            <div class="list-group list-group-flush border-left-0 atlas-white-gray-bg atlas-min-height-162">
+               <button (click)="expandSchedule = !expandSchedule" type="button" class="rounded-0 atlas-pl-4 atlas-pr-0 atlas-py-2 list-group-item list-group-item-action">
+                <i class="fal fa-chevron-right float-right atlas-pr-2 text-black" aria-hidden="true"></i>
+                <p class="atlas-mb-0 atlas-lg-text atlas-font-weight-semi-bold text-truncate">Psychiatry</p>
+                <p class="atlas-mb-0 atlas-smallest-text">NC - Southeast</p>
+                <p class="atlas-mb-0 atlas-smallest-text">Apr 27, 2020 - Nov 27, 2020</p>
+                <p class="atlas-mb-0 text-truncate atlas-smallest-text"><span>Recruiting Consultant:</span><span><a href="#/love" class="atlas-link"> Katariena Golluscio</a></span></p>
+              </button>
+              <button (click)="expandSchedule = !expandSchedule" type="button" class="rounded-0 atlas-pl-4 atlas-pr-0 atlas-py-2 list-group-item list-group-item-action">
+                <i class="fal fa-chevron-right float-right atlas-pr-2 text-black" aria-hidden="true"></i>
+                <p class="atlas-mb-0 atlas-lg-text atlas-font-weight-semi-bold text-truncate">Psychiatry</p>
+                <p class="atlas-mb-0 atlas-smallest-text">NC - Southeast</p>
+                <p class="atlas-mb-0 atlas-smallest-text">Apr 27, 2020 - Nov 27, 2020</p>
+                <p class="atlas-mb-0 text-truncate atlas-smallest-text"><span>Recruiting Consultant:</span><span><a href="#/love" class="atlas-link"> Katariena Golluscio</a></span></p>
+              </button>
+              <button (click)="expandSchedule = !expandSchedule" type="button" class="rounded-0 atlas-pl-4 atlas-pr-0 atlas-py-2 list-group-item list-group-item-action">
+                <i class="fal fa-chevron-right float-right atlas-pr-2 text-black" aria-hidden="true"></i>
+                <p class="atlas-mb-0 atlas-lg-text atlas-font-weight-semi-bold text-truncate">Psychiatry</p>
+                <p class="atlas-mb-0 atlas-smallest-text">NC - Southeast</p>
+                <p class="atlas-mb-0 atlas-smallest-text">Apr 27, 2020 - Nov 27, 2020</p>
+                <p class="atlas-mb-0 text-truncate atlas-smallest-text"><span>Recruiting Consultant:</span><span><a href="#/love" class="atlas-link"> Katariena Golluscio</a></span></p>
+              </button>
+            </div>
+            <div class="atlas-card-footer bg-white text-center">
+                <p class="atlas-mb-0">
+                    <button class="btn atlas-primary float-none w-100">Broaden My Search</button>
+                </p>    
+             </div>
+         </div>
+    </div>
+ </div>

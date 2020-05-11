@@ -27,3 +27,9 @@ $atlas-desktop-max: "only screen and (max-width: 1199.98px)";             // Fro
 $atlas-mobile-xs-min: "only screen and (min-width: 575.98px)";            // From xs-mobile and up
 $atlas-mobile-min: "only screen and (min-width: 767.98px)";               // From mobile and up
 $atlas-tablet-min: "only screen and (min-width: 991.98px)";               // From tablet and up
+
+
+//Browsers
+
+//Internet Explorer 10+
+$atlas-ie-override: "all and (-ms-high-contrast: none), (-ms-high-contrast: active)";

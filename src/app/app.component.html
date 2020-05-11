@@ -3,8 +3,9 @@
 <app-atlas-navigation></app-atlas-navigation>
 <!-- [ngStyle]="{'top.px': atlasImpersonation.offsetHeight + atlasHeader.offsetHeight }" -->
 <main id="atlas-main" class="atlas-main-content"  [ngClass]="{'atlas-main-content-expanded': data.navExpanded}">
-    
-    <router-outlet></router-outlet>
+    <div class="atlas-gutters">
+        <router-outlet></router-outlet>
+    </div>
 </main>
 
 <!-- [ngStyle]="{'top.px': atlasImpersonation.offsetHeight + atlasHeader.offsetHeight }" -->

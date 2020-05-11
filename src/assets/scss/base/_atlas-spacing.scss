@@ -49,3 +49,40 @@
 .atlas-right {
     right: 0
 }
+
+.atlas-gutters {
+    margin-left: auto;
+    margin-right: auto;
+    @media #{$atlas-desktop-lg} {
+        max-width: 1200px;
+    }
+}
+
+.row.display-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+    }
+    .row.display-flex > [class*='col-'], .row.display-flex > [class*='col'] {
+        display: flex;
+        flex-direction: column;
+    }
+
+#test {
+    .atlas-half-lg-column {
+        width: 50%;
+        display: inline-block;
+        @media #{$atlas-tablet-max} {
+            width: 100%;
+            display: block;
+        }
+        &:nth-child(odd) {
+            padding-right: $atlas-spacing-base-half;
+            @media #{$atlas-tablet-max} {
+            padding-right: $atlas-spacing-base-0;
+            }
+        }
+    }
+}

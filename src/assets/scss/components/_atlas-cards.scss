@@ -30,16 +30,16 @@
                 background-color: $atlas-white-gray;
             }
         }
-        /*BORDER-LEFT COLORS*/
-        .atlas-border-left-success {
-            border-left: 5px solid $atlas-success;
-        }
-        .atlas-border-left-danger {
-            border-left: 5px solid $atlas-danger;
-        }
-        .atlas-border-left-caution {
-            border-left: 5px solid $atlas-caution;
-        }
+    }
+    /*BORDER-LEFT COLORS*/
+    .atlas-border-left-success {
+        border-left: 5px solid $atlas-success;
+    }
+    .atlas-border-left-danger {
+        border-left: 5px solid $atlas-danger;
+    }
+    .atlas-border-left-caution {
+        border-left: 5px solid $atlas-caution;
     }
 }
 

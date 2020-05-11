@@ -16,9 +16,11 @@
 @import 'base/atlas-mixins';
 @import 'base/atlas-media-queries';
 @import 'base/atlas-focus';
+@import 'base/atlas-ie'; 
 @import 'base/atlas-typography';
 @import 'base/atlas-colors';
 @import 'base/atlas-spacing';
+@import 'base/atlas-utilities';
 //@import 'base/atlas-keyframes';
 /*Components*/
 @import 'components/atlas-buttons';

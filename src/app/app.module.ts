@@ -45,6 +45,7 @@ import {DataService} from './atlas-header/data.service';
 //DIRECTIVES
 import { CopyClipboardDirective } from './directives/copy-clipboard.directive';
 import { AtlasTestComponent } from './atlas-test/atlas-test.component';
+import { AtlasSampleSiteComponent } from './atlas-sample-site/atlas-sample-site.component';
 
 
 
@@ -69,6 +70,7 @@ const appRoutes: Routes = [
   { path: 'components/badge', component: AtlasBadgeComponent},
   { path: 'home', component: AtlasHomeComponent },
   { path: 'test', component: AtlasTestComponent },
+  { path: 'example', component: AtlasSampleSiteComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
@@ -95,7 +97,8 @@ const appRoutes: Routes = [
     AtlasBadgeComponent,
     AtlasSpacingComponent,
     CopyClipboardDirective,
-    AtlasTestComponent
+    AtlasTestComponent,
+    AtlasSampleSiteComponent
   ],
   imports: [
     BrowserModule,

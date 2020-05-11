@@ -283,3 +283,18 @@ BUTTONS MIXINS
         background-color: $atlas-off-white-two;
     }
 }
+@mixin atlas-hover-success-light {
+    &:hover {
+        background-color: $atlas-success-light
+    }
+}
+@mixin atlas-hover-caution-light {
+    &:hover {
+        background-color: $atlas-caution-light
+    }
+}
+@mixin atlas-hover-danger-light {
+    &:hover {
+        background-color: $atlas-danger-light
+    }
+}

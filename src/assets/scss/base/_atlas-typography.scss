@@ -111,3 +111,9 @@ body {
 .atlas-hr  {
     border-top: 1px solid $atlas-gray;
 }
+.atlas-cursor-pointer {
+    cursor: pointer;
+}
+.atlas-font-weight-semi-bold{
+    font-weight: $atlas-font-weight-bold;
+}

@@ -116,6 +116,21 @@
 .atlas-white-text {
     color: $atlas-white;
 }
+.atlas-off-white-text {
+    color: $atlas-off-white;
+}
+.atlas-off-white-two-text {
+    color: $atlas-off-white-two;
+}
+.atlas-gray-text {
+    color: $atlas-gray;
+}
+.atlas-dark-gray-text {
+    color: $atlas-dark-gray;
+}
+.atlas-darker-gray-text {
+    color: $atlas-darker-gray;
+}
 /*SELECTION COLORS*/
 ::selection, .k-text-selection ::selection, .k-block ::selection, .k-panel ::selection, .k-widget ::selection {
     @include atlas-selection;
