@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AtlasSampleSiteComponent implements OnInit {
 
+  expandSchedule:boolean = false;
+  expandScheduleTwo:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
