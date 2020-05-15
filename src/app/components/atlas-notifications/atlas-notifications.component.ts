@@ -9,7 +9,7 @@ export class AtlasNotificationsComponent implements OnInit {
 
   navigationalSelect:string ="info";
   public checked: boolean = false;
-  showCode:boolean = true;
+  showCode:boolean = false;
   clipboardTargetID:string = "code-info";
 
   test:boolean = false;
