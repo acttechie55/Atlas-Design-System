@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "name": "Informational",
+        "htmlB": "&lt;div class=&quot;atlas-notification atlas-caution&quot;&gt;\r\n                    &lt;div class=&quot;atlas-notification-status&quot;&gt;\r\n                        &lt;i class=&quot;fas fa-exclamation-triangle fa-lg&quot;&gt;&lt;\/i&gt;\r\n                    &lt;\/div&gt;\r\n                    &lt;div class=&quot;atlas-notification-body&quot;&gt;\r\n                        &lt;p class=&quot;atlas-text-slim&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;\/p&gt;\r\n                    &lt;\/div&gt;\r\n                &lt;\/div&gt;",
+        "html": "<div class=\"atlas-notification atlas-info\">\n     <div class=\"atlas-notification-status\">\n      <i class=\"fas fa-info-circle fa-lg\"></i>\n   </div>\n   <div class=\"atlas-notification-body\">\n      <p class=\"atlas-text-slim\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n   </div>\n</div>"
+    },
+    {
+        "id": 1,
+        "name": "Danger",
+        "html": "<div class=\"atlas-notification atlas-error\">\r\n    <div class=\"atlas-notification-status\">\r\n        <i class=\"fas fa-exclamation-circle fa-lg\"><\/i>\r\n    <\/div>\r\n    <div class=\"atlas-notification-body\">\r\n        <p class=\"atlas-text-slim\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\r\n    <\/div>\r\n<\/div>"
+    },
+    {
+        "id": 2,
+        "name": "Caution",
+        "html": "<div class=\"atlas-notification atlas-caution\">\r\n    <div class=\"atlas-notification-status\">\r\n        <i class=\"fas fa-exclamation-triangle fa-lg\"><\/i>\r\n    <\/div>\r\n    <div class=\"atlas-notification-body\">\r\n        <p class=\"atlas-text-slim\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\r\n    <\/div>\r\n<\/div>"
+    },
+    {
+        "id": 3,
+        "name": "Success",
+        "html": "<div class=\"atlas-notification atlas-success\">\r\n    <div class=\"atlas-notification-status\">\r\n        <i class=\"fas fa-check-circle fa-lg\"><\/i>\r\n    <\/div>\r\n    <div class=\"atlas-notification-body\">\r\n        <p class=\"atlas-text-slim\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\r\n    <\/div>\r\n<\/div>"
+    }
+]

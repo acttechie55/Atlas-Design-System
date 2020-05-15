@@ -1,21 +1,37 @@
-<h1>Notifications</h1>
+<h1 class="mb-lg-4">Notifications</h1>
 
 <!-- <p>Notifications float in front of page content and provide information 
     about page-level or out-of-view events. There are four types: error, caution, success, or informational.
-</p> -->
+</p> [ngClass]="{'atlas-info': navigationalSelect =='info' }"-->
+<section class="language-markup">
 
-<h2>Danger</h2>
-<!-- <p>Use for page-level errors and malfunctions, such as a file import failure or insufficient permissions to view content, or for errors that occur off of the page, such as failure to generate a report that was being created in the background.</p> -->
-<div class="row">
-    <div class="col-md-6">
-        <div class="atlas-notification atlas-error">
-            <div class="atlas-notification-status">
-                <i class="fas fa-exclamation-circle fa-lg"></i>
-            </div>
-            <div class="atlas-notification-body">
-                <p class="atlas-text-slim">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <!-- <div>
-                    <ul>
+
+
+<div class="row no-gutters">
+    <div class="col-lg-7">
+        <div class="card atlas-card py-lg-5 py-md-3 p-3 atlas-card-sharp">
+            <div class="atlas-notification" [ngClass]="{'atlas-info': navigationalSelect =='info', 
+            'atlas-error': navigationalSelect =='danger', 'atlas-caution': navigationalSelect =='caution', 'atlas-success': navigationalSelect =='success' }">
+                <div class="atlas-notification-status">
+                    <i class="fas fa-lg" [ngClass]="{'fa-info-circle': navigationalSelect =='info', 'fa-exclamation-triangle': navigationalSelect =='caution',
+                'fa-check-circle': navigationalSelect =='success', 'fa-exclamation-circle': navigationalSelect =='danger'}"></i>
+                </div>
+                <div class="atlas-notification-body">
+                    <p class="atlas-text-slim">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <!-- <div>
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li>
+                                Consectetur adipiscing elit
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- <ul>
                         <li>
                             Lorem ipsum dolor sit amet
                         </li>
@@ -25,66 +41,107 @@
                         <li>
                             Lorem ipsum dolor sit amet
                         </li>
-                    </ul>
-                </div> -->
-                <!-- <ul>
-                    <li>
-                        Lorem ipsum dolor sit amet
-                    </li>
-                    <li>
-                        Consectetur adipiscing elit
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet
-                    </li>
-                </ul> -->
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+        <div class="card atlas-card p-3 atlas-card-sharp">
+            <div class="row">
+                <div class="col-sm-3">
+                    <kendo-buttongroup class="atlas-button-group" [selection]="'single'" [width]="'100%'">
+                        <button class="p-1" kendoButton [toggleable]="true" (click)="showCode = false">
+                          Off
+                        </button>
+                        <button class="p-1"  kendoButton [toggleable]="true" [selected]="true" (click)="showCode = true">
+                          On
+                        </button>
+                    </kendo-buttongroup>
+                </div>
+                <div class="col-sm-9">
+                    <button id="btnCopy" class="btn atlas-secondary float-right p-1 atlas-mr-0" [attr.data-clipboard-target]="'#'+clipboardTargetID">Copy Code</button>
+                </div>
+            </div>
+        </div>  
+        <div class="card atlas-card atlas-card-sharp" [ngClass]="{'d-none': !showCode}" >
+            <div [ngClass]="{'d-block': navigationalSelect =='info', 'd-none': navigationalSelect !=='info'}">
+                <pre class="m-0 language-markup">
+                    <code class="language-html" id="code-info">
+                        &lt;div class=&quot;atlas-notification atlas-info&quot;&gt;
+                            &lt;div class=&quot;atlas-notification-status&quot;&gt;
+                            &lt;i class=&quot;fas fa-info-circle fa-lg&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;atlas-notification-body&quot;&gt;
+                                &lt;p class=&quot;atlas-text-slim&quot;&gt;Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;         
+                    </code>
+                </pre>
+            </div>
+            <div class="d-n" [ngClass]="{'d-block': navigationalSelect =='danger', 'd-none': navigationalSelect !=='danger'}">
+                <pre class="m-0 language-markup">
+                    <code class="language-html" id="code-danger">
+                        &lt;div class=&quot;atlas-notification atlas-danger&quot;&gt;
+                            &lt;div class=&quot;atlas-notification-status&quot;&gt;
+                            &lt;i class=&quot;fas fa-exclamation-circle fa-lg&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;atlas-notification-body&quot;&gt;
+                                &lt;p class=&quot;atlas-text-slim&quot;&gt;Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;         
+                    </code>
+                </pre>
+            </div>
+            <div  [ngClass]="{'d-block': navigationalSelect =='caution', 'd-none': navigationalSelect !=='caution'}">
+                <pre class="m-0 language-markup">
+                    <code class="language-html" id="code-caution">
+                        &lt;div class=&quot;atlas-notification atlas-caution&quot;&gt;
+                            &lt;div class=&quot;atlas-notification-status&quot;&gt;
+                            &lt;i class=&quot;fas fa-exclamation-triangle fa-lg&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;atlas-notification-body&quot;&gt;
+                                &lt;p class=&quot;atlas-text-slim&quot;&gt;Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;         
+                    </code>
+                </pre>
+            </div>
+            <div  [ngClass]="{'d-block': navigationalSelect =='success', 'd-none': navigationalSelect !=='success'}">
+                <pre class="m-0 language-markup">
+                    <code class="language-html" id="code-success">
+                        &lt;div class=&quot;atlas-notification atlas-success&quot;&gt;
+                            &lt;div class=&quot;atlas-notification-status&quot;&gt;
+                            &lt;i class=&quot;fas fa-check-circle fa-lg&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;atlas-notification-body&quot;&gt;
+                                &lt;p class=&quot;atlas-text-slim&quot;&gt;Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;         
+                    </code>
+                </pre>
+            </div>
+        </div>         
+    </div>
+    <div class="col-lg-4">
+        <div class="card atlas-card p-3 atlas-card-sharp border-left-0 h-100">
+            <div class="atlas-form-group">
+                <div class="form-group">
+                    <label class="atlas-font-weight-semi-bold" for="navigationType">Type</label>
+                    <div class="atlas-select-wrapper">
+                        <select [(ngModel)]="navigationalSelect" 
+                        (ngModelChange)="navigationalSelectChange()" class="form-control" id="navigationType">
+                            <option value="info">Informational</option>
+                            <option value="danger">Danger</option>
+                            <option value="caution">Caution</option>
+                            <option value="success">Success</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<h2>Caution</h2>
-<!-- <p>Use for a message requiring attention but not resolution in order to continue, such as sharing a file with someone who does not have permissions to view it.</p> -->
-<div class="row">
-    <div class="col-md-6">
-        <div class="atlas-notification atlas-caution">
-            <div class="atlas-notification-status">
-                <i class="fas fa-exclamation-triangle fa-lg"></i>
-            </div>
-            <div class="atlas-notification-body">
-                <p class="atlas-text-slim">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<h2>Success</h2>
-<!-- <p>Use for successes and completions, such as a report-generation or file upload completion, sent message confirmation, successfully adding investments to a list, or successfully saving updated settings.</p> -->
-<div class="row">
-    <div class="col-md-6">
-        <div class="atlas-notification atlas-success">
-            <div class="atlas-notification-status">
-                <i class="fas fa-check-circle fa-lg"></i>
-            </div>
-            <div class="atlas-notification-body">
-                <p class="atlas-text-slim">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<h2>Informational</h2>
-<!-- <p>Use for immediate feedback that a background process is happening. For example, a report is being generated or a file is being imported.</p> -->
-<div class="row">
-    <div class="col-md-6">
-        <div class="atlas-notification atlas-info">
-            <div class="atlas-notification-status">
-                <i class="fas fa-info-circle fa-lg"></i>
-            </div>
-            <div class="atlas-notification-body">
-                <p class="atlas-text-slim">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <!-- <button class="atlas-notification-dimiss btn">
-                <i class="fas fa-times"></i>
-            </button> -->
-        </div>
-    </div>
-</div>
-<hr class="atlas-hr">
+</section>

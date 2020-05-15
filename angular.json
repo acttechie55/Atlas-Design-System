@@ -29,7 +29,6 @@
             ],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
-              "src/assets/prism-syntax-highlighter/prism.css",
               "src/assets/scss/ADS.scss",
               "src/styles.css"
             ],

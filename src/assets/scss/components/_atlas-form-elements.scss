@@ -208,9 +208,9 @@
         }
     }
     .k-valid, .ng-valid {
-        border: $atlas-green-line;
+        border: 1px solid $atlas-line-color;
         &:focus {
-            outline: 5px auto $JC-green;
+            outline: 5px auto $JC-cyan;
         }
     }
 }

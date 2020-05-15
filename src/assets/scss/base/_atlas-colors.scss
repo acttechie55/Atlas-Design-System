@@ -132,6 +132,6 @@
     color: $atlas-darker-gray;
 }
 /*SELECTION COLORS*/
-::selection, .k-text-selection ::selection, .k-block ::selection, .k-panel ::selection, .k-widget ::selection {
+::selection, .k-text-selection ::selection, .k-block ::selection, .k-panel ::selection, .k-widget ::selection, code[class*=language-] ::selection, code[class*=language-]::selection, pre[class*=language-] ::selection, pre[class*=language-]::selection {
     @include atlas-selection;
 }
